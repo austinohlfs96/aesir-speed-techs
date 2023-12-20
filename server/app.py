@@ -61,7 +61,7 @@ def user_lookup_callback(_jwt_header, jwt_data):
 @app.route('/athletespotlight')
 @app.route('/login')
 @app.route('/signup')
-@app.route('/userhome')
+@app.route('/userHome')
 @app.route('/contact')
 def index(id=0):
     return render_template("index.html")
