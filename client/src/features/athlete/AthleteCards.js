@@ -51,7 +51,7 @@ const AthleteCards = ({handleItemClick}) => {
     if (!choice) {
       return;
     } else if (choice.toLowerCase() === 'yes') {
-      fetch(`http://127.0.0.1:5555/athlete/${athleteId}`, {
+      fetch(`/athlete/${athleteId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

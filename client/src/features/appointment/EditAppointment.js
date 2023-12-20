@@ -50,7 +50,7 @@ const EditAppointment = ( { setIsEditModalOpen,  setSelectedAppointment, selecte
       navigate('/')
       return;
     }
-    fetch(`http://127.0.0.1:5555/appointment/${selectedAppointment.id}`, {
+    fetch(`/appointment/${selectedAppointment.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -112,7 +112,7 @@ const EditAppointment = ( { setIsEditModalOpen,  setSelectedAppointment, selecte
     const selectedAthlete = coachAthletes.find((athlete) => athlete.id === services.athletes.id)
     console.log("selectedAthlete",selectedAthlete)
     setAthlete(selectedAthlete)
-    fetch(`http://127.0.0.1:5555/athlete-service/${services.id}`, {
+    fetch(`/athlete-service/${services.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ function Head() {
 
   useEffect(() => {
     if (!coach) {
-      fetch("http://127.0.0.1:5555/auth/me",{
+      fetch("/auth/me",{
         headers: {
               Authorization: `Bearer ${localStorage.getItem('jwt_token')}`,
             }
@@ -30,7 +30,7 @@ function Head() {
         if (res.ok) {
           res.json().then(coach => dispatch(setCurrentCoach(coach)))
         } else if (res.status === 422) {
-          fetch("http://127.0.0.1:5555/auth/refresh", {
+          fetch("/auth/refresh", {
             method: "POST",
             headers: {
               Authorization: `Bearer ${localStorage.getItem('refresh_token')}`,

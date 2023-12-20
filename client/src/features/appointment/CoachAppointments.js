@@ -43,7 +43,7 @@ const CoachAppointments = ({handleItemClick}) => {
     if (!choice) {
       return;
     } else if (choice.toLowerCase() === 'yes') {
-    fetch(`http://127.0.0.1:5555/appointment/${appointment.id}`, {
+    fetch(`/appointment/${appointment.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const CoachAppointments = ({handleItemClick}) => {
         dispatch(deleteAppointmentsToCoach(appointment.id));
         const athleteIds = appointment.athlete_services.map((service) => service.athletes.id);
         athleteIds.forEach((athleteId) => {
-          fetch(`http://127.0.0.1:5555/athlete/${athleteId}`)
+          fetch(`/athlete/${athleteId}`)
             .then((response) => {
               if (!response.ok) {
                 throw new Error('Failed to fetch athlete data');
@@ -104,7 +104,7 @@ const CoachAppointments = ({handleItemClick}) => {
 
   const handleReviewSubmit = () => {
     if (selectedService) {
-      fetch(`http://127.0.0.1:5555/athlete-service/${selectedService.id}`, {
+      fetch(`/athlete-service/${selectedService.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

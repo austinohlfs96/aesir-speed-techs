@@ -40,7 +40,7 @@ const EditCoachForm = ({handleItemClick}) => {
       return;
     }
 
-    fetch(`http://127.0.0.1:5555/coach/${coach.id}`, {
+    fetch(`/coach/${coach.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ const EditCoachForm = ({handleItemClick}) => {
       return;
     } else if (choice.toLowerCase() === 'yes') {
       navigate('/')
-      fetch(`http://127.0.0.1:5555/coach/${coach.id}`, {
+      fetch(`/coach/${coach.id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

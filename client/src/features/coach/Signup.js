@@ -44,7 +44,7 @@ const Signup = () => {
       }
   
       try {
-        fetch(`http://127.0.0.1:5555/auth/register`, {
+        fetch(`/auth/register`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

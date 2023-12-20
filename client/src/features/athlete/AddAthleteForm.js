@@ -62,7 +62,7 @@ const AddAthleteForm = ({handleItemClick, athlete}) => {
     const dataToSend = { ...values, coaches_id: coachId };
 
     const requestMethod = athlete ? 'PATCH' : 'POST';
-    const apiUrl = athlete ? `http://127.0.0.1:5555/athlete/${athlete.id}` : 'http://127.0.0.1:5555/athletes';
+    const apiUrl = athlete ? `/athlete/${athlete.id}` : '/athletes';
 
     fetch(apiUrl, {
       method: requestMethod,

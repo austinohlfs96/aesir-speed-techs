@@ -46,7 +46,7 @@ const AddAthleteServiceForm = ({ appointment, handleModalClose, setAppointment }
     }
 
     const formData = { ...values, appointment_id: appointment.id };
-    fetch('http://127.0.0.1:5555/athlete-services', {
+    fetch('/athlete-services', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ const AddAthleteServiceForm = ({ appointment, handleModalClose, setAppointment }
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5555/services');
+        const response = await fetch('/services');
         if (!response.ok) {
           throw new Error('Failed to fetch services');
         }

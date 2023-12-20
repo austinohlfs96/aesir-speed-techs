@@ -48,7 +48,7 @@ const BookAppointment = ({handleItemClick}) => {
       navigate('/')
       return;
     }
-    fetch('http://127.0.0.1:5555/appointments', {
+    fetch('/appointments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ const BookAppointment = ({handleItemClick}) => {
     const selectedAthlete = coachAthletes.find((athlete) => athlete.id === services.athletes.id)
     console.log("selectedAthlete",selectedAthlete)
     setAthlete(selectedAthlete)
-    fetch(`http://127.0.0.1:5555/athlete-service/${services.id}`, {
+    fetch(`/athlete-service/${services.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
