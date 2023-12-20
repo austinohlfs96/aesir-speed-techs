@@ -15,7 +15,7 @@ function Router() {
       <Route path='/' element={<Title/>} />,
       <Route path='/login' element={<Login/>} />,
       <Route path='/signup' element={<Signup/>} />,
-      <Route path='/userhome' element={<UserHome/>} />,
+      <Route path='/coachespage' element={<UserHome/>} />,
       <Route path='/tuningservices' element={<Services/>} />,
       <Route path='/contact' element={<Contact/>}/>,
       <Route path="/athletespotlight" element={<AthleteSpotlight/>}/>,

@@ -44,7 +44,7 @@ const Login = () => {
             
             });
             
-            navigate('/userhome');
+            navigate('/coachespage');
           } else {
             res.json().then(errorObj => {
               dispatch(addError(errorObj.message));

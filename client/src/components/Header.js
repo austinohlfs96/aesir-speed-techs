@@ -86,7 +86,7 @@ function Head() {
 )}
     {coach && (
   <>
-    <Button primary onClick={() => navigate('/userHome')}>Profile</Button>
+    <Button primary onClick={() => navigate('/coachespage')}>Profile</Button>
     <Button secondary onClick={handleLogout}>Logout</Button>
   </>
 )}

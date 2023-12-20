@@ -59,7 +59,7 @@ const Signup = () => {
                 localStorage.setItem("jwt_token", resObj.token)
                 localStorage.setItem("refresh_token", resObj.refresh_token)
               })
-              navigate('/userhome');
+              navigate('/coachespage');
           } else {
               res.json().then(errorObj => {
               dispatch(addError(errorObj.message));
