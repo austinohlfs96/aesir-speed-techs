@@ -88,7 +88,7 @@ margin-bottom: 0px;
   margin-bottom: 63px;
 }
 
-form.ui.form .field.field input:-webkit-autofill:focus {
-  border-color: #fff !important;
-  box-shadow:  #fff !important;
+form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
+  border-color: #000000 !important;
+  box-shadow:  #989898 0px 0px 0px 100px inset !important;
 }
