@@ -15,7 +15,7 @@ const initialState = {
 const register = async ({values}, ) => {
   
     try {
-        const response = await fetch('http://127.0.0.1:5555/auth/register', {
+        const response = await fetch('/auth/register', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -34,7 +34,7 @@ const register = async ({values}, ) => {
 }
 const fetchMe = async () => {
     try {
-        const resp = await fetch("http://127.0.0.1:5555/auth/me", {
+        const resp = await fetch("/auth/me", {
             headers: {
                 "Authorization": `Bearer ${getToken()}` 
             }
