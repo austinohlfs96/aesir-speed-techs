@@ -34,7 +34,7 @@ const register = async ({values}, ) => {
 }
 const fetchMe = async () => {
     try {
-        const resp = await fetch("http://127.0.0.1:5555//auth/me", {
+        const resp = await fetch("http://127.0.0.1:5555/auth/me", {
             headers: {
                 "Authorization": `Bearer ${getToken()}` 
             }
