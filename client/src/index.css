@@ -87,3 +87,8 @@ margin-bottom: 0px;
   margin-left: 30%;
   margin-bottom: 63px;
 }
+
+form.ui.form .field.field input:-webkit-autofill:focus {
+  border-color: #fff !important;
+  box-shadow:  #fff !important;
+}
