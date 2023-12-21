@@ -16,6 +16,7 @@ const EditAppointment = ( { setIsEditModalOpen,  setSelectedAppointment, selecte
   const dispatch = useDispatch();
   const coach = useSelector((state) => state.coach.data)
   const coachId = useSelector((state) => state.coach.data.id)
+  const jwtToken = localStorage.getItem('jwt_token')
   const coachAthletes = coach.athletes;
   const [athlete, setAthlete] = useState({});
   const [editedAppointment, setEditedAppointment] = useState({});
@@ -54,6 +55,8 @@ const EditAppointment = ( { setIsEditModalOpen,  setSelectedAppointment, selecte
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${jwtToken}`,
+
       },
       body: JSON.stringify(values),
     })

@@ -12,6 +12,7 @@ const CoachAppointments = ({handleItemClick}) => {
   const navigate = useNavigate()
   const dispatch = useDispatch();
   const coach = useSelector((state) => state.coach.data)
+  const jwtToken = localStorage.getItem('jwt_token')
   const coachAppointments = coach.appointment;
   const [selectedAppointment, setSelectedAppointment] = useState(null);
   const [reviewText, setReviewText] = useState('');
@@ -47,6 +48,7 @@ const CoachAppointments = ({handleItemClick}) => {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${jwtToken}`,
       },
     })
       .then((response) => {

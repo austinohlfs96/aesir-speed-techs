@@ -3,6 +3,7 @@ from flask_restful import Resource
 from config import db
 from models.appointments import Appointment
 from schemas.appointment_schema import AppointmentSchema
+from flask_jwt_extended import (jwt_required)
 
 appointment_schema = AppointmentSchema(session=db.session)
 appointments_schema = AppointmentSchema(many=True, session=db.session)
@@ -16,7 +17,7 @@ class AppointmentById(Resource):
             return {"message": "Team not found"}, 404
         except Exception as e:
             return {"message": str(e)}, 500
-          
+    @jwt_required()      
     def patch(self, id):
         if appointment := db.session.get(Appointment, id):
             try:
@@ -30,7 +31,7 @@ class AppointmentById(Resource):
                 return {"message": str(e)}, 400
         return {"message": "Team not found"}, 404
       
-      
+    @jwt_required() 
     def delete(self, id):
         if appointment := db.session.get(Appointment, id):
             try:
