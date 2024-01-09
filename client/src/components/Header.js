@@ -77,7 +77,20 @@ function Head() {
     
         <Sticky >
       <Segment style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-    <Header id="login" as='h3' textAlign='right'>
+      <Header id="login" as='h3' textAlign='right'>
+    </Header>
+    <div onClick={() => navigate('/')}>
+    <Header id="title" as='h3' textAlign='left' >
+    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')}/>
+     Æsir Performance Tunes
+    </Header>
+    </div> 
+    <Header id='headerButtons' as='h3' textAlign='center'>
+    <Button secondary onClick={() => navigate('/')}>About</Button>
+    <Button secondary onClick={() => navigate('/tuningservices')}>Services</Button>
+    <Button secondary onClick={() => navigate('/gallery')}>Gallery</Button>
+    <Button secondary onClick={() => navigate('/athletespotlight')}>Athlete Spotlight</Button>
+    <Button secondary onClick={() => navigate('/contact')}>Contact Us</Button>
     {!coach && (
   <>
     <Button primary onClick={() => navigate('/login')}>Login</Button>
@@ -90,17 +103,6 @@ function Head() {
     <Button secondary onClick={handleLogout}>Logout</Button>
   </>
 )}
-    </Header>
-    <Header id="title" as='h3' textAlign='left' >
-    <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' />
-      Æsir Performance Tunes
-    </Header>
-    <Header id='headerButtons' as='h3' textAlign='center'>
-    <Button secondary onClick={() => navigate('/')}>About</Button>
-    <Button secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-    <Button secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-    <Button secondary onClick={() => navigate('/athletespotlight')}>Athlete Spotlight</Button>
-    <Button secondary onClick={() => navigate('/contact')}>Contact Us</Button>
     
     </Header>
   </Segment>
