@@ -34,7 +34,7 @@ const Services = () => {
           <h1 style={{ color: 'white' }}>Services</h1>
           <Item.Group>
             {services.map((service) => (
-              <Segment key={service.id} className="service-item" style={{background: rgba(255, 255, 255, 0.8)}}>
+              <Segment key={service.id} className="service-item" style={{background: 'rgba(255, 255, 255, 0.8)'}}>
                 <Image src={service.image} size='medium' floated='left' />
                 <Item>
                   <Item.Content>
