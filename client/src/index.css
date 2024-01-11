@@ -95,6 +95,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 
 .service-item {
   display: grid;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .service-item img {

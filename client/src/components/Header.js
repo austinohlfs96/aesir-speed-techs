@@ -86,10 +86,11 @@ function Head() {
     </Header>
     </div> 
     <Header id='headerButtons' as='h3' textAlign='center'>
-    <Button secondary onClick={() => navigate('/')}>About</Button>
+    <Button secondary onClick={() => navigate('/')}>Home</Button>
     <Button secondary onClick={() => navigate('/tuningservices')}>Services</Button>
     <Button secondary onClick={() => navigate('/gallery')}>Gallery</Button>
     <Button secondary onClick={() => navigate('/athletespotlight')}>Athlete Spotlight</Button>
+    <Button secondary onClick={() => navigate('/about')}>About</Button>
     <Button secondary onClick={() => navigate('/contact')}>Contact Us</Button>
     {!coach && (
   <>
