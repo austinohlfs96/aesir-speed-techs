@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="ui container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' style={{ width: '20px', height: '20px', marginRight: '10px' }} />
-          <p style={{ margin: '0' }}>Æsir Performance Tunes 2023. All Rights Reserved</p>
+          <p style={{ margin: '0' }}>Æsir Performance Tunes © 2024</p>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <p style={{ margin: '0 10px' }}>Sponsors:</p>
+          <Image src='https://www.swixsport.com/siteassets/archive/logos/logo.png?width=400' style={{ width: '40px', height: '16px', marginRight: '10px' }} />
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <p style={{ margin: '0 10px' }}>Follow us on social media:</p>

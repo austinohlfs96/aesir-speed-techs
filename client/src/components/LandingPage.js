@@ -24,7 +24,7 @@ const LandingPage = () => {
               color: "white",
             }}
           >
-            <Segment style={{ background: 'rgba(255, 255, 255, 0.3)' }}>
+            <Segment style={{ background: 'rgba(14, 61, 98, 0.4)' }}>
             <h1><Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny'/>
              Æsir Performance Tunes</h1>
             <p>GO FAST TAKE CHANCES!</p>
@@ -34,7 +34,7 @@ const LandingPage = () => {
       {/* </Segment> */}
       <div >
       <Segment style={{ 
-        background: 'rgba(255, 255, 255, 0.9)',
+        background: 'rgba(16, 51, 78, 0.6)',
         marginRight: '120px',
         marginLeft: '9px',
         marginTop: "70px",
@@ -45,12 +45,12 @@ const LandingPage = () => {
           size="medium"
           floated="left"
         />
-        <h2 style={{textAlign: "center"}}>Mission</h2>
-        <h3 style={{textAlign: "center"}}>
+        <h2 style={{textAlign: "center", color: "white"}}>Mission</h2>
+        <h3 style={{textAlign: "revert", color: "white"}}>
         At Æsir Performance Tunes, our mission is to elevate the winter sports compition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Performance Tunes.</h3> 
           </Segment>
           <Segment style={{ 
-        background: 'rgba(255, 255, 255, 0.9)',
+        background: 'rgba(16, 51, 78, 0.6)',
         marginLeft: '120px',
         marginRight: '9px',
         marginTop: "70px",
@@ -61,13 +61,13 @@ const LandingPage = () => {
           size="medium"
           floated="right"
         />
-        <h2 style={{textAlign: "center"}}>Premier Services</h2>
-          <h3 style={{textAlign: "center"}}>Discover a new level of performance with Æsir Performance Tunes' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
+        <h2 style={{textAlign: "center", color: "white"}}>Premier Services</h2>
+          <h3 style={{textAlign: "left", color: "white"}}>Discover a new level of performance with Æsir Performance Tunes' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
 
 </h3> 
           </Segment>
           <Segment style={{ 
-        background: 'rgba(255, 255, 255, 0.9)',
+        background: 'rgba(16, 51, 78, 0.6)',
         marginRight: '120px',
         marginLeft: '9px',
         marginTop: "70px",
@@ -78,8 +78,8 @@ const LandingPage = () => {
           size="medium"
           floated="left"
         />
-        <h2 style={{textAlign: "center"}}>Our Crew</h2>
-        <h3 style={{textAlign: "center"}}>Our success at Æsir Performance Tunes is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
+        <h2 style={{textAlign: "center", color: "white"}}>Our Crew</h2>
+        <h3 style={{textAlign: "revert", color: "white"}}>Our success at Æsir Performance Tunes is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
         </h3>
       </Segment>
       <div style={{marginBottom: "10px"}}>

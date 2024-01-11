@@ -30,8 +30,8 @@ const Services = () => {
     <Head />
     <div className='modal'>
       <div id="services">
-        <Segment className="services-segment" >
-          <h1>Services</h1>
+        <Segment style={{ background: 'rgba(16, 51, 78, 0.6)' }}>
+          <h1 style={{ color: 'white' }}>Services</h1>
           <Item.Group>
             {services.map((service) => (
               <Segment key={service.id} className="service-item">
