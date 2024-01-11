@@ -96,7 +96,7 @@ const Login = () => {
         <Divider vertical>Or</Divider>
       </Segment>
       <div id="loginImage">
-      <Image src='https://www.snowboarder.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTk2MzUxNDI1MzY0ODMwMTQ3/modified-pipe.jpg' size='large' centered margin-bottom="57px"/>
+      <Image src='https://stokedrideshop.com/cdn/shop/articles/Ayumu_Hirano.jpg?v=1659564082' size='large' centered margin-bottom="57px"/>
       </div>
     </div>
     </>
