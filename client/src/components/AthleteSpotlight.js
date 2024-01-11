@@ -15,8 +15,8 @@ const AthleteSpotlight = () => {
       <Head />
       <div className='modal'>
       <div id="services">
-      <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', width: '100%', height: '77vh', overflow: 'auto' }}>
-        <h1>Athlete Spotlight</h1>
+      <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', width: '100%', height: '77vh', overflow: 'auto' }}>
+        <h1 style={{ color: 'white' }}>Athlete Spotlight</h1>
         <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', width: 'fit-content' }}>
         <Image src='https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/02/np_file_140504.jpeg' size='medium' floated='left' />
         <h1>Ayuma Hirano</h1>
