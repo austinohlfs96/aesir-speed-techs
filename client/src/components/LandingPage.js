@@ -26,7 +26,7 @@ const LandingPage = () => {
           >
             <Segment style={{ background: 'rgba(14, 61, 98, 0.4)' }}>
             <h1><Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny'/>
-             Æsir Performance Tunes</h1>
+             Æsir Speed Techs</h1>
             <p>GO FAST TAKE CHANCES!</p>
             </Segment>
           </div>
@@ -47,7 +47,7 @@ const LandingPage = () => {
         />
         <h2 style={{textAlign: "center", color: "white"}}>Mission</h2>
         <h3 style={{textAlign: "revert", color: "white"}}>
-        At Æsir Performance Tunes, our mission is to elevate the winter sports compition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Performance Tunes.</h3> 
+        At Æsir Speed Techs, our mission is to elevate the winter sports compition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.</h3> 
           </Segment>
           <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
@@ -62,7 +62,7 @@ const LandingPage = () => {
           floated="right"
         />
         <h2 style={{textAlign: "center", color: "white"}}>Premier Services</h2>
-          <h3 style={{textAlign: "left", color: "white"}}>Discover a new level of performance with Æsir Performance Tunes' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
+          <h3 style={{textAlign: "left", color: "white"}}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
 
 </h3> 
           </Segment>
@@ -79,7 +79,7 @@ const LandingPage = () => {
           floated="left"
         />
         <h2 style={{textAlign: "center", color: "white"}}>Our Crew</h2>
-        <h3 style={{textAlign: "revert", color: "white"}}>Our success at Æsir Performance Tunes is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
+        <h3 style={{textAlign: "revert", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
         </h3>
       </Segment>
       <div style={{marginBottom: "10px"}}>
