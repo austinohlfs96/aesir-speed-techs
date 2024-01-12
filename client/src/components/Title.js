@@ -69,7 +69,7 @@ const Title = () => {
       <h1 style={{textAlign: "center", color: "white"}}>About</h1>
     {/* <Image src='https://www.usskiandsnowboard.org/sites/default/files/paragraph/single-image-caption/2020-01/maggiepodium%20.jpg' size='medium' floated='left' /> */}
     <h4 style={{color: "white"}}>
-    Welcome to Æsir Performance Tunes, your premier destination for professional performance ski and snowboard tuning. At Æsir Performance Tunes, we take pride in our commitment to excellence and our passion for elevating winter sports performance. With a dedicated team of skilled technicians and state-of-the-art machinery, we offer top-tier tuning services tailored for athletes and coaches seeking to outperform the competition.
+    Welcome to Æsir Speed Techs, your premier destination for professional performance ski and snowboard tuning. At Æsir Speed Techs, we take pride in our commitment to excellence and our passion for elevating winter sports performance. With a dedicated team of skilled technicians and state-of-the-art machinery, we offer top-tier tuning services tailored for athletes and coaches seeking to outperform the competition.
     </h4>
     {/* <Image src='https://www.snowboarder.com/.image/t_share/MTk2MzUwOTc2MjcyNDQzMzMx/tuning-taylor-boyd-02.jpg' size='medium' floated='right' /> */}
     
@@ -79,7 +79,7 @@ const Title = () => {
 
     </h4>
     <h4 style={{color: "white"}}>
-    At Æsir Performance Tunes, we prioritize the individual needs of each client, providing customized tuning solutions to optimize performance on the slopes. Our experienced technicians combine technical expertise with a genuine love for the sport, ensuring that every pair of skis or snowboard receives the attention it deserves. Join the ranks of elite athletes who trust Æsir Performance Tunes for their tuning needs, and experience the difference that precision and passion can make in pushing your performance to new heights.
+    At Æsir Speed Techs, we prioritize the individual needs of each client, providing customized tuning solutions to optimize performance on the slopes. Our experienced technicians combine technical expertise with a genuine love for the sport, ensuring that every pair of skis or snowboard receives the attention it deserves. Join the ranks of elite athletes who trust Æsir Speed Techs for their tuning needs, and experience the difference that precision and passion can make in pushing your performance to new heights.
     </h4>
     
   </Segment>
