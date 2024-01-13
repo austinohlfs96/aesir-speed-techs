@@ -24,10 +24,10 @@ const LandingPage = () => {
               color: "white",
             }}
           >
-            <Segment style={{ background: 'rgba(14, 61, 98, 0.4)' }}>
-            <h1><Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny'/>
+            <Segment style={{ background: 'rgba(255, 255, 255, 0.3)', width: '500px', height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <h1 style={{ fontSize: '4.3rem', color: '#05082b' }}><Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny'/>
              Æsir Speed Techs</h1>
-            <p>GO FAST TAKE CHANCES!</p>
+            <p style={{ fontSize: '1.5rem', color: '#05082b' }}>GO FAST TAKE CHANCES!</p>
             </Segment>
           </div>
         </div>
@@ -47,7 +47,7 @@ const LandingPage = () => {
         />
         <h2 style={{textAlign: "center", color: "white"}}>Mission</h2>
         <h3 style={{textAlign: "revert", color: "white"}}>
-        At Æsir Speed Techs, our mission is to elevate the winter sports compition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.</h3> 
+        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.</h3> 
           </Segment>
           <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
