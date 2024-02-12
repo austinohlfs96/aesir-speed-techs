@@ -71,7 +71,7 @@ const Services = () => {
           <Table.Body>
             {services.map((service) => (
               <Table.Row key={service.id}>
-                <Table.Cell>{service.name}</Table.Cell>
+                <Table.Cell><Image src={service.image} size='medium' floated='left' />{service.name}</Table.Cell>
                 <Table.Cell>{`$${service.price}`}</Table.Cell>
                 <Table.Cell>{service.average_turn_around}</Table.Cell>
                 <Table.Cell>{service.description}</Table.Cell>
