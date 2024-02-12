@@ -24,7 +24,7 @@ const LandingPage = () => {
               color: "white",
             }}
           >
-            <Segment style={{ background: 'rgba(255, 255, 255, 0.3)', width: '500px', height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <Segment style={{ background: 'rgba(255, 255, 255, 0.4)', width: '500px', height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <h1 style={{ fontSize: '4.3rem', color: '#05082b' }}><Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny'/>
              Æsir Speed Techs</h1>
             <p style={{ fontSize: '1.5rem', color: '#05082b' }}>GO FAST TAKE CHANCES!</p>
