@@ -9,28 +9,34 @@ const LandingPage = () => {
     <div>
       <Head />
       {/* <Segment style={{ background: "#f0f0f0", textAlign: "center" }}> */}
-      <div style={{ position: "relative", marginTop: "10px" }}>
-          <Image
-            src="https://content.invisioncic.com/n281171/monthly_2020_03/image.png.1219740564eea0550ff238a905befbf5.png"
-            fluid
-            centered
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              color: "white",
-            }}
-          >
-            <Segment style={{ background: 'rgba(255, 255, 255, 0.4)', width: '500px', height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <h1 style={{ fontSize: '4.3rem', color: '#05082b' }}><Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny'/>
-             Æsir Speed Techs</h1>
-            <p style={{ fontSize: '1.5rem', color: '#05082b' }}>GO FAST TAKE CHANCES!</p>
-            </Segment>
-          </div>
-        </div>
+      <div style={{ position: "relative", marginTop: "10px", width: '100%', height: '57vh' }}>
+  <Image
+    src="https://content.invisioncic.com/n281171/monthly_2020_03/image.png.1219740564eea0550ff238a905befbf5.png"
+    fluid
+    centered
+  />
+  <div
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      color: "white",
+      margin: 'auto',
+      width: '57%', // Set width to 80% of the parent container's width
+      height: '50%', // Set height to 80% of the parent container's height
+    }}
+  >
+    <Segment style={{ background: 'rgba(255, 255, 255, 0.4)', width: '56vw', height: '31vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <h1 style={{ fontSize: '4.3vw', color: '#05082b' }}>
+        <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny' style={{width: "9vw", height: "auto"}}/>
+         Æsir Speed Techs
+      </h1>
+      <p style={{ fontSize: '1.5vw', color: '#05082b' }}>GO FAST TAKE CHANCES!</p>
+    </Segment>
+  </div>
+</div>
+
       {/* </Segment> */}
       <div >
       <Segment style={{ 
