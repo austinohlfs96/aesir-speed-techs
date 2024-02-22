@@ -9,11 +9,11 @@ const Footer = () => {
           <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' style={{ width: '20px', height: '20px', marginRight: '10px' }} />
           <p style={{ margin: '0' }}>Æsir Speed Techs © 2024</p>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexDirection: "row", flexWrap: 'wrap', justifyConten: "center" }}>
           <p style={{ margin: '0 10px' }}>Sponsors:</p>
           <Image src='https://www.swixsport.com/siteassets/archive/logos/logo.png?width=400' style={{ width: '40px', height: '16px', marginRight: '10px' }} />
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
           <p style={{ margin: '0 10px' }}>Follow us on social media:</p>
           <a href="https://www.instagram.com/aesir_techs/" target="_blank" rel="noopener noreferrer">
             <i className="instagram icon" style={{ margin: '0 10px' }}></i>

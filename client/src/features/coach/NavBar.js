@@ -59,7 +59,7 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
 
         <Grid.Column stretched width={12}>
-          <Segment style={{ marginTop: '-20vh', maxWidth: '664px' }}>
+          <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
             <BookAppointment handleItemClick={handleItemClick}/>
           </Segment>
         </Grid.Column>
@@ -103,7 +103,7 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
 
         <Grid.Column stretched width={12}>
-        <Segment style={{ marginTop: '-30vh', maxWidth: '664px' }}>
+        <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
           <CoachAppointments handleItemClick={handleItemClick}/>
           </Segment>
         </Grid.Column>
@@ -146,7 +146,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
         <Grid.Column width={12}>
-        <Segment style={{ marginTop: '-37vh', maxWidth: '664px'}}>
+        <Segment style={{ marginTop: '-10vh', maxWidth: '664px'}}>
           <AddAthleteForm handleItemClick={handleItemClick} />
           </Segment>
         </Grid.Column>  
@@ -189,7 +189,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column >
         <Grid.Column width={12}>
-        <Segment style={{ marginTop: '-36vh', maxWidth: '664px' }}>
+        <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
          <EditCoachForm handleItemClick={handleItemClick}/>
         </Segment>
         </Grid.Column>   
@@ -235,7 +235,7 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
        
         <Grid.Column width={12}>
-          <Segment style={{ marginTop: '-30vh', maxWidth: '664px'}}>
+          <Segment style={{ marginTop: '-10vh', maxWidth: '664px'}}>
           <AthleteCards handleItemClick={handleItemClick}/>
           </Segment>
          </Grid.Column>
