@@ -1,20 +1,20 @@
 
-
+/* 
 html {
   height: 100vh;
   
-}
+} */
 
 
-.App {
+/* .App {
   margin: 0;
-  background-image: url('https://th.bing.com/th/id/OIG.p1xDRGNwkYeCXnxR2apa?w=1024&h=1024&rs=1&pid=ImgDetMain');
-  background-size: cover;
+  
   height: 100%;
-}
+} */
 
 body {
- 
+  background-image: url('https://i.ytimg.com/vi/T56863YhZTg/hqdefault.jpg');
+  background-size: 100vh;
   
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -47,6 +47,7 @@ code {
 
 #login {
  margin-bottom: 0px;
+ position: relative;
 }
 
 #title{
@@ -54,10 +55,30 @@ code {
   margin-bottom: 12px;
   }
 
-#headerButtons {
+  #headerButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-buttons {
+    display: contents;
+  }
+
+.menu-dropdown {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   margin-top: 5px;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the header */
+  left: 0;
+  background-color: #ffffff52;
+  padding: 10px;
+  z-index: 999; 
+}
+
+.mobile-menu-icon {
+  display: contents;
 }
 
 .image-grid {
@@ -101,3 +122,5 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 .service-item img {
   margin-bottom: 10px;
 } 
+
+
