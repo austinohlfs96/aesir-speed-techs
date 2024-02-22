@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div>
       <Head />
       {/* <Segment style={{ background: "#f0f0f0", textAlign: "center" }}> */}
-      <div style={{ position: "relative", marginTop: "10px", width: '100%', height: '57vh' }}>
+      <div style={{ position: "relative", marginTop: "10px", width: '100%', height: '20%' }}>
   <Image
     src="https://content.invisioncic.com/n281171/monthly_2020_03/image.png.1219740564eea0550ff238a905befbf5.png"
     fluid
@@ -38,10 +38,10 @@ const LandingPage = () => {
 </div>
 
       {/* </Segment> */}
-      <div >
+      <div style={{marginTop: "3vw"}}>
       <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
-        marginRight: '120px',
+        marginRight: '9px',
         marginLeft: '9px',
         marginTop: "70px",
         height: 'auto'
@@ -57,7 +57,7 @@ const LandingPage = () => {
           </Segment>
           <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
-        marginLeft: '120px',
+        marginLeft: '9px',
         marginRight: '9px',
         marginTop: "70px",
         height: 'auto'
@@ -74,7 +74,7 @@ const LandingPage = () => {
           </Segment>
           <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
-        marginRight: '120px',
+        marginRight: '9px',
         marginLeft: '9px',
         marginTop: "70px",
         height: 'auto'

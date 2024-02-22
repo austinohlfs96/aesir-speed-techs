@@ -62,7 +62,7 @@ const Login = () => {
   return (
    <>
       <Head />
-      <div className='modal'>
+      <div className='loginModal'>
       <Segment placeholder style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
         <Grid columns={2} relaxed='very' stackable>
           <Grid.Column>

@@ -64,7 +64,7 @@ const Title = () => {
   return (
     <div >
       <Head coach={coach}/>
-      <div className='modal'>
+      <div className='aboutModal'>
       <Segment style={{ background: 'rgba(16, 51, 78, 0.6)' }}>
       <h1 style={{textAlign: "center", color: "white"}}>About</h1>
     {/* <Image src='https://www.usskiandsnowboard.org/sites/default/files/paragraph/single-image-caption/2020-01/maggiepodium%20.jpg' size='medium' floated='left' /> */}
