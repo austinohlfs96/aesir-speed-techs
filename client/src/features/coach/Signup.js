@@ -85,7 +85,7 @@ const Signup = () => {
     <>
       <Head/>
       
-      <div className='modal'>
+      <div className='registerModal'>
       <Segment style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
       <Form onSubmit={formik.handleSubmit}>
         <Form.Field>

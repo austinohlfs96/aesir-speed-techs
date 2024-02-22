@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <Head/>
-      <div className='modal'>
+      <div className='contactModal'>
       <Grid.Column width={12}>
       <Segment id="emailContainer" centered>
         <h1>Contact Form</h1>
