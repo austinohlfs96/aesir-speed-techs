@@ -41,6 +41,7 @@ const LandingPage = () => {
       <div style={{marginTop: "3vw"}}>
       <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
+        borderRadius: '0px',
         marginRight: '9px',
         marginLeft: '9px',
         marginTop: "70px",
@@ -52,11 +53,12 @@ const LandingPage = () => {
           floated="left"
         />
         <h2 style={{textAlign: "center", color: "white"}}>Mission</h2>
-        <h3 style={{textAlign: "revert", color: "white"}}>
-        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.</h3> 
+        <h4 style={{textAlign: "center", color: "white"}}>
+        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.</h4> 
           </Segment>
           <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
+        borderRadius: '0px',
         marginLeft: '9px',
         marginRight: '9px',
         marginTop: "70px",
@@ -68,12 +70,13 @@ const LandingPage = () => {
           floated="right"
         />
         <h2 style={{textAlign: "center", color: "white"}}>Premier Services</h2>
-          <h3 style={{textAlign: "left", color: "white"}}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
+          <h4 style={{textAlign: "center", color: "white"}}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
 
-</h3> 
+</h4> 
           </Segment>
           <Segment style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
+        borderRadius: '0px',
         marginRight: '9px',
         marginLeft: '9px',
         marginTop: "70px",
@@ -81,12 +84,12 @@ const LandingPage = () => {
          }}>
         <Image
           src="https://www.snowboarder.com/.image/t_share/MTk2MzUwOTc2MjcyNDQzMzMx/tuning-taylor-boyd-02.jpg"
-          size="medium"
+          size="small"
           floated="left"
         />
         <h2 style={{textAlign: "center", color: "white"}}>Our Crew</h2>
-        <h3 style={{textAlign: "revert", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
-        </h3>
+        <h4 style={{textAlign: "center", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
+        </h4>
       </Segment>
       <div style={{marginBottom: "10px"}}>
       <Image
