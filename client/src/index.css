@@ -1,18 +1,19 @@
 
-/* 
-html {
-  height: 100vh;
-  
-} */
 
-
-/* .App {
+.App {
   margin: 0;
-  
-  height: 100%;
-} */
+  padding: 0;
+  background-size: cover; /* Cover ensures the image covers the entire viewport */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed;
+  background-image: url('https://i.ytimg.com/vi/T56863YhZTg/hqdefault.jpg');
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
 
 body {
+  
   background-image: url('https://i.ytimg.com/vi/T56863YhZTg/hqdefault.jpg');
   background-size: 100vh;
   
@@ -153,5 +154,67 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   margin-bottom: 10px;
 } 
 
+.ui.segment.landing:hover {
+    transform: scale(1.10); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
 
+@media (max-width: 768px) {
+    .ui.ui.segment.landing:hover {
+      transform: scale(1.25); 
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.ui.segment.landing {
+  opacity: 0;
+  transform: translateX(-50px); /* Initial position, adjust as needed */
+  transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+.ui.segment.landing.visible {
+  opacity: 1;
+  transform: translateX(0); /* Final position, adjust as needed */
+  transform: scale(1.25);
+  transform: scale(1.00);
+}
+
+/* .burtonPipe {
+ margin-bottom: 65px;
+} */
+
+.burtonPipe {
+  opacity: 0;
+  transition: opacity 2.0s ease;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.burtonPipe.visible {
+  opacity: 1;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px;
+}
+
+.ui.inverted.vertical.footer.segment {
+  position: fixed
+}
+
+.transform-on-load {
+  opacity: 0;
+  transition: opacity 2.0s ease
+}
+
+.transform-on-load.active {
+  opacity: 1;
+}
 
