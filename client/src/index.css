@@ -218,3 +218,15 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   opacity: 1;
 }
 
+.slide-in {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: opacity 0.5s, transform 1s;
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
