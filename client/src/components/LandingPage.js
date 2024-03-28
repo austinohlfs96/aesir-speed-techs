@@ -90,7 +90,7 @@ const LandingPage = () => {
 
       {/* </Segment> */}
       <div style={{marginTop: "3vw"}}>
-      <Segment className="landing" style={{ 
+      <Segment className={`transform-on-load ${isActive ? 'active' : ''}`}  style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
         borderRadius: '0px',
         marginRight: '55px',
@@ -116,7 +116,7 @@ const LandingPage = () => {
         height: 'auto'
          }}>
           <Image
-          src="/JRTuningEileenSkis.jpg"
+          src="/JRBaseGrind1.jpg"
           size="medium"
           floated="right"
         />
@@ -132,8 +132,8 @@ const LandingPage = () => {
         height: 'auto'
          }}>
         <Image
-          src="/ÆsirAndGraham.jpg"
-          size="medium"
+          src="/AESIRCrewRev.jpg"
+          size="large"
           floated="left"
         />
         <h2 style={{fontSize: "3vw", textAlign: "center", color: "white"}}>Our Crew</h2>
