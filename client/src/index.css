@@ -6,7 +6,7 @@
   background-size: cover; /* Cover ensures the image covers the entire viewport */
   background-position: center; /* Center the background image */
   background-attachment: fixed;
-  background-image: url('https://i.ytimg.com/vi/T56863YhZTg/hqdefault.jpg');
+  background-image: url('https://swiftmedia.s3.amazonaws.com/mountain.swiftcom.com/images/sites/5/2022/08/11031149/e6af3be4-68d7-59de-90fa-8e29f53d198d-scaled.jpg');
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
@@ -186,8 +186,8 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 .burtonPipe {
   opacity: 0;
   transition: opacity 2.0s ease;
-  margin-top: 65px;
-  margin-bottom: 65px;
+  margin-top: 35px;
+  margin-bottom: 75px;
 }
 
 .burtonPipe.visible {
