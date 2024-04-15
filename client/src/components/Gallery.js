@@ -30,11 +30,16 @@ const Gallery = () => {
         
         <Image src='/RevTopofPipe.jpg' size='medium' centered onClick={() => handleImageClick('/RevTopofPipe.jpg')}/>
         <Image src='/AESIRnJasonRev.jpg' size='medium' centered onClick={() => handleImageClick('/AESIRnJasonRev.jpg')}/>
-        <Image src='/ÆSIRShop1.jpg' size='medium' centered onClick={() => handleImageClick('/ÆSIRShop1.jpg')}/>
+        <Image src='/Aimee&Elinationals24.jpg' size='medium' centered onClick={() => handleImageClick('/AESIRnJasonRev.jpg')}/>
+        <Image src='/AESIRNationals.jpg' size='medium' centered onClick={() => handleImageClick('/AESIRNationals.jpg')}/>
         <Image src='/JRBaseGrind1.jpg' size='medium' centered onClick={() => handleImageClick('/JRBaseGrind1.jpg')}/>
-        <Image src='/ScottAndJR.jpg' size='medium' centered onClick={() => handleImageClick('/ScottAndJR.jpg')}/>
+        <Image src='/AustinRoto.jpg' size='medium' centered onClick={() => handleImageClick('/AustinRoto.jpg')}/>
         <Image src='/ScottJRBueaxDew.jpg' size='medium' centered onClick={() => handleImageClick('/ScottJRBueaxDew.jpg')}/>
+        <Image src='/ScottAndJR.jpg' size='medium' centered onClick={() => handleImageClick('/ScottAndJR.jpg')}/>
+        <Image src='/boards.jpg' size='medium' centered onClick={() => handleImageClick('/boards.jpg')}/>
+        <Image src='/ÆSIRShop1.jpg' size='medium' centered onClick={() => handleImageClick('/ÆSIRShop1.jpg')}/>
         <Image src='ÆSIRAndElieenDew.jpg' size='medium' centered onClick={() => handleImageClick('ÆSIRAndElieenDew.jpg')}/>
+        <Image src='/USASBXTeam.png' size='medium' centered onClick={() => handleImageClick('/USASBXTeam.png')}/>
         <Image src='/EileenTropies.jpg' size='medium' centered onClick={() => handleImageClick('/EileenTropies.jpg')}/>
         <Image src='/TeamInTheGate.jpg' size='medium' centered onClick={() => handleImageClick('/TeamInTheGate.jpg')}/>
         <Image src='/JRAndEileen.jpg' size='medium' centered onClick={() => handleImageClick('/JRAndEileen.jpg')}/>

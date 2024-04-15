@@ -28,7 +28,7 @@ const MenuExampleTabularOnLeft = () => {
         <div style={{ marginTop: '20px', marginBottom: "104px" }}>
         <Grid>
         <Grid.Column width={4}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', fontSize: "2.5vw"}}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)'}}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}

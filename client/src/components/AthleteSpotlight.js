@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Item, Image, Segment, Embed, Icon } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css'
 import Head from './Header';
 
 
@@ -42,7 +43,8 @@ const AthleteSpotlight = () => {
       <div >
       <div >
       {/* <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', width: '100%', height: '77vh', overflow: 'auto' }}> */}
-        <h1 style={{ color: 'white', textAlign: "center" }}>Athlete Spotlight</h1>
+        <h1 style={{ color: 'white', textAlign: "center", color: 'black'}}>Athlete Page</h1>
+
         <Segment className="slide-in" style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
         borderRadius: '0px',
@@ -56,7 +58,7 @@ const AthleteSpotlight = () => {
         </a> </h1>
        
         <h4 style={{color: "white"}}>Congratulations to three time opymipic medalist Eileen Gu for dominating the women's ski halfpipe at Dew Tour with an astounding score of 97.66! 🏆 Team Æsir celebrates her remarkable victory and unwavering dedication. Here's to many more triumphs ahead! 🎉</h4>
-        <div style={{ width: '100%' }}> {/* Set the width to 100% */}
+        <div style={{ width: '100%' }}>
         <Embed
           style={{ width: '100%' }}
           id='O0drnWf1T-I'
@@ -166,7 +168,7 @@ const AthleteSpotlight = () => {
         // marginTop: "70px",
         height: 'auto'
          }}>
-        <Image src='https://neversummer.com/cdn/shop/files/EliStroker.jpg?v=1666638331&width=1080' size='small' floated='left' />
+        <Image src='EliGold24.jpg' size='small' floated='left' />
         <h1 style={{color: "white"}}>Eli Stroker <a href="https://www.instagram.com/eli_shreds/" target="_blank" rel="noopener noreferrer">
         <Icon name='instagram' size='small' inverted link />
         </a> </h1>

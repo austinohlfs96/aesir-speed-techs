@@ -89,63 +89,40 @@ function Head() {
 }
   
   return (
-//     <div  >
-    
-//         <Sticky >
-//       <Segment style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-//       <Header id="login" as='h3' textAlign='right'>
-//     </Header>
-//     <div onClick={() => navigate('/')}>
-//     <Header id="title" as='h3' textAlign='left' >
-//     <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')}/>
-//      Æsir Speed Techs
-//     </Header>
-//     </div> 
-//     <Header id='headerButtons' as='h3' textAlign='center'>
-//     <Button secondary onClick={() => navigate('/')}>Home</Button>
-//     <Button secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-//     <Button secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-//     <Button secondary onClick={() => navigate('/athletespotlight')}>Athlete Spotlight</Button>
-//     <Button secondary onClick={() => navigate('/about')}>About</Button>
-//     <Button secondary onClick={() => navigate('/contact')}>Contact Us</Button>
-//     {!coach && (
-//   <>
-//     <Button primary onClick={() => navigate('/login')}>Login</Button>
-//     <Button secondary onClick={() => navigate('/signup')}>Register</Button>
-//   </>
-// )}
-//     {coach && (
-//   <>
-//     <Button primary onClick={() => navigate('/coachespage')}>Profile</Button>
-//     <Button secondary onClick={handleLogout}>Logout</Button>
-//   </>
-// )}
-    
-//     </Header>
-//   </Segment>
-//   </Sticky>
-//     </div>
 <div>
 
-<Sticky>
-  <Segment style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-    <Header id="login" as='h3' textAlign='right'>
-    </Header>
-    <div onClick={() => navigate('/')}>
-      <Header id="title" as='h3' textAlign='left' >
+<Sticky style={{marginTop: '10px'}}>
+  <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', borderRadius: '0px' }}>
+    <div>
+      <Header id="title" as='h3' textAlign='left' style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end'}}>
         <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')} />
-        Æsir Speed Techs
+        ÆSIR Speed Techs
+        <div style={{display: 'flex', float: 'right'}}>
+      {!coach ? (
+            <>
+              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} primary onClick={() => navigate('/login')}>Book</Button>
+              {/* <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/signup')}>Register</Button> */}
+            </>
+          ) : (
+            <>
+              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} primary onClick={() => navigate('/coachespage')}>Profile</Button>
+              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} primary onClick={() => navigate('/coachespage')}>Profile</Button>
+              <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={handleLogout}>Logout</Button>
+            </>
+          )}
+      </div>
       </Header>
+      
     </div>
     <Header id='headerButtons' as='h3' textAlign='center'>
       {!isMobile && ( // Conditionally render buttons if not on mobile
-        <Button.Group className='menu-buttons'>
-          <Button secondary onClick={() => navigate('/')}>Home</Button>
-          <Button secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-          <Button secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-          <Button secondary onClick={() => navigate('/athletespotlight')}>Athlete Spotlight</Button>
-          <Button secondary onClick={() => navigate('/about')}>About</Button>
-          <Button secondary onClick={() => navigate('/contact')}>Contact Us</Button>
+        <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/')}>Home</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/about')}>About</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
           {/* {!coach ? (
             <>
               <Button primary onClick={() => navigate('/login')}>Login</Button>
@@ -158,6 +135,7 @@ function Head() {
             </>
           )} */}
         </Button.Group>
+        
       )}
       <Button.Group>
         {/* Show the hamburger icon only when the page width is less than 850px */}
@@ -166,28 +144,16 @@ function Head() {
       {/* Render the menu items when showMenu is true or when the page width is more than 850px */}
       {showMenu && isMobile && (
         <div className="menu-dropdown">
-          <Button secondary onClick={() => navigate('/')}>Home</Button>
-          <Button secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-          <Button secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-          <Button secondary onClick={() => navigate('/athletespotlight')}>Athlete Spotlight</Button>
-          <Button secondary onClick={() => navigate('/about')}>About</Button>
-          <Button secondary onClick={() => navigate('/contact')}>Contact Us</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/')}>Home</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/about')}>About</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
           
         </div>
       )}
-      <div>
-      {!coach ? (
-            <>
-              <Button primary onClick={() => navigate('/login')}>Login</Button>
-              <Button secondary onClick={() => navigate('/signup')}>Register</Button>
-            </>
-          ) : (
-            <>
-              <Button primary onClick={() => navigate('/coachespage')}>Profile</Button>
-              <Button secondary onClick={handleLogout}>Logout</Button>
-            </>
-          )}
-      </div>
+     
     </Header>
   </Segment>
 </Sticky>

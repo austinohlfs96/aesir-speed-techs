@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="ui container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' style={{ width: '20px', height: '20px', marginRight: '10px' }} />
-          <p style={{ fontSize: "1.3vw", margin: '0' }}>Æsir Speed Techs © 2024</p>
+          <p style={{ fontSize: "1.3vw", margin: '0' }}>ÆSIR Speed Techs © 2024</p>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', flexDirection: "row", flexWrap: 'wrap', justifyConten: "center" }}>
           <p style={{ fontSize: "1.3vw", margin: '0 10px' }}>Sponsors:</p>
