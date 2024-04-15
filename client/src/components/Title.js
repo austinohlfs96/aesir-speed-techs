@@ -83,7 +83,7 @@ const Title = () => {
     </h4>
     
   </Segment>
-  <Image src='https://fis-cloudinary.corebine.com/image/upload/c_fit,dpr_3.0,f_webp,g_center,h_613,q_auto,w_1980/v1/fis-prod/02' size='large' centered />
+  <Image src='https://fis-cloudinary.corebine.com/image/upload/c_fit,dpr_3.0,f_webp,g_center,h_613,q_auto,w_1980/v1/fis-prod/02' size='large' centered style={{marginBottom: '50px'}}/>
   </div>
     </div>
   )

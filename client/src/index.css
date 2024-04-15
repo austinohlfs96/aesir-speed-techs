@@ -6,7 +6,7 @@
   background-size: cover; /* Cover ensures the image covers the entire viewport */
   background-position: center; /* Center the background image */
   background-attachment: fixed;
-  background-image: url('https://swiftmedia.s3.amazonaws.com/mountain.swiftcom.com/images/sites/5/2022/08/11031149/e6af3be4-68d7-59de-90fa-8e29f53d198d-scaled.jpg');
+  background-image: url('https://www.snow-forecast.com/whiteroom/content/images/wordpress/2022/08/Indoor-half-pipe.jpg');
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
@@ -87,14 +87,48 @@ code {
   margin-bottom: 12px;
   }
 
-  #headerButtons {
+#headerButtons {
+  border-radius: 0px;
     display: flex;
     justify-content: space-between;
   }
 
-  .menu-buttons {
-    display: contents;
+/* .menu-buttons {
+    margin-right: 10px;
+    display: flex;
   }
+
+  .ui.button {
+    border-radius: 0px;
+  }
+
+  .Button.Group {
+    border-radius: 0px;
+  } */
+
+  .menu-buttons .ui.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: rgb(220, 218, 215, );
+  color: #333;
+  border: none;
+  border-radius: 4px;
+}
+
+.menu-buttons .ui.button:hover {
+  background-color: #ddd;
+}
+
+.menu-buttons .ui.button.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.menu-buttons .ui.button.secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
 
 .menu-dropdown {
   display: flex;
@@ -117,6 +151,8 @@ code {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 16px;
+  align-items: center;
+  align-content: center;
 }
 
 .image-grid img {
