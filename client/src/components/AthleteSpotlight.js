@@ -40,10 +40,10 @@ const AthleteSpotlight = () => {
   return (
     <>
       <Head />
-      <div >
+      <div>
       <div >
       {/* <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', width: '100%', height: '77vh', overflow: 'auto' }}> */}
-        <h1 style={{ color: 'white', textAlign: "center", color: 'black'}}>Athlete Page</h1>
+        <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta"}}>Athlete Page</h1>
 
         <Segment className="slide-in" style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
@@ -188,6 +188,7 @@ const AthleteSpotlight = () => {
         marginRight: '20px',
         marginLeft: '20px',
         // marginTop: "70px",
+        marginBottom: '60px',
         height: 'auto'
          }}>
         <Image src='https://www.denverpost.com/wp-content/uploads/2022/01/GettyImages-1306573888.jpg?w=1024' size='small' floated='left' />

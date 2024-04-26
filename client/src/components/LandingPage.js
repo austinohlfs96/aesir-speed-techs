@@ -1,11 +1,13 @@
 
 import React, {useEffect, useState} from "react";
 import { Segment, Image, Grid, Header } from "semantic-ui-react";
+import { useNavigate } from 'react-router-dom';
 import Head from "./Header";
 
 
 const LandingPage = () => {
   const [isActive, setIsActive] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Activate the animation when the component mounts
@@ -68,47 +70,62 @@ const LandingPage = () => {
   }, []);
   return (
     <div>
-      <Head />
-        <div className={`animation-container ${isActive ? 'active' : ''}`} style={{ position: "relative", marginTop: "10px" }}>
+      {/* <Head /> */}
+        <div className={`animation-container ${isActive ? 'active' : ''}`} style={{ position: "relative" }}>
           <Image src="/AESIRCarve.png" fluid centered />
-          <div className="text-overlay" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
-            <Segment inverted style={{ backgroundColor: 'transparent', padding: '2em', display: 'flex', flexFlow: 'wrap', justifyContent: 'space-around', alignItems: 'flex-end' }}>
-              <h1 style={{ fontSize: '9vw', color: '#fff', marginBottom: '2em', lineHeight: '0', display: 'contents', backgroundColor: 'red'}}>
+          <div className="text-overlay" style={{ display: 'grid', position: "absolute", top: 0, left: 0, width: "100%", height: "100%", alignItems: 'baseline', alignContent: 'space-between' }}>
+            {/* <Segment inverted style={{ backgroundColor: 'transparent', padding: '2em', display: 'flex', flexFlow: 'wrap', justifyContent: 'space-around', alignItems: 'flex-end' }}> */}
+              {/* <h1 style={{ fontSize: '9vw', color: '#fff', marginBottom: '2em', lineHeight: '0', display: 'contents', backgroundColor: 'red'}}>
                 <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='tiny' style={{width: "9vw", height: "auto"}}/>
                 ÆSIR Speed Techs
-              </h1>
-              <p style={{ fontSize: '5vw', color: '#fff', lineHeight: '12.5', color: 'black', fontStyle: 'italic', fontWeight: 'bold'}}>GO FAST TAKE CHANCES!</p>
-            </Segment>
+              </h1> */}
+              <Head />
+             <Segment style={{background: 'rgba(16, 51, 78, 0.6)', width: '35%', margin: '20px 30px'}}> <h2 style={{ fontSize: '2vw', color: '#fff', color: 'black', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h2>
+             <p style={{ fontSize: '2.1vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>AESIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
+             </Segment>
+            {/* </Segment> */}
           </div>
         </div>
 
       {/* </Segment> */}
-      <div style={{marginTop: "3vw"}}>
-      <Segment className="slide-in"  style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+      <div>
+      <Segment className="slide-in" style={{ 
+    background: 'rgb(117, 102, 102)',
+    borderRadius: '0px', // Added border radius
+    padding: '20px', // Added padding for better spacing
+    // margin: '25px 0', // Adjusted margin
+    height: 'auto',
+    display: 'flex', // Added flex display for image and text alignment
+    alignItems: 'center', // Center align items vertically
+    color: 'white', // Changed text color
+    flexDirection: 'row', // Align items vertically
+}}>
+    <div style={{ position: 'relative', fontSize: "3vw" }}>
+  <Image
+    src="EileenPodium.jpg"
+    size="medium"
+    floated="left"
+    className="dynamic-image"
+    style={{ marginBottom: '20px' }}
+  />
+
+  <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'black', fontFamily: "Anta", fontWeight: 'bold', textAlign: 'center' }}>
+  MISSION
+  </h1>
+</div>
+
+    
+    <p style={{ fontSize: "2.2vw", textAlign: "center", maxWidth: '55%', marginLeft: '10%' }}> {/* Added paragraph tag for better text layout */}
+        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.
+    </p> 
+</Segment>
+
+{/* <Segment className="slide-in" style={{ 
+        background: 'rgb(118, 171, 174)',
         borderRadius: '0px',
-        marginRight: '20px',
-        marginLeft: '20px',
-        marginTop: "25px",
-        height: 'auto',
-        display: 'inline-block'
-         }}>
-        <Image
-          src="EileenPodium.jpg"
-          size="medium"
-          floated="left"
-        />
-        <h2 style={{fontSize: "3vw", textAlign: "center", color: "white"}}>Mission</h2>
-        <h4 style={{fontSize: "2.6vw", textAlign: "center", color: "white"}}>
-        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.</h4> 
-          </Segment>
-          
-          <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
-        borderRadius: '0px',
         marginLeft: '20px',
         marginRight: '20px',
-        marginTop: "70px",
+        marginTop: "20px",
         height: 'auto',
         display: 'inline-block'
          }}>
@@ -119,24 +136,144 @@ const LandingPage = () => {
         />
         <h2 style={{fontSize: "3vw", textAlign: "center", color: "white"}}>Premier Services</h2>
           <h4 style={{fontSize: "2.6vw", textAlign: "center", color: "white"}}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.</h4> 
+          </Segment> */}
+          
+          <Segment className="slide-in" style={{ 
+    background: 'rgb(34, 40, 49)',
+    borderRadius: '0px', // Added border radius
+    // padding: '20px', // Added padding for better spacing
+    marginTop: '250px', // Adjusted margin
+    marginBottom: '0px',
+    height: 'auto',
+    display: 'flex', // Added flex display for image and text alignment
+    alignItems: 'center', // Center align items vertically
+    color: 'white', // Changed text color
+    flexDirection: 'row-reverse', // Align items vertically
+}}>
+          <div 
+          style={{ position: 'relative', fontSize: "3vw" }}
+          >
+            <Image
+              src="/JRBaseGrind1.jpg"
+              size="medium"
+              floated="left"
+              className="dynamic-image"
+              style={{ marginBottom: '20px' }}
+            />
+             
+          </div>
+         <div style={{maxWidth: '55%', marginRight: '10%'}}>
+         <h1 style={{fontFamily: "Anta", textAlign: "center" }}>
+            Premier Services
+            </h1>
+          <p style={{ fontSize: "2vw", textAlign: 'center'   }}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.</p> 
+         </div>
+          
           </Segment>
+          <Segment className="slide-in" style={{ 
+    background: 'rgb(126 125 125)',
+    borderRadius: '0px', // Added border radius
+    // padding: '20px', // Added padding for better spacing
+    margin: '0px 0', // Adjusted margin
+    height: 'auto',
+    display: 'flex', // Added flex display for image and text alignment
+    alignItems: 'center', // Center align items vertically
+    color: 'white', // Changed text color
+    flexDirection: 'row', // Align items vertically
+    justifyContent: 'space-around',
+    flexWrap: 'wrap'
+}}>
+          <div 
+          onClick={() => navigate('/tuningservices')}
+          className="image-container"
+          style={{ position: 'relative', fontSize: "3vw" }}
+          >
+            <Image
+            
+              src="/ProWax.jpg"
+              size="small"
+              floated="left"
+              className="dynamic-image"
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+            />
+            <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
+            Pro Wax
+            </h1>
+          </div>
+          <div 
+          className="image-container"
+          onClick={() => navigate('/tuningservices')}
+          style={{ position: 'relative', fontSize: "3vw", overflow: 'hidden' }}
+          >
+            <Image
+              src="ProTune.jpg"
+              size="small"
+              centered
+              className="dynamic-image"
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+            />
+            <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
+            Comp Edge/Wax
+            </h1>
+          </div>
+          <div 
+          className="image-container"
+          onClick={() => navigate('/tuningservices')}
+          style={{ position: 'relative', fontSize: "3vw" }}
+          >
+            <Image
+              src="/HuckknifeGrind.jpg"
+              size="small"
+              floated="right"
+              className="dynamic-image"
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+            />
+            <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
+            Pro Tune
+            </h1>
+          </div>
+          <div 
+          className="image-container"
+          onClick={() => navigate('/tuningservices')}
+          style={{ position: 'relative', fontSize: "3vw" }}
+          >
+            <Image
+              src="/ProE:W.jpg"
+              size="small"
+              floated="right"
+              className="dynamic-image"
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+            />
+            <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
+            Full Compitition Tune
+            </h1>
+          </div>
+          </Segment>
+
+
           <Segment className="slide-in" style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
-        marginTop: "70px",
+        marginTop: "20px",
         height: 'auto'
          }}>
         
-        <h2 style={{fontSize: "3vw", textAlign: "center", color: "white"}}>Our Crew</h2>
-        <h4 style={{fontSize: "2.6vw", textAlign: "center", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
-        </h4>
-        <Image
-          src="/AESIRCrewRev.jpg"
-          size="large"
-          centered
-        />
+        <div style={{ position: 'relative', fontSize: "3vw" }}>
+            <Image
+              src="AESIRCREW.jpg"
+              size="medium"
+              className="dynamic-image"
+              centered
+              style={{ marginBottom: '20px' }}
+            />
+            <span style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta" }}>
+            Our Crew
+            </span>
+          </div>
+        <p style={{fontSize: "2vw", textAlign: "center", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
+        </p>
       </Segment>
      
       <div className="burtonPipe">

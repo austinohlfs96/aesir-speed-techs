@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import {useDispatch} from "react-redux"
 import { useNavigate } from 'react-router-dom';
 import { Header, Segment, Button, Image, Sticky } from 'semantic-ui-react'
@@ -20,6 +20,7 @@ function Head() {
 
   const [showMenu, setShowMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const menuRef = useRef(null)
 
   useEffect(() => {
     function handleResize() {
@@ -76,6 +77,16 @@ function Head() {
     }
   }, [handleNewError, coach])
 
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("jwt_token")
@@ -89,40 +100,32 @@ function Head() {
 }
   
   return (
-<div>
+<div style={{width: "-webkit-fill-available", marginTop: '15px'}}>
 
-<Sticky style={{marginTop: '10px'}}>
-  <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', borderRadius: '0px' }}>
-    <div>
-      <Header id="title" as='h3' textAlign='left' style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end'}}>
-        <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')} />
-        ÆSIR Speed Techs
-        <div style={{display: 'flex', float: 'right'}}>
-      {!coach ? (
-            <>
-              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} primary onClick={() => navigate('/login')}>Book</Button>
-              {/* <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/signup')}>Register</Button> */}
-            </>
-          ) : (
-            <>
-              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} primary onClick={() => navigate('/coachespage')}>Profile</Button>
-              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} primary onClick={() => navigate('/coachespage')}>Profile</Button>
-              <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={handleLogout}>Logout</Button>
-            </>
-          )}
-      </div>
-      </Header>
+{/* <Sticky style={{marginTop: '10px'}}> */}
+  {/* <Segment style={{ background: 'rgba(16, 51, 78, 0.0)', borderRadius: '0px'}}> */}
+    <div style={{display: 'flex', marginTop: "0px", marginLeft: '10px', marginRight: '10px', justifyContent: "space-between", alignItems: 'flex-start'}}>
+      <Header id="title" as='h3' textAlign='left' 
+      style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+      >
+        <div style={{ backgroundColor: 'red', borderRadius: '50%', display: 'inline-block', padding: '5px', width: '35px', height: '35px' }}>
+  <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')} />
+</div>
+
+       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px'}}>ÆSIR Speed Techs</span> 
+       
       
-    </div>
-    <Header id='headerButtons' as='h3' textAlign='center'>
+       
+      </Header>
+      <Header id='headerButtons' as='h3' textAlign='center'>
       {!isMobile && ( // Conditionally render buttons if not on mobile
-        <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/')}>Home</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/about')}>About</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
+        <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: "0px" }}>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/')}>Home</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/about')}>About</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
           {/* {!coach ? (
             <>
               <Button primary onClick={() => navigate('/login')}>Login</Button>
@@ -132,31 +135,45 @@ function Head() {
             <>
               <Button primary onClick={() => navigate('/coachespage')}>Profile</Button>
               <Button secondary onClick={handleLogout}>Logout</Button>
-            </>
           )} */}
         </Button.Group>
         
       )}
       <Button.Group>
         {/* Show the hamburger icon only when the page width is less than 850px */}
-        {isMobile && <Button icon='bars' onClick={toggleMenu} className="mobile-menu-icon" style={{display: 'contents'}}/>}
+        {isMobile && <Button icon='bars' onClick={toggleMenu} className="mobile-menu-icon" style={{display: 'contents', justifyContent: 'flex-end', color: 'white'}}/>}
       </Button.Group>
       {/* Render the menu items when showMenu is true or when the page width is more than 850px */}
       {showMenu && isMobile && (
-        <div className="menu-dropdown">
-          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/')}>Home</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/about')}>About</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
+        <div ref={menuRef} className="menu-dropdown">
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/')}>Home</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/about')}>About</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
           
         </div>
       )}
+       <div style={{display: 'flex', float: 'right', marginLeft: '20px'}}>
+      {!coach ? (
+            <>
+              <Button color= "red" style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} onClick={() => navigate('/login')}>Book</Button>
+              {/* <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/signup')}>Register</Button> */}
+            </>
+          ) : (
+            <>
+              <Button color= "red" style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} onClick={() => navigate('/coachespage')}>Profile</Button>
+              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} secondary onClick={handleLogout}>Logout</Button>
+            </>
+          )}
+      </div>
      
     </Header>
-  </Segment>
-</Sticky>
+    </div>
+    
+  {/* </Segment> */}
+{/* </Sticky> */}
 </div>
   );
 }

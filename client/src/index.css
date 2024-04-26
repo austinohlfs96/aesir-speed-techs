@@ -4,36 +4,36 @@
   margin: 0;
   padding: 0;
   background-size: cover; /* Cover ensures the image covers the entire viewport */
-  background-position: center; /* Center the background image */
+  background-position: calc(50% + 10px) center; /* Center the background image */
   background-attachment: fixed;
-  background-image: url('https://www.snow-forecast.com/whiteroom/content/images/wordpress/2022/08/Indoor-half-pipe.jpg');
+  background-image: url('/public/Indoor-half-pipe.jpg');
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
 }
 
+
 body {
   
-  background-image: url('https://i.ytimg.com/vi/T56863YhZTg/hqdefault.jpg');
+  /* background-image: url('https://i.ytimg.com/vi/T56863YhZTg/hqdefault.jpg'); */
   background-size: 100vh;
-  
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Anta", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-#services {
-  margin-left: 75px;
-  margin-right: 75px;
-}
+ #services {
+  /* margin-left: 75px;
+  margin-right: 75px; */
+} 
 .react-toast-notifications__container {
   z-index: 1000;
 }
@@ -41,8 +41,8 @@ code {
 .modal {
   margin-top: 40px;
   padding-bottom: 5px;
-  margin-left: -65px;
-  margin-right: -65px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .aboutModal {
@@ -88,9 +88,18 @@ code {
   }
 
 #headerButtons {
+  margin-top: 0px;
   border-radius: 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .red-background {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
 /* .menu-buttons {
@@ -136,8 +145,8 @@ code {
   justify-content: space-evenly;
   margin-top: 5px;
   position: absolute;
-  top: 100%; /* Position the dropdown below the header */
-  left: 0;
+  top: 60px; /* Position the dropdown below the header */
+  right: 11px; /* Align the dropdown with the left edge of the page */
   background-color: #ffffff52;
   padding: 10px;
   z-index: 999; 
@@ -186,6 +195,10 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   background: rgba(255, 255, 255, 0.8);
 }
 
+.image-container:hover {
+  transform: scale(1.05); /* Example: Increase size on hover */
+}
+
 .service-item img {
   margin-bottom: 10px;
 } 
@@ -202,6 +215,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   }
 }
 
+
 .ui.segment.landing {
   opacity: 0;
   transform: translateX(-50px); /* Initial position, adjust as needed */
@@ -215,13 +229,29 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   transform: scale(1.00);
 }
 
+.dynamic-image {
+  width: 100%; /* Default width */
+}
+
+@media screen and (min-width: 768px) {
+  .dynamic-image {
+    width: 50%; /* Resize the image to 50% of the container width for screens wider than 768px */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dynamic-image {
+    width: 30%; /* Resize the image to 30% of the container width for screens wider than 1024px */
+  }
+}
+
 /* .burtonPipe {
  margin-bottom: 65px;
 } */
 
 .burtonPipe {
   opacity: 0;
-  transition: opacity 2.0s ease;
+  transition: opacity 1.0s ease;
   margin-top: 35px;
   margin-bottom: 75px;
 }
@@ -264,5 +294,3 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   opacity: 1;
   transform: translateX(0);
 }
-
-
