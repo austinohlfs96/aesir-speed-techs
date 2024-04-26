@@ -23,14 +23,14 @@ const Gallery = () => {
       <Head />
       <div className='modal'>
       <div id="services">
-      <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', width: '100%', height: '77vh', overflow: 'auto' }}>
-        <h1>Gallery</h1>
+      <Segment style={{ background: 'rgba(255, 255, 255, 0.3)', width: '100%', height: '77vh', overflow: 'auto' }}>
+        <h1 style={{textAlign: 'center', fontFamily: 'Anta', color: 'white'}}>Gallery</h1>
         <div className="image-grid">
        
         
         <Image src='/RevTopofPipe.jpg' size='medium' centered onClick={() => handleImageClick('/RevTopofPipe.jpg')}/>
         <Image src='/AESIRnJasonRev.jpg' size='medium' centered onClick={() => handleImageClick('/AESIRnJasonRev.jpg')}/>
-        <Image src='/Aimee&Elinationals24.jpg' size='medium' centered onClick={() => handleImageClick('/AESIRnJasonRev.jpg')}/>
+        <Image src='/Aimee&Elinationals24.jpg' size='medium' centered onClick={() => handleImageClick('/Aimee&Elinationals24.jpg')}/>
         <Image src='/AESIRNationals.jpg' size='medium' centered onClick={() => handleImageClick('/AESIRNationals.jpg')}/>
         <Image src='/JRBaseGrind1.jpg' size='medium' centered onClick={() => handleImageClick('/JRBaseGrind1.jpg')}/>
         <Image src='/AustinRoto.jpg' size='medium' centered onClick={() => handleImageClick('/AustinRoto.jpg')}/>
