@@ -205,7 +205,7 @@ if __name__ == '__main__':
 #  ________________________________________Services_____________________________
         
         service1 = Service(
-            name='Pro Competition Wax',
+            name='Pro Wax',
             description="Professional competion three layer swix hot wax application to the base specific for current conditions, enforced base durability, and top speed",
             price=75.00,
             average_turn_around="24 hours",

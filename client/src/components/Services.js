@@ -31,18 +31,19 @@ const Services = () => {
     <div className='modal'>
       <div id="services">
         <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', marginBottom: '60px' }}>
-          <h1 style={{ color: 'white' }}>Services</h1>
+          <h1 style={{ color: 'white', fontFamily: 'Anta' }}>Services</h1>
           <Item.Group>
             {services.map((service) => (
               <Segment key={service.id} className="service-item" style={{background: 'rgba(255, 255, 255, 0.8)'}}>
                 <Image src={service.image} size='medium' floated='left' />
                 <Item>
                   <Item.Content>
-                    <h3>{service.name}</h3>
+                    <h1 style={{fontFamily: "Anta"}}>{service.name}</h1>
                     <Item.Meta>
-                      <span className='price'>{`Price: $${service.price}`}</span>
+                      <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price:</span> <span>{service.price}</span>
+                      {/* <span className='price'>{`Price: $${service.price}`}</span> */}
                     </Item.Meta>
-                    <span className='stay'>Average Turn Around Time: {service.average_turn_around}</span>
+                    <span className='stay' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Average Turn Around Time:</span>  <span>{service.average_turn_around}</span>
                     <Item.Description>{service.description}</Item.Description>
                   </Item.Content>
                 </Item>
