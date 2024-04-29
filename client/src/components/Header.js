@@ -112,7 +112,7 @@ function Head() {
   <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')} />
 </div>
 
-       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px'}}>ÆSIR Speed Techs</span> 
+       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '10px', border: '2px solid white'}}>ÆSIR Speed Techs</span> 
        
       
        
@@ -124,6 +124,7 @@ function Head() {
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/shop')}>Shop</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/about')}>About</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
           {/* {!coach ? (
@@ -150,6 +151,7 @@ function Head() {
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/shop')}>Shop</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/about')}>About</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
           
