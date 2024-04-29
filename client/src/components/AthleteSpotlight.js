@@ -46,7 +46,7 @@ const AthleteSpotlight = () => {
         <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Athlete Page</h1>
 
         <Segment className="slide-in" style={{ 
-  background: 'rgba(16, 51, 78, 0.6)',
+  background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
   borderRadius: '0px',
   margin: '20px',
   display: 'flex', // Make the segment a flex container
@@ -75,7 +75,7 @@ const AthleteSpotlight = () => {
 </Segment>
 
         <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
@@ -97,7 +97,7 @@ const AthleteSpotlight = () => {
         <h4></h4>
         </Segment>
         <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
@@ -122,7 +122,7 @@ const AthleteSpotlight = () => {
         The 11-year-old snowboarder finished second in the Dew Tour women’s snowboard superpipe event Sunday in Copper Mountain, Colorado, becoming the youngest athlete to ever land on a winter Dew Tour podium and the second-youngest ever at any Dew Tour event. Zhou trailed 14-year-old South Korean Gaon Choi, whose score of 98.33 was one of the highest ever awarded at the Dew Tour.</h4>
         </Segment>
         <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
@@ -144,7 +144,7 @@ const AthleteSpotlight = () => {
         <h4></h4>
         </Segment>
         <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
@@ -167,7 +167,7 @@ const AthleteSpotlight = () => {
         <h4></h4>
         </Segment>
         <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
@@ -189,7 +189,7 @@ const AthleteSpotlight = () => {
       </div>
         </Segment>
         <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
