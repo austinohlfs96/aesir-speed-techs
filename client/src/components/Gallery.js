@@ -23,8 +23,9 @@ const Gallery = () => {
       <Head />
       <div className='modal'>
       <div id="services">
+      <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Gallery</h1>
       <Segment style={{ background: 'rgba(255, 255, 255, 0.3)', width: '100%', height: '77vh', overflow: 'auto' }}>
-        <h1 style={{textAlign: 'center', fontFamily: 'Anta', color: 'white'}}>Gallery</h1>
+        
         <div className="image-grid">
        
         
