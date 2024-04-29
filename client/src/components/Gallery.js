@@ -24,7 +24,7 @@ const Gallery = () => {
       <div className='modal'>
       <div id="services">
       <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Gallery</h1>
-      <Segment style={{ background: 'rgba(255, 255, 255, 0.3)', width: '100%', height: '77vh', overflow: 'auto' }}>
+      <Segment style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', width: '100%', height: '77vh', overflow: 'auto' }}>
         
         <div className="image-grid">
        

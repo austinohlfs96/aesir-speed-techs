@@ -30,7 +30,7 @@ const Services = () => {
     <Head />
     <div className='modal'>
       <div id="services">
-        <Segment style={{display: 'flex', flexFlow: 'wrap', background: 'rgba(16, 51, 78, 0.6)', marginBottom: '60px' }}>
+        <Segment style={{display: 'flex', flexFlow: 'wrap', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', marginBottom: '60px' }}>
           <h1 style={{ color: 'white', fontFamily: 'Anta' }}>Services</h1>
           <Item.Group>
             {services.map((service) => (

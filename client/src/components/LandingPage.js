@@ -261,7 +261,7 @@ const LandingPage = () => {
 
 
           <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
+        background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
         marginRight: '20px',
         marginLeft: '20px',
