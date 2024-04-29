@@ -41,9 +41,38 @@ const AthleteSpotlight = () => {
     <>
       <Head />
       <div>
-      <div >
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       {/* <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', width: '100%', height: '77vh', overflow: 'auto' }}> */}
-        <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta"}}>Athlete Page</h1>
+        <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Athlete Page</h1>
+
+        <Segment className="slide-in" style={{ 
+  background: 'rgba(16, 51, 78, 0.6)',
+  borderRadius: '0px',
+  margin: '20px',
+  display: 'flex', // Make the segment a flex container
+  alignItems: 'center', // Align items vertically
+  flexDirection: 'column', // Stack items vertically
+}}>
+  <div style={{ marginBottom: '20px' }}> {/* Add margin bottom for spacing */}
+    <Image src='/ElieenDewTrophies.jpg' size='small' floated='left' />
+    <h1 style={{ color: "white", marginLeft: '10px', fontFamily: "Anta"}}>Eileen Gu  <a href="https://www.instagram.com/eileengu/" target="_blank" rel="noopener noreferrer">
+      <Icon name='instagram' size='small' inverted link />
+    </a> </h1>
+  </div>
+  
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>
+    Congratulations to three-time Olympic medalist Eileen Gu for dominating the women's ski halfpipe at Dew Tour with an astounding score of 97.66! 🏆 Team Æsir celebrates her remarkable victory and unwavering dedication. Here's to many more triumphs ahead! 🎉
+  </h4>
+
+  <div style={{ width: '100%', marginTop: '20px' }}> {/* Add margin top for spacing */}
+    <Embed
+      style={{ width: '100%' }}
+      id='O0drnWf1T-I'
+      placeholder='https://i2.wp.com/dewtour.com/wp-content/uploads/2024/03/eileen-gu-dew-tour-2024-winning-run.jpg?resize=1200%2C600&ssl=1'
+      source='youtube'
+    />
+  </div>
+</Segment>
 
         <Segment className="slide-in" style={{ 
         background: 'rgba(16, 51, 78, 0.6)',
@@ -52,31 +81,8 @@ const AthleteSpotlight = () => {
         marginLeft: '20px',
         height: 'auto'
          }}>
-        <Image src='/ElieenDewTrophies.jpg' size='small' floated='left' />
-        <h1 style={{color: "white"}}>Eileen Gu  <a href="https://www.instagram.com/eileengu/" target="_blank" rel="noopener noreferrer">
-        <Icon name='instagram' size='small' inverted link />
-        </a> </h1>
-       
-        <h4 style={{color: "white"}}>Congratulations to three time opymipic medalist Eileen Gu for dominating the women's ski halfpipe at Dew Tour with an astounding score of 97.66! 🏆 Team Æsir celebrates her remarkable victory and unwavering dedication. Here's to many more triumphs ahead! 🎉</h4>
-        <div style={{ width: '100%' }}>
-        <Embed
-          style={{ width: '100%' }}
-          id='O0drnWf1T-I'
-          placeholder='https://i2.wp.com/dewtour.com/wp-content/uploads/2024/03/eileen-gu-dew-tour-2024-winning-run.jpg?resize=1200%2C600&ssl=1'
-          source='youtube'
-        />
-      </div>
-        <h4></h4>
-        </Segment>
-        <Segment className="slide-in" style={{ 
-        background: 'rgba(16, 51, 78, 0.6)',
-        borderRadius: '0px',
-        marginRight: '20px',
-        marginLeft: '20px',
-        height: 'auto'
-         }}>
-        <Image src='https://scontent-den2-1.xx.fbcdn.net/v/t1.6435-9/56839716_2086949598275692_8855843280085057536_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zmzvcVyl_jwAX-GCnjx&_nc_ht=scontent-den2-1.xx&oh=00_AfCZasJBVeqsJiWyHSz82Pplbg1yz_eAoRt-WoyIosadEg&oe=661BE3D2' size='small' floated='left' />
-        <h1 style={{color: "white"}}>Alessandro Barbieri <a href="https://www.instagram.com/alessandro_pdx/" target="_blank" rel="noopener noreferrer">
+        <Image src='https://usskiandsnowboard.org/sites/default/files/styles/athlete_headshot_node/public/images/athletes/head-shots/2024-02/Alessandro_Kappa.jpg?itok=kVPu3U2b' size='small' floated='left' />
+        <h1 style={{color: "white", fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white'}}>Alessandro Barbieri <a href="https://www.instagram.com/alessandro_pdx/" target="_blank" rel="noopener noreferrer">
         <Icon name='instagram' size='small' inverted link />
         </a></h1>
         <h4 style={{color: "white"}}>Check out Æsir team rider Alessandro's 2rd place run from USASA Nationals last year at Copper. Look forward to seeing this young ripper take on the best in the country again this year at USASA Nationals in Copper March-29 April-10!</h4>

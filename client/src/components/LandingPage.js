@@ -80,98 +80,69 @@ const LandingPage = () => {
                 ÆSIR Speed Techs
               </h1> */}
               <Head />
-             <Segment style={{background: 'rgba(16, 51, 78, 0.6)', width: '35%', margin: '20px 30px'}}> <h2 style={{ fontSize: '2vw', color: '#fff', color: 'black', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h2>
+             {/* <Segment style={{background: 'rgba(16, 51, 78, 0.6)', width: '20%',  height: '20%', margin: '20px 30px'}}> <h2 style={{ fontSize: '2vw', color: '#fff', color: 'black', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h2>
              <p style={{ fontSize: '2.1vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>AESIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
-             </Segment>
+             </Segment> */}
             {/* </Segment> */}
           </div>
         </div>
 
+        <div>
+  <Segment className="topical-segment" style={{ 
+    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', // Add a background image with gradient overlay
+    backgroundSize: 'cover', // Ensure the background image covers the entire segment
+    borderRadius: '0px', // Adjust border radius if needed
+    padding: '50px', // Adjust padding for content spacing
+    color: 'white', // Set text color to white
+    textAlign: 'center', // Center align text
+    fontSize: '2vw', // Adjust font size
+    fontFamily: 'Anta', // Specify font family
+    marginBottom: "0px",
+  }}>
+    <h1 style={{ fontSize: '3vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h1>
+             <p style={{ fontSize: '3vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>ÆSIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
+    <button onClick={() => navigate('/login')} style={{textDecoration: 'underline'}}>Book Now</button>
+  </Segment>
+</div>
       {/* </Segment> */}
       <div>
       <Segment className="slide-in" style={{ 
-    background: 'rgb(117, 102, 102)',
+    background: 'rgb(34, 40, 49)',
     borderRadius: '0px', // Added border radius
-    padding: '20px', // Added padding for better spacing
+    // padding: '20px', // Added padding for better spacing
     // margin: '25px 0', // Adjusted margin
     height: 'auto',
     display: 'flex', // Added flex display for image and text alignment
     alignItems: 'center', // Center align items vertically
     color: 'white', // Changed text color
     flexDirection: 'row', // Align items vertically
+    marginBottom: '0px'
 }}>
-    <div style={{ position: 'relative', fontSize: "3vw" }}>
-  <Image
-    src="EileenPodium.jpg"
-    size="medium"
-    floated="left"
-    className="dynamic-image"
-    style={{ marginBottom: '20px' }}
-  />
-
-  <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'black', fontFamily: "Anta", fontWeight: 'bold', textAlign: 'center' }}>
-  MISSION
-  </h1>
-</div>
-
-    
-    <p style={{ fontSize: "2.2vw", textAlign: "center", maxWidth: '55%', marginLeft: '10%' }}> {/* Added paragraph tag for better text layout */}
-        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.
-    </p> 
-</Segment>
-
-{/* <Segment className="slide-in" style={{ 
-        background: 'rgb(118, 171, 174)',
-        borderRadius: '0px',
-        marginLeft: '20px',
-        marginRight: '20px',
-        marginTop: "20px",
-        height: 'auto',
-        display: 'inline-block'
-         }}>
-          <Image
-          src="/JRBaseGrind1.jpg"
-          size="medium"
-          floated="right"
-        />
-        <h2 style={{fontSize: "3vw", textAlign: "center", color: "white"}}>Premier Services</h2>
-          <h4 style={{fontSize: "2.6vw", textAlign: "center", color: "white"}}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.</h4> 
-          </Segment> */}
-          
-          <Segment className="slide-in" style={{ 
-    background: 'rgb(34, 40, 49)',
-    borderRadius: '0px', // Added border radius
-    // padding: '20px', // Added padding for better spacing
-    marginTop: '250px', // Adjusted margin
-    marginBottom: '0px',
-    height: 'auto',
-    display: 'flex', // Added flex display for image and text alignment
-    alignItems: 'center', // Center align items vertically
-    color: 'white', // Changed text color
-    flexDirection: 'row-reverse', // Align items vertically
-}}>
-          <div 
-          style={{ position: 'relative', fontSize: "3vw" }}
+ 
+    <div 
+          style={{ position: 'relative', fontSize: "3vw", }}
           >
             <Image
               src="/JRBaseGrind1.jpg"
               size="medium"
               floated="left"
               className="dynamic-image"
-              style={{ marginBottom: '20px' }}
+              // style={{ marginBottom: '20px' }}
             />
              
           </div>
-         <div style={{maxWidth: '55%', marginRight: '10%'}}>
+         <div style={{maxWidth: '55%', marginLeft: '5%'}}>
          <h1 style={{fontFamily: "Anta", textAlign: "center" }}>
             Premier Services
             </h1>
           <p style={{ fontSize: "2vw", textAlign: 'center'   }}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.</p> 
          </div>
+        
           
-          </Segment>
-          <Segment className="slide-in" style={{ 
-    background: 'rgb(126 125 125)',
+</Segment>
+
+<Segment className="slide-in" style={{ 
+     background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
     borderRadius: '0px', // Added border radius
     // padding: '20px', // Added padding for better spacing
     margin: '0px 0', // Adjusted margin
@@ -196,6 +167,7 @@ const LandingPage = () => {
               className="dynamic-image"
               style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
             />
+            <div style={{ position: 'absolute', top: '0', right: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
             Pro Wax
             </h1>
@@ -212,6 +184,7 @@ const LandingPage = () => {
               className="dynamic-image"
               style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
             />
+            <div style={{ position: 'absolute', top: '0', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
             Comp Edge/Wax
             </h1>
@@ -228,6 +201,7 @@ const LandingPage = () => {
               className="dynamic-image"
               style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
             />
+             <div style={{ position: 'absolute', top: '0', left: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
             Pro Tune
             </h1>
@@ -244,11 +218,46 @@ const LandingPage = () => {
               className="dynamic-image"
               style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
             />
+            <div style={{ position: 'absolute', top: '0', left: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
             Full Compitition Tune
             </h1>
           </div>
           </Segment>
+          
+          <Segment className="slide-in" style={{ 
+    background: 'rgb(117, 102, 102)',
+    borderRadius: '0px', // Added border radius
+    // padding: '20px', // Added padding for better spacing
+    marginTop: '200px', // Adjusted margin
+    marginBottom: '0px',
+    height: 'auto',
+    display: 'flex', // Added flex display for image and text alignment
+    alignItems: 'center', // Center align items vertically
+    color: 'white', // Changed text color
+    flexDirection: 'row-reverse', // Align items vertically
+}}>
+          <div style={{ position: 'relative', fontSize: "3vw" }}>
+  <Image
+    src="EileenPodium.jpg"
+    size="medium"
+    floated="left"
+    className="dynamic-image"
+    style={{ marginBottom: '20px' }}
+  />
+
+  <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'black', fontFamily: "Anta", fontWeight: 'bold', textAlign: 'center' }}>
+  MISSION
+  </h1>
+</div>
+
+    
+    <p style={{ fontSize: "2.2vw", textAlign: "center", maxWidth: '55%', marginRight: '5%' }}>
+        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.
+    </p> 
+          
+          </Segment>
+         
 
 
           <Segment className="slide-in" style={{ 

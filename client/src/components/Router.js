@@ -9,6 +9,7 @@ import Services from "./Services";
 import Contact from "./Contact";
 import AthleteSpotlight from "./AthleteSpotlight";
 import Gallery from "./Gallery"
+import Shop from "./Shop";
 
 function Router() {
   const routes = (
@@ -22,7 +23,7 @@ function Router() {
       <Route path='/contact' element={<Contact/>}/>,
       <Route path="/athletespotlight" element={<AthleteSpotlight/>}/>,
       <Route path='/gallery' element={<Gallery/>}/>,
-
+      <Route path='/shop' element={<Shop/>}/>,
     </>
   )
   return (
