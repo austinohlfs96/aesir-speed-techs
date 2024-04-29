@@ -30,11 +30,11 @@ const Services = () => {
     <Head />
     <div className='modal'>
       <div id="services">
-        <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', marginBottom: '60px' }}>
+        <Segment style={{display: 'flex', flexFlow: 'wrap', background: 'rgba(16, 51, 78, 0.6)', marginBottom: '60px' }}>
           <h1 style={{ color: 'white', fontFamily: 'Anta' }}>Services</h1>
           <Item.Group>
             {services.map((service) => (
-              <Segment key={service.id} className={`service-item-${service.id}`}  style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px' }}>
+              <Segment key={service.id} id={`service-item-${service.id}`} className="service-item" style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px' }}>
                 <Image src={service.image} size='medium' floated='left' />
                 <Item>
                   <Item.Content>
