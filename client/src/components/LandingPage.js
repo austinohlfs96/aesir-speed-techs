@@ -155,7 +155,7 @@ const LandingPage = () => {
     flexWrap: 'wrap'
 }}>
           <div 
-          onClick={() => navigate('/tuningservices')}
+          onClick={() => navigate('/tuningservices#service-item-1')}
           className="image-container"
           style={{ position: 'relative', fontSize: "3vw" }}
           >
@@ -174,7 +174,7 @@ const LandingPage = () => {
           </div>
           <div 
           className="image-container"
-          onClick={() => navigate('/tuningservices')}
+          onClick={() => navigate('/tuningservices#service-item-2')}
           style={{ position: 'relative', fontSize: "3vw", overflow: 'hidden' }}
           >
             <Image
@@ -191,7 +191,7 @@ const LandingPage = () => {
           </div>
           <div 
           className="image-container"
-          onClick={() => navigate('/tuningservices')}
+          onClick={() => navigate('/tuningservices#service-item-3')}
           style={{ position: 'relative', fontSize: "3vw" }}
           >
             <Image
@@ -208,7 +208,7 @@ const LandingPage = () => {
           </div>
           <div 
           className="image-container"
-          onClick={() => navigate('/tuningservices')}
+          onClick={() => navigate('/tuningservices#service-item-4')}
           style={{ position: 'relative', fontSize: "3vw" }}
           >
             <Image

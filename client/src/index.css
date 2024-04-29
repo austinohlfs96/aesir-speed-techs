@@ -190,6 +190,11 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   box-shadow:  #989898 0px 0px 0px 100px inset !important;
 }
 
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .service-item {
   display: grid;
   background: rgba(255, 255, 255, 0.8);
