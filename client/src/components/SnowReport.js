@@ -42,7 +42,7 @@ const SnowReport = () => {
         <div style={{display: "flex", flexDirection: 'column', alignItems: 'center'}}>
         <h2 style={{fontFamily: 'Anta', color: 'white', marginBottom: '0px'}}>Check</h2>
         <h2 style={{fontFamily: 'Anta', color: 'white', marginTop: '0px'}}>Snow Conditions</h2>
-        <p style={{fontFamily: 'Anta', color: 'white', textAlign: 'center'}}>Search a location to see temeratures and conditions and use the wac key to wax accordingly</p>
+        <p style={{fontFamily: 'Anta', color: 'white', textAlign: 'center', marginBlock: '20px'}}>Search a location to see temeratures and conditions and use the wac key to wax accordingly</p>
         </div>
         <div style={{display: 'flex', justifyContent: 'center'}}>
         <Segment style={{width: '500px', textAlign: 'center'}}>
