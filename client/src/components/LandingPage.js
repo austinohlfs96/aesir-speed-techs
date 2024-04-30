@@ -10,6 +10,7 @@ import SnowReport from "./SnowReport";
 
 const LandingPage = () => {
   const [isActive, setIsActive] = useState(false);
+  const someCondition = true;
   // const [snowData, setSnowData] = useState(null);
   const navigate = useNavigate();
 
