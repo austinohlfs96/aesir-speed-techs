@@ -2,12 +2,37 @@
 import React, {useEffect, useState} from "react";
 import { Segment, Image, Grid, Header } from "semantic-ui-react";
 import { useNavigate } from 'react-router-dom';
+// import axios from "axios";
+// import { format } from 'date-fns';
 import Head from "./Header";
+import SnowReport from "./SnowReport";
 
 
 const LandingPage = () => {
   const [isActive, setIsActive] = useState(false);
+  // const [snowData, setSnowData] = useState(null);
   const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   // Make API request to Snow API
+  //   axios.get('https://api.tomorrow.io/v4/weather/forecast?location=Vail&apikey=i8LYur8TS60cPEgzBm2sKTSC8q6aorFu', {
+  //     params: {
+  //       // key: 'i8LYur8TS60cPEgzBm2sKTSC8q6aorFu',
+  //       // resort: 'Kirkwood, CA',
+  //       // country: 'US', // or any other country code
+  //       // units: 'imperial', // or 'metric'
+  //     }
+  //   })
+  //   .then(response => {
+  //     // Handle successful response
+  //     console.log(response.data);
+  //     setSnowData(response.data);
+  //   })
+  //   .catch(error => {
+  //     // Handle error
+  //     console.error('Error fetching snow data:', error);
+  //   });
+  // }, []);
 
   useEffect(() => {
     // Activate the animation when the component mounts
@@ -101,7 +126,7 @@ const LandingPage = () => {
   }}>
     <h1 style={{ fontSize: '3vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h1>
              <p style={{ fontSize: '3vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>ÆSIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
-    <button onClick={() => navigate('/login')} style={{textDecoration: 'underline'}}>Book Now</button>
+    <button onClick={() => navigate('/login')} style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Book Now</button>
   </Segment>
 </div>
       {/* </Segment> */}
@@ -224,6 +249,34 @@ const LandingPage = () => {
             </h1>
           </div>
           </Segment>
+          <SnowReport/>
+          {/* <div>
+  <Segment className="snow-conditions-segment">
+    <h2>Snow Conditions</h2>
+    {snowData && snowData.timelines && snowData.timelines.daily && (
+      <div>
+        {snowData.timelines.daily.map((dayData, index) => {
+          // Convert the timestamp to a Date object
+          const timestamp = new Date(dayData.time);
+          console.log(timestamp)
+          // Get the day of the week
+          const dayOfWeek = timestamp.toLocaleDateString(undefined, { weekday: 'long' });
+          console.log(dayOfWeek)
+          return (
+            <div key={index}>
+              <p>Location: {snowData.location.name}</p>
+              <p>Temp High: {dayData.values.temperatureMax}</p>
+              <p>Temp Average: {dayData.values.temperatureAvg}</p>
+              <p>Temp Low: {dayData.values.temperatureMin}</p>
+              <p>{dayOfWeek}</p>
+            </div>
+          );
+        })}
+      </div>
+    )}
+  </Segment>
+</div> */}
+
           
           <Segment className="slide-in" style={{ 
     background: 'rgb(117, 102, 102)',
@@ -246,13 +299,14 @@ const LandingPage = () => {
     style={{ marginBottom: '20px' }}
   />
 
-  <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'black', fontFamily: "Anta", fontWeight: 'bold', textAlign: 'center' }}>
+  {/* <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'black', fontFamily: "Anta", fontWeight: 'bold', textAlign: 'center' }}>
   MISSION
-  </h1>
+  </h1> */}
 </div>
 
     
     <p style={{ fontSize: "2.2vw", textAlign: "center", maxWidth: '55%', marginRight: '5%' }}>
+    <h1 style={{ color: 'white', fontFamily: "Anta", marginBottom: '10px'}}>The ÆSIR MISSION</h1>
         At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.
     </p> 
           
@@ -263,9 +317,9 @@ const LandingPage = () => {
           <Segment className="slide-in" style={{ 
         background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))',
         borderRadius: '0px',
-        marginRight: '20px',
-        marginLeft: '20px',
-        marginTop: "20px",
+        // marginRight: '20px',
+        // marginLeft: '20px',
+        marginTop: "50px",
         height: 'auto'
          }}>
         
@@ -277,7 +331,7 @@ const LandingPage = () => {
               centered
               style={{ marginBottom: '20px' }}
             />
-            <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta" }}>
+            <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta" }}>
             Our Crew
             </h1>
           </div>
