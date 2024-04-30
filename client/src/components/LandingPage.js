@@ -126,7 +126,7 @@ const LandingPage = () => {
   }}>
     <h1 style={{ fontSize: '3vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h1>
              <p style={{ fontSize: '3vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>ÆSIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
-    <button onClick={() => navigate('/login')} style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Book Now</button>
+    <button onClick={() => navigate(someCondition ? "/coachespage" : "/login")} style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Book Now</button>
   </Segment>
 </div>
       {/* </Segment> */}
@@ -306,7 +306,7 @@ const LandingPage = () => {
 
     
     <p style={{ fontSize: "2.2vw", textAlign: "center", maxWidth: '55%', marginRight: '5%' }}>
-    <h1 style={{ color: 'white', fontFamily: "Anta", marginBottom: '10px'}}>The ÆSIR MISSION</h1>
+    <h1 style={{ color: 'white', fontFamily: "Anta", marginBottom: '10px'}}>THE ÆSIR MISSION</h1>
         At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.
     </p> 
           

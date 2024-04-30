@@ -23,6 +23,7 @@ const Signup = () => {
     email: yup.string().required('Please enter your email').typeError('Please enter a string.'),
     password: yup.string().required('Please enter a password.').typeError('Please enter a string.'),
     confirmpassword: yup.string().required('Please enter the same password.').typeError('Please enter a string.'), 
+    accessCode: yup.string().required('Please enter the access code.'),
     profile_picture: yup.string().url('Please enter a valid URL for the profile picture'),
   });
 
@@ -33,6 +34,7 @@ const Signup = () => {
       team: "",
       password: "",
       confirmpassword: "",
+      accessCode: '',
       profile_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Windows_10_Default_Profile_Picture.svg/2048px-Windows_10_Default_Profile_Picture.svg.png"
     },
     validationSchema: formSchema,
@@ -40,6 +42,12 @@ const Signup = () => {
       console.log("val", values)
       if (values.password !== values.confirmpassword) {
         handleNewError("Password must match.");
+        return;
+      }
+
+      const expectedAccessCode = "@ÆSiRteAm23"; // Replace with your expected access code
+      if (values.accessCode !== expectedAccessCode) {
+        handleNewError("Access code is incorrect.");
         return;
       }
   
@@ -145,6 +153,17 @@ const Signup = () => {
           required="true"
         />
         </Form.Field>
+        <Form.Field>
+            <label>Access Code</label>
+            <input
+              id="accessCode"
+              name="accessCode"
+              onChange={handleInputChange}
+              value={formik.values.accessCode}
+              placeholder="Enter Access Code"
+              required="true"
+            />
+          </Form.Field>
         <Button type='submit'>Submit</Button>
         <Button type='submit' onClick={() => navigate('/')}>Cancel</Button>
       </Form>
