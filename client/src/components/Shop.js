@@ -65,8 +65,14 @@ const Shop = () => {
     <div >
       <Head coach={coach}/>
       <div className='shopModal'>
-      <Segment style={{ background: 'rgba(16, 51, 78, 0.6)' }}>
-      <h1 style={{textAlign: "center", color: "white"}}>Inventory Coming Soon!</h1>
+        <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>ÆSIR SHOP</h1>
+      <Segment style={{ background: 'rgba(16, 51, 78, 0.6)', textAlign: "center", color: "white" }}>
+        
+      <h1 style={{textAlign: "center", color: "white", fontWeight: 'bold', textDecoration: 'underline'}}>Inventory Coming Soon!</h1>
+      <h3>In the mean time check out our Instagram page for content and updates on our riders and services!</h3>
+      <a href="https://www.instagram.com/aesir_techs/" target="_blank" rel="noopener noreferrer">
+            <i className="instagram icon" style={{ margin: '0 10px', fontSize: '3em' }}></i>
+          </a>
    
   </Segment>
   </div>

@@ -30,15 +30,16 @@ const Services = () => {
     <Head />
     <div className='modal'>
       <div id="services">
-        <Segment style={{display: 'flex', flexFlow: 'wrap', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', marginBottom: '60px' }}>
-          <h1 style={{ color: 'white', fontFamily: 'Anta' }}>Services</h1>
+        <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Services</h1>
+        <Segment style={{display: 'flex', flexFlow: 'wrap', alignItems: 'center', background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', marginBottom: '60px' }}>
+          
           <Item.Group>
             {services.map((service) => (
-              <Segment key={service.id} id={`service-item-${service.id}`} className="service-item" style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px' }}>
+              <Segment key={service.id} className="service-item" style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px' }}>
                 <Image src={service.image} size='medium' floated='left' />
                 <Item>
                   <Item.Content>
-                    <h1 style={{fontFamily: "Anta", marginBottom: '10px'}}>{service.name}</h1>
+                    <h1 id={`service-item-${service.id}`} style={{fontFamily: "Anta", marginBottom: '10px'}}>{service.name}</h1>
                     <Item.Meta>
                       <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price:</span> <span>{service.price}</span>
                       {/* <span className='price'>{`Price: $${service.price}`}</span> */}

@@ -65,8 +65,8 @@ const Title = () => {
     <div >
       <Head coach={coach}/>
       <div className='aboutModal'>
+      <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>About</h1>
       <Segment style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' }}>
-      <h1 style={{textAlign: "center", color: "white"}}>About</h1>
     {/* <Image src='https://www.usskiandsnowboard.org/sites/default/files/paragraph/single-image-caption/2020-01/maggiepodium%20.jpg' size='medium' floated='left' /> */}
     <h4 style={{color: "white"}}>
     Welcome to Æsir Speed Techs, your premier destination for professional performance ski and snowboard tuning. At Æsir Speed Techs, we take pride in our commitment to excellence and our passion for elevating winter sports performance. With a dedicated team of skilled technicians and state-of-the-art machinery, we offer top-tier tuning services tailored for athletes and coaches seeking to outperform the competition.

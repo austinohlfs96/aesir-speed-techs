@@ -108,11 +108,11 @@ function Head() {
       <Header id="title" as='h3' textAlign='left' 
       style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
       >
-        <div style={{ backgroundColor: 'red', borderRadius: '50%', display: 'inline-block', padding: '5px', width: '35px', height: '35px' }}>
+        <div style={{ backgroundColor: 'red', borderRadius: '50%', display: 'inline-block', padding: '5px', width: '50px', height: '50px', marginRight: '10px' }}>
   <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')} />
 </div>
 
-       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '10px', border: '2px solid white'}}>ÆSIR Speed Techs</span> 
+       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px'}}>ÆSIR Speed Techs</span> 
        
       
        
@@ -157,7 +157,7 @@ function Head() {
           
         </div>
       )}
-       <div style={{display: 'flex', float: 'right', marginLeft: '20px'}}>
+       <div style={{display: 'flex', float: 'right', marginLeft: '20px', marginTop: '10px'}}>
       {!coach ? (
             <>
               <Button color= "red" style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} onClick={() => navigate('/login')}>Book</Button>
