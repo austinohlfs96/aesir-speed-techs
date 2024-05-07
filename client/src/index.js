@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { store } from  "./app/store"
 import { ToastProvider, useToasts } from 'react-toast-notifications';
 
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(

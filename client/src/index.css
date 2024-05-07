@@ -313,7 +313,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 .weather-cards-container {
   display: flex;
   overflow: scroll;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
