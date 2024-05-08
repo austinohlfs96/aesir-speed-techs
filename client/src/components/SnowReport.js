@@ -4,21 +4,31 @@ import { FaSun, FaCloud, FaCloudSun, FaCloudRain, FaSnowflake, FaWind, FaColumns
 import axios from "axios";
 import MapContainer from "./MapContainer";
 import WeatherCard from "./WeatherCard";
-import { Line } from 'react-chartjs-2';
-import Chart from 'chart.js';
-
-
+import { Bar } from 'react-chartjs-2';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 const SnowReport = () => {
   const [location, setLocation] = useState("");
   const [daysLimit, setDaysLimit] = useState(1); // Default limit is set to 7 days
   const [snowData, setSnowData] = useState(null);
+  const [dayData, setDayData] = useState(null);
   const [clickedLocation, setClickedLocation] = useState(null);
   const [locationName, setLocationName] = useState('');
   const [temperatureDifferenceData, setTemperatureDifferenceData] = useState(null);
   const [showHourlyTemperature, setShowHourlyTemperature] = useState(false); // State to control the visibility of hourly temperature chart
 
   const handleExpandClick = () => {
+    // Check if snowData is defined and has days property
+    if (snowData && snowData.days) {
+      // Assuming you want to get temperatures for the second day (index 1)
+      const temperaturesForOneDay = snowData.days[1].hours.map(hour => hour.temp);
+      console.log(temperaturesForOneDay);
+  
+      // Update state if necessary
+      setDayData(temperaturesForOneDay);
+    }
+    console.log(dayData)
     setShowHourlyTemperature(!showHourlyTemperature); // Toggle the visibility state
   };
 
@@ -95,8 +105,6 @@ const SnowReport = () => {
     { key: 7, text: "7 days", value: 7 },
     { key: 14, text: "14 days", value: 14 },
   ];
-
-  
 
   return (
     <div>
@@ -220,51 +228,38 @@ const SnowReport = () => {
                   {weatherIcon || dayData.icon}
                   </div>
                   <button onClick={handleExpandClick}>Show Hourly Temperature</button> {/* Button to expand/collapse */}
-                  {showHourlyTemperature && (
-  <div style={{display: "flex", justifyContent: 'center', marginTop: '20px'}}>
-    <div>
-      <h3>Hourly Temperatures</h3>
-      <Line
-        data={{
-          labels: dayData.hours.map((hourData, hourIndex) => hourData.time), // Assuming there's a time property in your hourData
-          datasets: [{
-            label: 'Hourly Temperature (F)',
-            data: dayData.hours.map((hourData) => hourData.temp),
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1
-          }]
-        }}
-        options={{
-          scales: {
-            y: {
-              type: 'linear',
-              title: {
-                display: true,
-                text: 'Temperature (F)'
+                  {showHourlyTemperature && snowData && snowData.days && (
+    <div style={{ display: "flex", justifyContent: 'center', marginTop: '20px' }}>
+      <div>
+        <h3>Temperature Difference Chart</h3>
+        <Bar
+          data={{
+            labels: dayData.hours.map(hour => hour.datetime), // Use the datetime as labels
+            datasets: [
+              {
+                label: 'Hourly Temperature',
+                data: dayData.hours.map(hour => hour.temp), // Use the hourly temperature data
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
               }
-            },
-            x: {
-              type: 'linear', // Change here
-              title: {
-                display: true,
-                text: 'Time'
+            ]
+          }}
+          options={{
+            scales: {
+              y: {
+                type: 'linear',
+                beginAtZero: true
               }
             }
-          }
-        }}
-        
-      />
+          }}
+        />
+      </div>
     </div>
-  </div>
-)}
+  )}
 
-
-
-                  
                   </Segment>
-                  
-                  
+
                 </div>
               );
             })}
@@ -276,6 +271,11 @@ const SnowReport = () => {
 };
 
 export default SnowReport;
+
+
+
+
+
 
 
 // import React, { useEffect, useState } from "react";
