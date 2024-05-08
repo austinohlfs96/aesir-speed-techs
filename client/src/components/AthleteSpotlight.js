@@ -117,7 +117,7 @@ const AthleteSpotlight = () => {
     </a> </h1>
   </div>
   
-  <h4 style={{color: "white"}}>As the youngest-ever Winter DewTour competitor, China's Zhou Yizhu (Patti Zhou) took silver in the Women's Snowboard Superpipe at Copper Mountain, Colorado. The 11-year-old threw down a 90.66 run in her second attempt at the pipe.</h4>
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>As the youngest-ever Winter DewTour competitor, China's Zhou Yizhu (Patti Zhou) took silver in the Women's Snowboard Superpipe at Copper Mountain, Colorado. The 11-year-old threw down a 90.66 run in her second attempt at the pipe.</h4>
 
   <div style={{ width: '100%', marginTop: '20px' }}> {/* Add margin top for spacing */}
   <Embed
@@ -127,7 +127,7 @@ const AthleteSpotlight = () => {
           source='youtube'
         />
   </div>
-  <h4 style={{color: "white"}}>
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>
         The 11-year-old snowboarder finished second in the Dew Tour women’s snowboard superpipe event Sunday in Copper Mountain, Colorado, becoming the youngest athlete to ever land on a winter Dew Tour podium and the second-youngest ever at any Dew Tour event. Zhou trailed 14-year-old South Korean Gaon Choi, whose score of 98.33 was one of the highest ever awarded at the Dew Tour.</h4>
   </Segment>
 
@@ -146,7 +146,7 @@ const AthleteSpotlight = () => {
     </a> </h1>
   </div>
   
-  <h4 style={{color: "white"}}>Join Æsir team rider Jason Wolle as he unveils the artistry behind mastering Michalchuks in the halfpipe.🔥 Dive into the depths of skill and finesse with his exclusive trick tip session, where precision meets passion. Get ready to elevate your halfpipe game with Jason's expert guidance!</h4>
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>Join Æsir team rider Jason Wolle as he unveils the artistry behind mastering Michalchuks in the halfpipe.🔥 Dive into the depths of skill and finesse with his exclusive trick tip session, where precision meets passion. Get ready to elevate your halfpipe game with Jason's expert guidance!</h4>
        
 
   <div style={{ width: '100%', marginTop: '20px' }}> {/* Add margin top for spacing */}
@@ -174,7 +174,7 @@ const AthleteSpotlight = () => {
     </a> </h1>
   </div>
   
-  <h4 style={{color: "white"}}>Æsir Team rider Xuetong Cai triumphs in a mesmerizing performance at the FIS Women's Super Pipe Contest! With unwavering poise, she unleashes an array of gravity-defying tricks including backside 900s, frontside 720s, and stylish alley-oop airs. Her flawless execution and seamless transitions captivate the crowd as she dominates the snow with finesse. Scoring an impressive 92.5, Cai's winning run embodies the epitome of excellence in women's snowboarding. Witness her mastery of the super pipe as she soars to new heights and secures her rightful place as champion. 🏂🏆</h4>
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>Æsir Team rider Xuetong Cai triumphs in a mesmerizing performance at the FIS Women's Super Pipe Contest! With unwavering poise, she unleashes an array of gravity-defying tricks including backside 900s, frontside 720s, and stylish alley-oop airs. Her flawless execution and seamless transitions captivate the crowd as she dominates the snow with finesse. Scoring an impressive 92.5, Cai's winning run embodies the epitome of excellence in women's snowboarding. Witness her mastery of the super pipe as she soars to new heights and secures her rightful place as champion. 🏂🏆</h4>
        
 
   <div style={{ width: '100%', marginTop: '20px' }}> {/* Add margin top for spacing */}
@@ -202,7 +202,7 @@ const AthleteSpotlight = () => {
     </a> </h1>
   </div>
   
-  <h4 style={{color: "white"}}>Dive into the world of young talent with Æsir Team's rising star, Eli Stroker, as he unveils his weapon of choice for the season: the Never Summer Yutes board. Discover the passion driving Eli's ride as he shares the secrets behind his board selection.</h4>
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>Dive into the world of young talent with Æsir Team's rising star, Eli Stroker, as he unveils his weapon of choice for the season: the Never Summer Yutes board. Discover the passion driving Eli's ride as he shares the secrets behind his board selection.</h4>
        
 
   <div style={{ width: '100%', marginTop: '20px' }}> {/* Add margin top for spacing */}
@@ -231,7 +231,7 @@ const AthleteSpotlight = () => {
     </a> </h1>
   </div>
   
-  <h4 style={{color: "white"}}>Embark on an inspiring journey with Æsir Team rider Zoe Kalapos as she spends a day shredding with a group of young rippers, imparting the art of mastering the 50-50 on a box. 🏂✨ Witness Zoe's passion ignite as she guides the next generation through the slopes, sharing invaluable tricks and techniques. </h4>
+  <h4 style={{ color: "white", textAlign: 'center', margin: '0 20px' }}>Embark on an inspiring journey with Æsir Team rider Zoe Kalapos as she spends a day shredding with a group of young rippers, imparting the art of mastering the 50-50 on a box. 🏂✨ Witness Zoe's passion ignite as she guides the next generation through the slopes, sharing invaluable tricks and techniques. </h4>
        
 
   <div style={{ width: '100%', marginTop: '20px' }}> {/* Add margin top for spacing */}
