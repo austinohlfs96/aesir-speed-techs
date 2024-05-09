@@ -77,7 +77,7 @@ const Shop = () => {
    
   </Segment>
   </div>
-  <SnowReport/>
+  {/* <SnowReport/> */}
     </div>
     
   )
