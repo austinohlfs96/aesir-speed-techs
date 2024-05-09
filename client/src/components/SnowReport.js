@@ -6,7 +6,7 @@ import MapContainer from "./MapContainer";
 import WeatherCard from "./WeatherCard";
 import { Bar} from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
-Chart.register(...registerables);
+// Chart.register(...registerables);
 
 const SnowReport = () => {
   const [location, setLocation] = useState("");
