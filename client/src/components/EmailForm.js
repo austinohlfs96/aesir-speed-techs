@@ -39,34 +39,36 @@ const EmailForm = () => {
       <Grid columns={1} stackable>
         <Grid.Column>
           <Form.Field>
-            <label>First name</label>
+            <label style={{fontFamily: 'Anta'}}>First name</label>
             <Input type="text" name="user_first_name" width={20} /> {/* Set width to 8 columns out of 16 */}
           </Form.Field>
           <Form.Field>
-            <label>Last name</label>
+            <label style={{fontFamily: 'Anta'}}>Last name</label>
             <Input type="text" name="user_last_name" width={8} /> {/* Set width to 8 columns out of 16 */}
           </Form.Field>
           <Form.Field>
-            <label>Email</label>
+            <label style={{fontFamily: 'Anta'}}>Email</label>
             <Input type="email" name="user_email" width={16} /> {/* Set width to 16 columns out of 16 for full width */}
           </Form.Field>
-        </Grid.Column>
-        <Grid.Column>
+        {/* </Grid.Column>
+        <Grid.Column> */}
           <Form.Field>
-            <label>Phone</label>
+            <label style={{fontFamily: 'Anta'}}>Phone</label>
             <Input type="tel" name="user_phone" width={8} /> {/* Set width to 8 columns out of 16 */}
           </Form.Field>
           <Form.Field>
-            <label>Subject</label>
+            <label style={{fontFamily: 'Anta'}}>Subject</label>
             <Input type="text" name="user_subject" width={8} /> {/* Set width to 8 columns out of 16 */}
           </Form.Field>
           <Form.Field>
-            <label>Message</label>
-            <TextArea name="message" width={16} /> {/* Set width to 16 columns out of 16 for full width */}
+            <label style={{fontFamily: 'Anta'}}>Message</label>
+            <TextArea name="message" width={16} style={{width: "200px", height: "100px"}}/> {/* Set width to 16 columns out of 16 for full width */}
           </Form.Field>
         </Grid.Column>
       </Grid>
-      <Button type="submit">Send</Button>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+        <Button type="submit" style={{fontFamily: "Anta"}}>Send</Button>
+      </div>
     </form>
   );
 };

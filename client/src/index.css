@@ -63,6 +63,9 @@ code {
 }
 
 .registerModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 40px;
   padding-bottom: 5px;
   margin-left: 10px;
@@ -176,6 +179,10 @@ code {
   margin-bottom: 57px;
 }
 
+.custom-divider::after {
+  border-color: white !important; /* Ensure high specificity */
+}
+
 #emailForm {
   display: table-caption;
   margin-left: 20%;
@@ -183,7 +190,9 @@ code {
 }
 
 #emailContainer {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 40vh;
   margin-bottom: 63px;
 }
@@ -311,6 +320,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 
 
 .weather-cards-container {
+  height: 280px;
   display: flex;
   overflow: scroll;
   flex-direction: column;

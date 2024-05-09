@@ -1,19 +1,25 @@
+
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { useState, useCallback } from 'react';
 import { addError } from "./coachSlice";
-import { useFormik } from 'formik'
-import * as yup from 'yup'
+import { useFormik } from 'formik';
+import * as yup from 'yup';
 import { useToasts } from 'react-toast-notifications';
 import Head from "../../components/Header";
-import { Button, Checkbox, Form, Image, Segment } from 'semantic-ui-react'
+import { Button, Form, Image, Segment } from 'semantic-ui-react';
 
 const Signup = () => {
-  const navigate = useNavigate()
-  const dispatch = useDispatch()
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const { addToast } = useToasts();
-  const [coach, setCoach] = useState(null)
-  const updateCoach = (coach) => setCoach(coach)
+
+  const [emailVisible, setEmailVisible] = useState(true);
+  const [nameVisible, setNameVisible] = useState(false);
+  const [teamVisible, setTeamVisible] = useState(false);
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
+  const [accessCodeVisible, setAccessCodeVisible] = useState(false);
 
   const handleNewError = useCallback((error) => {
     addToast(error, { appearance: 'error', autoDismiss: true });
@@ -39,7 +45,7 @@ const Signup = () => {
     },
     validationSchema: formSchema,
     onSubmit: async (values) => {
-      console.log("val", values)
+      console.log("val", values);
       if (values.password !== values.confirmpassword) {
         handleNewError("Password must match.");
         return;
@@ -63,9 +69,8 @@ const Signup = () => {
         .then(res => {
           if (res.ok) {
               res.json().then(resObj => {
-                updateCoach(resObj.coach)
-                localStorage.setItem("jwt_token", resObj.token)
-                localStorage.setItem("refresh_token", resObj.refresh_token)
+                // Update state or perform other actions upon successful registration
+                console.log(resObj);
               })
               navigate('/coachespage');
           } else {
@@ -86,95 +91,127 @@ const Signup = () => {
     const trimmedValue = e.target.value.trim();
     formik.handleChange(e);
     formik.setFieldValue(e.target.name, trimmedValue);
-
+  
+    // Toggle visibility of the next field upon input change
+    switch (e.target.name) {
+      case 'email':
+        setNameVisible(true);
+        break;
+      case 'name':
+        setTeamVisible(true);
+        break;
+      case 'team':
+        setPasswordVisible(true);
+        break;
+      case 'password':
+        setConfirmPasswordVisible(true);
+        break;
+      case 'confirmpassword':
+        setAccessCodeVisible(true);
+        break;
+      default:
+        break;
+    }
   };
+  
 
   return (
     <>
       <Head/>
-      
-      <div className='registerModal'>
-      <Segment style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-      <Form onSubmit={formik.handleSubmit}>
-        <Form.Field>
-          <label>Email</label>
-          <input className='signup'
-          id='email'
-          name="email"
-          onChange={handleInputChange}
-          value={formik.values.email}
-          placeholder="Enter Email"
-          required="true"
-        />
-        </Form.Field>
-        <Form.Field>
-          <label>Name</label>
-          <input className='signup'
-          id='name'
-          name="name"
-          onChange={handleInputChange}
-          value={formik.values.name}
-          placeholder="Enter Name"
-          required="true"
-        />
-        </Form.Field>
-        <Form.Field>
-          <label>Team</label>
-          <input className='signup'
-          id='team'
-          name="team"
-          onChange={handleInputChange}
-          value={formik.values.team}
-          placeholder="Enter team"
-        
-        />
-        </Form.Field>
-        <Form.Field>
-          <label>Password</label>
-          <input className='signup'
-          id='password'
-          name="password"
-          type="password"
-          onChange={handleInputChange}
-          value={formik.values.password}
-          placeholder="Enter Password"
-          required="true"
-        />
-        </Form.Field>
-        <Form.Field>
-          <label>Confirm Password</label>
-          <input className='signup'
-          id='confirmpassword'
-          name="confirmpassword"
-          type="password"
-          onChange={handleInputChange}
-          value={formik.values.confirmpassword}
-          placeholder="Confirm Password"
-          required="true"
-        />
-        </Form.Field>
-        <Form.Field>
-            <label>Access Code</label>
-            <input
-              id="accessCode"
-              name="accessCode"
-              onChange={handleInputChange}
-              value={formik.values.accessCode}
-              placeholder="Enter Access Code"
-              required="true"
-            />
-          </Form.Field>
-        <Button type='submit'>Submit</Button>
-        <Button type='submit' onClick={() => navigate('/')}>Cancel</Button>
-      </Form>
+      <div className='registerModal' >
+      <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Sign Up</h1>
+        <Segment style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', textAlign: 'center' }}>
+          <Form onSubmit={formik.handleSubmit}>
+          <Form.Field style={{ height: emailVisible ? 'auto' : '0px', opacity: emailVisible ? 1 : 0, transition: 'height 0.5s ease, opacity 0.5s ease', overflow: 'hidden', marginBottom: emailVisible ? '10px' : '0px' }}>
+             <Segment style={{ background: 'black', border: "2px solid white", borderRadius: "20px" }}>
+        <label style={{fontFamily: "Anta", color: "white"}}>Email</label>
+        <input className='signup'
+        id='email'
+        name="email"
+        onChange={handleInputChange}
+        value={formik.values.email}
+        placeholder="Enter Email"
+        required="true"
+      />
       </Segment>
-      <Image src='https://images.squarespace-cdn.com/content/v1/58b755102994cae144cde267/1488847126298-4N5ZM6OJDML7QTP15U2O/DropInZone_PeacePark2016_Blotto_07697.jpg?format=2500w' size='large' centered />
+      </Form.Field>
+      <Form.Field style={{ height: nameVisible? 'auto' : '0px', opacity: nameVisible? 1 : 0, transition: 'height 0.5s ease, opacity 0.5s ease', overflow: 'hidden', marginBottom: nameVisible? '10px' : '0px' }}>
+       <Segment style={{ background: 'black', border: "2px solid white", borderRadius: "20px" }}>
+        <label style={{fontFamily: "Anta", color: "white"}}>Name</label>
+        <input className='signup'
+        id='name'
+        name="name"
+        onChange={handleInputChange}
+        value={formik.values.name}
+        placeholder="Enter Name"
+        required="true"
+      />
+      </Segment>
+      </Form.Field>
+      <Form.Field style={{ height: teamVisible ? 'auto' : '0px', opacity: teamVisible ? 1 : 0, transition: 'height 0.5s ease, opacity 0.5s ease', overflow: 'hidden', marginBottom: teamVisible ? '10px' : '0px' }}>
+       <Segment style={{ background: 'black', border: "2px solid white", borderRadius: "20px" }}>
+        <label style={{fontFamily: "Anta", color: "white"}}>Team (Optional)</label>
+        <input className='signup'
+        id='team'
+        name="team"
+        onChange={handleInputChange}
+        value={formik.values.team}
+        placeholder="Enter team"
+        
+      />
+      </Segment>
+      </Form.Field>
+      <Form.Field style={{ height: teamVisible? 'auto' : '0px', opacity: teamVisible ? 1 : 0, transition: 'height 0.5s ease, opacity 0.5s ease', overflow: 'hidden', marginBottom: teamVisible ? '10px' : '0px' }}>
+       <Segment style={{ background: 'black', border: "2px solid white", borderRadius: "20px" }}>
+        <label style={{fontFamily: "Anta", color: "white"}}>Password</label>
+        <input className='signup'
+        id='password'
+        name="password"
+        type="password"
+        onChange={handleInputChange}
+        value={formik.values.password}
+        placeholder="Enter Password"
+        required="true"
+      />
+      </Segment>
+      </Form.Field>
+      <Form.Field style={{ height: confirmPasswordVisible ? 'auto' : '0px', opacity: confirmPasswordVisible ? 1 : 0, transition: 'height 0.5s ease, opacity 0.5s ease', overflow: 'hidden', marginBottom: confirmPasswordVisible ? '10px' : '0px' }}>
+       <Segment style={{ background: 'black', border: "2px solid white", borderRadius: "20px" }}>
+        <label style={{fontFamily: "Anta", color: "white"}}>Confirm Password</label>
+        <input className='signup'
+        id='confirmpassword'
+        name="confirmpassword"
+        type="password"
+        onChange={handleInputChange}
+        value={formik.values.confirmpassword}
+        placeholder="Confirm Password"
+        required="true"
+      />
+      </Segment>
+      </Form.Field>
+      <Form.Field style={{ height: accessCodeVisible ? 'auto' : '0px', opacity: accessCodeVisible ? 1 : 0, transition: 'height 0.5s ease, opacity 0.5s ease', overflow: 'hidden', marginBottom: accessCodeVisible ? '10px' : '0px' }}>
+       <Segment style={{ background: 'black', border: "2px solid white", borderRadius: "20px" }}>
+          <label style={{fontFamily: "Anta", color: "white"}}>Access Code</label>
+          <input
+            id="accessCode"
+            name="accessCode"
+            onChange={handleInputChange}
+            value={formik.values.accessCode}
+            placeholder="Enter Access Code"
+            required="true"
+          />
+          </Segment>
+        </Form.Field>
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginTop: '20px' }}>
+            <Button type='submit' style={{fontFamily: 'Anta'}}>Submit</Button>
+            <Button type='submit' style={{fontFamily: 'Anta'}} onClick={() => navigate('/')}>Cancel</Button>
+            </div>
+          </Form>
+        </Segment>
+        <Image src='https://images.squarespace-cdn.com/content/v1/58b755102994cae144cde267/1488847126298-4N5ZM6OJDML7QTP15U2O/DropInZone_PeacePark2016_Blotto_07697.jpg?format=2500w' size='large' centered />
       </div>
-      
-      </>
+    </>
   );
-
 }
-
 
 export default Signup;
