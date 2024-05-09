@@ -285,7 +285,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -295,7 +295,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 }
 
 .ui.inverted.vertical.footer.segment {
-  position: fixed
+  /* position: fixed */
 }
 
 .transform-on-load {
