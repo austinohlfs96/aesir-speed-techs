@@ -12,7 +12,9 @@ const Contact = () => {
       <div className='contactModal'>
       <Grid.Column width={12}>
       <Segment id="emailContainer" centered>
-        <h1>Contact Form</h1>
+        <h1 style={{fontFamily: "Anta"}}>Contact Form</h1>
+        <p style={{fontFamily: "Anta", textAlign: 'center'}}>If you are interested in our services or have any questions, comments, or concerns about our services, please feel free to contact us.</p>
+            <p style={{fontFamily: "Anta", textAlign: 'center'}}>Our team will be happy to assist you!</p>
         <EmailForm/>
       </Segment>
       </Grid.Column>

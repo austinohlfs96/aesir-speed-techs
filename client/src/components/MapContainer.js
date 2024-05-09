@@ -25,13 +25,10 @@ const MapContainer = ({ onLocationClick }) => {
   };
 
   const handleMapClick = async (event) => {
-    console.log("test",event)
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
     setClickedLatLng({ lat, lng });
-    console.log("test2", clickedLatLng)
-    // console.log(event.lat)
-    // console.log('lng', lng)
+    console.log("clickedLatLng", clickedLatLng)
     
     // Fetch location information using Google Maps Geocoding API
     const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=AIzaSyAphlaQwuL0msVjGt04wdLmHZRCy32XXxs`);
@@ -43,11 +40,19 @@ const MapContainer = ({ onLocationClick }) => {
       // Set the location name based on the extracted components
       console.log('location', location); 
       const newLocationName = `${component1.long_name}, ${component3.long_name}`;
+      // const newLocationName = location.geometry.location
       setLocationName(newLocationName);
       onLocationClick(newLocationName);
       console.log("onlocationclick", newLocationName)
       // Log the new location name directly
     }
+    // if (data.results && data.results.length > 0) {
+    //   const location = data.results[0];
+    //   const locationName = location.formatted_address; // Extract location name from formatted_address field
+    //   const locationLatLng = location.geometry.location; // Extract location's latitude and longitude
+    //   setLocationName(locationName);
+    //   onLocationClick(`${locationLatLng.lat},${locationLatLng.lng}`); 
+    // }
   };
   
 

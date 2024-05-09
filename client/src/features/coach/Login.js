@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useDispatch } from "react-redux";
 import { setCurrentCoach, addError } from "./coachSlice";
 import { useFormik } from "formik";
@@ -12,6 +12,7 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { addToast } = useToasts();
+  const [isWideScreen, setIsWideScreen] = useState(false);
   const formSchema = yup.object().shape({
     email: yup.string().required("Please enter an email."),
     password: yup.string().required("Please enter a password.")
@@ -59,16 +60,29 @@ const Login = () => {
     },
   });
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 768);
+    };
+
+    // Call handleResize when the component mounts and when the window resizes
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
    <>
       <Head />
       <div className='loginModal'>
-      <Segment placeholder style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
+      <Segment placeholder style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' }}>
         <Grid columns={2} relaxed='very' stackable>
           <Grid.Column>
-            <Form onSubmit={formik.handleSubmit} id='formikLogin'>
+            <Form style={{textAlign: 'center'}} onSubmit={formik.handleSubmit} id='formikLogin'>
               <Form.Input
-                label="Email"
+                label={<label style={{ fontFamily: "Anta", color: "white" }}>Email</label>}
                 id='email'
                 className='loginInput'
                 type='text'
@@ -77,14 +91,14 @@ const Login = () => {
                 placeholder="Enter Email"
               />
               <Form.Input
-                label="Password"
+                label={<label style={{ fontFamily: "Anta", color: "white" }}>Pasword</label>}
                 id='password'
                 className='loginInput'
                 type='password' onChange={formik.handleChange}
                 value={formik.values.password}
                 placeholder="Enter Password"
               />
-              <Button content='Login' type="submit" primary />
+              <Button content='Login' type="submit"  style={{background: 'red', fontFamily: 'Anta', color: 'white'}} />
             </Form>
           </Grid.Column>
 
@@ -93,7 +107,8 @@ const Login = () => {
           </Grid.Column>
         </Grid>
 
-        <Divider vertical>Or</Divider>
+        {isWideScreen && <Divider vertical className="custom-divider" style={{ fontFamily: 'Anta', color: 'white'}}>Or</Divider>}
+
       </Segment>
       <div id="loginImage">
       <Image src='https://stokedrideshop.com/cdn/shop/articles/Ayumu_Hirano.jpg?v=1659564082' size='large' centered margin-bottom="57px"/>
