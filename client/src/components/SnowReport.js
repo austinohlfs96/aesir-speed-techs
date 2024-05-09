@@ -4,7 +4,7 @@ import { FaSun, FaCloud, FaCloudSun, FaCloudRain, FaSnowflake, FaWind, FaColumns
 import axios from "axios";
 import MapContainer from "./MapContainer";
 import WeatherCard from "./WeatherCard";
-import { Bar } from 'react-chartjs-2';
+import { Bar} from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
@@ -68,6 +68,7 @@ const SnowReport = () => {
     if (snowData && snowData.days) {
       const labels = [];
       const temperatureDifferences = [];
+
       snowData.days.slice(0, daysLimit).forEach(dayData => {
         labels.push(dayData.datetime);
         const difference = (dayData.tempmax || dayData.temp) - (dayData.tempmin || dayData.temp);
@@ -241,7 +242,7 @@ const SnowReport = () => {
         <Bar
         
   data={{
-    labels: formattedLabels, // Use the datetime as labels
+    labels: dayData.hours.map(hour => hour.datetime), // Use the datetime as labels
     datasets: [
       {
         label: 'Hourly Temperature',
@@ -285,7 +286,7 @@ const SnowReport = () => {
   options={{
     scales: {
       y: {
-        type: 'linear',
+        
         beginAtZero: true
       },
     }
