@@ -251,8 +251,8 @@ const LandingPage = () => {
           </div>
           </Segment>
 
-
-          {/* <SnowReport/> */}
+          
+          <SnowReport/>
 
 
           {/* <div>
