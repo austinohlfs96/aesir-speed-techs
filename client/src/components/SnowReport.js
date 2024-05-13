@@ -114,23 +114,13 @@ const SnowReport = () => {
 
   return (
     <div>
-      <Segment className="snow-conditions-segment" style={{borderRadius: '0px', background: 'rgb(34, 40, 49)', marginTop: '100px'}}>
+      <Segment className="snow-conditions-segment" style={{borderRadius: '0px', background: 'rgb(34, 40, 49)', marginTop: '10px', marginBottom: '100px'}}>
         <div style={{display: "flex", flexDirection: 'column', alignItems: 'center'}}>
         <h2 style={{fontFamily: 'Anta', color: 'white', marginBottom: '0px'}}>Check</h2>
         <h2 style={{fontFamily: 'Anta', color: 'white', marginTop: '0px'}}>Snow Conditions</h2>
         <p style={{fontFamily: 'Anta', color: 'white', textAlign: 'center', marginBlock: '20px'}}>Search a location to see temeratures and conditions and use the wax key to wax accordingly</p>
         </div>
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-        <Segment style={{width: '500px', textAlign: 'center'}}>
-          <h2>Recommended Wax Key</h2>
-          <h5 style={{background: 'rgb(251 238 71)'}}>Swix HS 10</h5>
-          <h5 style={{background: 'rgb(228 70 59)'}}>Swix HS 8</h5>
-          <h5 style={{background: 'rgb(186 110 158)'}}>Swix HS 7</h5>
-          <h5 style={{background: 'rgb(111 172 206)'}}>Swix HS 6</h5>
-          <h5 style={{background: 'rgb(117 173 115)'}}>Swix HS 5</h5>
-
-        </Segment>
-        </div>
+       
         
     
         {/* Search bar */}
@@ -146,6 +136,18 @@ const SnowReport = () => {
           }}
         /> */}
         <MapContainer onLocationClick={handleLocationClick}/>
+        
+        <Segment style={{width: 'auto', textAlign: 'center'}}>
+          <h2>Recommended Wax Key</h2>
+          <h5 style={{background: 'rgb(251 238 71)'}}>Swix HS 10</h5>
+          <h5 style={{background: 'rgb(228 70 59)'}}>Swix HS 8</h5>
+          <h5 style={{background: 'rgb(186 110 158)'}}>Swix HS 7</h5>
+          <h5 style={{background: 'rgb(111 172 206)'}}>Swix HS 6</h5>
+          <h5 style={{background: 'rgb(117 173 115)'}}>Swix HS 5</h5>
+
+        </Segment>
+       
+
         {/* Days limit selector */}
         <div>
         <Dropdown
@@ -164,7 +166,7 @@ const SnowReport = () => {
           //   <WeatherCard data={snowData}/>
           // </div>
           
-          <div className="weather-cards-container" style={{ overflow: "auto", height: '280px', marginTop: '20px', scrollbarWidth: 'none', '-ms-overflow-style': 'none' }}>
+          <div className="weather-cards-container" style={{ overflow: "auto", height: '280px', marginTop: '20px', marginBottom: "40px", scrollbarWidth: 'none', '-ms-overflow-style': 'none' }}>
             {snowData.days.slice(0, daysLimit).map((dayData, index) => {
               // Convert the timestamp to a Date object
               const timestamp = new Date(dayData.datetime);
@@ -243,7 +245,7 @@ const SnowReport = () => {
                   {showHourlyTemperature && snowData && snowData.days && (
     <div style={{ display: "flex", justifyContent: 'center', marginTop: '20px' }}>
       <div>
-        <h3>Daily Temperature Chart</h3>
+        <h3>Hourly Temp: {dayOfWeek}</h3>
         
         <Bar
         
@@ -256,17 +258,17 @@ const SnowReport = () => {
         backgroundColor: dayData.hours.map(hour => {
           // Set different background colors based on temperature
           if (hour.temp >= 35) {
-            return 'rgba(251, 238, 71, 0.2)'; // Red for high temperatures
+            return 'rgba(251, 238, 71, 0.5)'; // Red for high temperatures
           } else if (hour.temp >= 25) {
-            return 'rgba(228, 70, 59, 0.2)'; // Orange for warm temperatures
+            return 'rgba(228, 70, 59, 0.5)'; // Orange for warm temperatures
           } else if (hour.temp >= 18) {
-            return 'rgba(186, 110, 158, 0.2)'; // Yellow for mild temperatures
+            return 'rgba(186, 110, 158, 0.5)'; // Yellow for mild temperatures
           } else if (hour.temp >= 10) {
-            return 'rgba(111, 172, 206, 0.2)'; // Green for cool temperatures
+            return 'rgba(111, 172, 206, 0.5)'; // Green for cool temperatures
           } else if (hour.temp >= 3) {
-            return 'rgba(117, 173, 115, 0.2)'; // Blue for cold temperatures
+            return 'rgba(117, 173, 115, 0.5)'; // Blue for cold temperatures
           } else {
-            return 'rgba(117, 173, 115, 0.2)'; // Purple for very cold temperatures
+            return 'rgba(117, 173, 115, 0.5)'; // Purple for very cold temperatures
           }
         }),
         borderColor: dayData.hours.map(hour => {

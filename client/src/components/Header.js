@@ -119,7 +119,7 @@ function Head() {
       </Header>
       <Header id='headerButtons' as='h3' textAlign='center'>
       {!isMobile && ( // Conditionally render buttons if not on mobile
-        <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: "0px" }}>
+        <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: "0px", backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px' }}>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/')}>Home</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>

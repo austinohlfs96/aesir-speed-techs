@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import AthleteSpotlight from "./AthleteSpotlight";
 import Gallery from "./Gallery"
 import Shop from "./Shop";
+import SnowConditions from "./ConditionChecker";
 
 function Router() {
   const routes = (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/athletespotlight" element={<AthleteSpotlight/>}/>,
       <Route path='/gallery' element={<Gallery/>}/>,
       <Route path='/shop' element={<Shop/>}/>,
+      <Route path='/snow-conditions' element={<SnowConditions/>}/>
     </>
   )
   return (

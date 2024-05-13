@@ -89,19 +89,8 @@ const MapContainer = ({ onLocationClick }) => {
       googleMapsApiKey="AIzaSyAphlaQwuL0msVjGt04wdLmHZRCy32XXxs"
       libraries={['places']}
     >
-      <GoogleMap
-        mapContainerStyle={mapStyles}
-        zoom={13}
-        center={clickedLatLng || defaultCenter}
-        onClick={handleMapClick}
-        onLoad={onLoad}
-      >
-        {clickedLatLng && (
-          <Marker
-            position={{ lat: clickedLatLng.lat, lng: clickedLatLng.lng }}
-          />
-        )}
-        <StandaloneSearchBox
+      <div style={{display: 'flex', alignItems: 'center', flrexDirection: "column"}}>
+       <StandaloneSearchBox
           onLoad={onSearchBoxLoad}
           onPlacesChanged={onPlacesChanged}
         >
@@ -114,15 +103,30 @@ const MapContainer = ({ onLocationClick }) => {
               width: `240px`,
               height: `32px`,
               marginTop: `10px`,
-              marginLeft: `200px`,
+              // marginLeft: `200px`,
               borderRadius: `3px`,
               boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
               fontSize: `14px`,
               outline: `none`,
               textOverflow: `ellipses`,
+              marginBottom: '10px'
             }}
           />
         </StandaloneSearchBox>
+        </div>
+      <GoogleMap
+        mapContainerStyle={mapStyles}
+        zoom={13}
+        center={clickedLatLng || defaultCenter}
+        onClick={handleMapClick}
+        onLoad={onLoad}
+      >
+        {clickedLatLng && (
+          <Marker
+            position={{ lat: clickedLatLng.lat, lng: clickedLatLng.lng }}
+          />
+        )}
+       
       </GoogleMap>
       {clickedLatLng && (
         <div style={{color: 'white'}}>
