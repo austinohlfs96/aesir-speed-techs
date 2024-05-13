@@ -35,10 +35,10 @@ const Services = () => {
           
           <Item.Group>
             {services.map((service) => (
-              <Segment key={service.id} className="service-item" style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px' }}>
+              <Segment key={service.id} className="service-item" style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Image src={service.image} size='medium' floated='left' />
                 <Item>
-                  <Item.Content>
+                  <Item.Content style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
                     <h1 id={`service-item-${service.id}`} style={{fontFamily: "Anta", marginBottom: '10px'}}>{service.name}</h1>
                     <Item.Meta>
                       <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price:</span> <span>{service.price}</span>
