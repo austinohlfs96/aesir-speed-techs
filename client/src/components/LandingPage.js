@@ -252,42 +252,34 @@ const LandingPage = () => {
           </Segment>
 
           
-          <SnowReport/>
+          {/* <SnowReport/> */}
 
 
-          {/* <div>
-  <Segment className="snow-conditions-segment">
-    <h2>Snow Conditions</h2>
-    {snowData && snowData.timelines && snowData.timelines.daily && (
-      <div>
-        {snowData.timelines.daily.map((dayData, index) => {
-          // Convert the timestamp to a Date object
-          const timestamp = new Date(dayData.time);
-          console.log(timestamp)
-          // Get the day of the week
-          const dayOfWeek = timestamp.toLocaleDateString(undefined, { weekday: 'long' });
-          console.log(dayOfWeek)
-          return (
-            <div key={index}>
-              <p>Location: {snowData.location.name}</p>
-              <p>Temp High: {dayData.values.temperatureMax}</p>
-              <p>Temp Average: {dayData.values.temperatureAvg}</p>
-              <p>Temp Low: {dayData.values.temperatureMin}</p>
-              <p>{dayOfWeek}</p>
-            </div>
-          );
-        })}
-      </div>
-    )}
+          <div>
+  <Segment className="topical-segment" style={{ 
+    background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', // Add a background image with gradient overlay
+    backgroundSize: 'cover', // Ensure the background image covers the entire segment
+    borderRadius: '0px', // Adjust border radius if needed
+    padding: '50px', // Adjust padding for content spacing
+    color: 'white', // Set text color to white
+    textAlign: 'center', // Center align text
+    fontSize: '2vw', // Adjust font size
+    fontFamily: 'Anta', // Specify font family
+    marginBottom: "0px",
+    marginTop: '100px'
+  }}>
+    <h1 style={{ fontSize: '5vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>DON'T KNOW WHAT WAX TO USE?</h1>
+             <p style={{ fontSize: '5vw'}}>Check out our snow conditions and wax recommendations</p>
+    <button onClick={() => navigate("/snow-conditions")} style={{fontSize: "150%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Snow Conditions</button>
   </Segment>
-</div> */}
+</div>
 
           
           <Segment className="slide-in" style={{ 
     background: 'rgb(117, 102, 102)',
     borderRadius: '0px', // Added border radius
     // padding: '20px', // Added padding for better spacing
-    marginTop: '200px', // Adjusted margin
+    marginTop: '150px', // Adjusted margin
     marginBottom: '0px',
     height: 'auto',
     display: 'flex', // Added flex display for image and text alignment
@@ -303,10 +295,6 @@ const LandingPage = () => {
     className="dynamic-image"
     style={{ marginBottom: '20px' }}
   />
-
-  {/* <h1 style={{ position: 'absolute', top: '5%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'black', fontFamily: "Anta", fontWeight: 'bold', textAlign: 'center' }}>
-  MISSION
-  </h1> */}
 </div>
 
     
@@ -324,7 +312,7 @@ const LandingPage = () => {
         borderRadius: '0px',
         // marginRight: '20px',
         // marginLeft: '20px',
-        marginTop: "50px",
+        marginTop: "75px",
         height: 'auto'
          }}>
         
@@ -340,7 +328,7 @@ const LandingPage = () => {
             Our Crew
             </h1>
           </div>
-        <p style={{fontSize: "2vw", textAlign: "center", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
+        <p style={{fontSize: "2.2vw", textAlign: "center", color: "white"}}>Our success at Æsir Speed Techs is driven by the expertise and passion of our professional employees and technicians. With a dedicated team of skilled individuals who share a genuine love for winter sports, we take pride in delivering unparalleled tuning experiences. Our technicians are not just experts in their field; they are enthusiasts who understand the intricacies of competitive skiing and snowboarding.
         </p>
       </Segment>
      

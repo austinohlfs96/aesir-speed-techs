@@ -220,11 +220,12 @@ const AthleteSpotlight = () => {
   borderRadius: '0px',
   marginBottom: '60px',
   margin: '20px',
+  marginBottom: '120px',
   display: 'flex', // Make the segment a flex container
   alignItems: 'center', // Align items vertically
   flexDirection: 'column', // Stack items vertically
 }}>
-  <div style={{ marginBottom: '20px', display:'flex', flexDirection:'column', alignItems: 'center' }}> {/* Add margin bottom for spacing */}
+  <div style={{ marginBottom: '125px', display:'flex', flexDirection:'column', alignItems: 'center' }}> {/* Add margin bottom for spacing */}
   <Image src='https://www.denverpost.com/wp-content/uploads/2022/01/GettyImages-1306573888.jpg?w=1024' size='small' floated='left' />
         <h1 style={{color: "white"}}>Zoe Kalapos <a href="https://www.instagram.com/zoe_kalapos/" target="_blank" rel="noopener noreferrer">
       <Icon name='instagram' size='small' inverted link />

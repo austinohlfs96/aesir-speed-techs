@@ -276,7 +276,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   opacity: 0;
   transition: opacity 1.0s ease;
   margin-top: 35px;
-  margin-bottom: 75px;
+  margin-bottom: 125px;
 }
 
 .burtonPipe.visible {
@@ -295,7 +295,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
 }
 
 .ui.inverted.vertical.footer.segment {
-  /* position: fixed */
+  position: fixed
  
 }
 
