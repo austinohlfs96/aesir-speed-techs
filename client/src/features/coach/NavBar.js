@@ -1,337 +1,249 @@
-// import {useState, useEffect} from "react"
-// import { useLocation } from 'react-router-dom';
-// import { Grid, Menu, Segment } from 'semantic-ui-react'
-// import EditCoachForm from './EditCoachForm'
-// import AddAthleteForm from "../athlete/AddAthleteForm"
-// import AthleteCards from "../athlete/AthleteCards"
-// import BookAppointment from "../appointment/BookAppiontment";
-// import CoachAppointments from "../appointment/CoachAppointments";
-
-// const MenuExampleTabularOnLeft = () => {
-//   const location = useLocation();
-//   const [menuState, setMenuState] = useState({activeItem: 'athletes'})
-
-//   const handleItemClick = (e, { name }) => setMenuState({ activeItem: name })
-
-//   const { activeItem } = menuState
-
-//   useEffect(() => {
-//     if (location.pathname === '/editathlete') {
-//       setMenuState({ activeItem: 'add-athlete' });
-//     } else {
-//       setMenuState({ activeItem: 'athletes' });
-//     }
-//   }, [location.pathname]);
-
-//     if (activeItem === 'book-appointment') {
-//       return (
-//         <div style={{ marginTop: '20px', marginBottom: "104px" }}>
-//         <Grid>
-//         <Grid.Column width={4}>
-//         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)'}}>
-//           <Menu.Item
-//               name='athletes'
-//               active={activeItem === 'athletes'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='book-appointment'
-//               active={activeItem === 'book-appointment'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='view-appointments'
-//               active={activeItem === 'view-appointments'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='add-athlete'
-//               active={activeItem === 'add-athlete'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='edit-account'
-//               active={activeItem === 'edit-account'}
-//               onClick={handleItemClick}
-//             />
-//           </Menu>
-          
-//         </Grid.Column>
-
-//         <Grid.Column stretched width={12}>
-//           <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
-//             <BookAppointment handleItemClick={handleItemClick}/>
-//           </Segment>
-//         </Grid.Column>
-//       </Grid>
-//         </div>
-//     )}
-
-//     if (activeItem === 'view-appointments') {
-//       return (
-//         <div style={{ marginTop: '20px', marginBottom: "30px" }}>
-//         <Grid>
-//         <Grid.Column width={4}>
-//         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-//           <Menu.Item
-//               name='athletes'
-//               active={activeItem === 'athletes'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='book-appointment'
-//               active={activeItem === 'book-appointment'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='view-appointments'
-//               active={activeItem === 'view-appointments'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='add-athlete'
-//               active={activeItem === 'add-athlete'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='edit-account'
-//               active={activeItem === 'edit-account'}
-//               onClick={handleItemClick}
-//             />
-//           </Menu>
-          
-//         </Grid.Column>
-
-//         <Grid.Column stretched width={12}>
-//         <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
-//           <CoachAppointments handleItemClick={handleItemClick}/>
-//           </Segment>
-//         </Grid.Column>
-//       </Grid>
-//         </div>
-//     )}
-
-//     if (activeItem === 'add-athlete') {
-//       return (
-//         <div style={{ marginTop: '20px', marginBottom: "30px" }}>
-//         <Grid>
-//         <Grid.Column width={4}>
-//         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-//           <Menu.Item
-//               name='athletes'
-//               active={activeItem === 'athletes'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='book-appointment'
-//               active={activeItem === 'book-appointment'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='view-appointments'
-//               active={activeItem === 'view-appointments'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='add-athlete'
-//               active={activeItem === 'add-athlete'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='edit-account'
-//               active={activeItem === 'edit-account'}
-//               onClick={handleItemClick}
-//             />
-//           </Menu>
-          
-//         </Grid.Column>
-//         <Grid.Column width={12}>
-//         <Segment style={{ marginTop: '-10vh', maxWidth: '664px'}}>
-//           <AddAthleteForm handleItemClick={handleItemClick} />
-//           </Segment>
-//         </Grid.Column>  
-//       </Grid>
-//         </div>
-//     )}
-
-//     if (activeItem === 'edit-account') {
-//       return (
-//         <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-//         <Grid>
-//         <Grid.Column width={4}>
-//         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-//           <Menu.Item
-//               name='athletes'
-//               active={activeItem === 'athletes'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='book-appointment'
-//               active={activeItem === 'book-appointment'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='view-appointments'
-//               active={activeItem === 'view-appointments'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='add-athlete'
-//               active={activeItem === 'add-athlete'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='edit-account'
-//               active={activeItem === 'edit-account'}
-//               onClick={handleItemClick}
-//             />
-//           </Menu>
-          
-//         </Grid.Column >
-//         <Grid.Column width={12}>
-//         <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
-//          <EditCoachForm handleItemClick={handleItemClick}/>
-//         </Segment>
-//         </Grid.Column>   
-//       </Grid>
-//         </div>
-//     )}
-
-//     return (
-//       <div style={{ marginTop: '20px', marginBottom: "30px" }}>
-//       <Grid>
-       
-//         <Grid.Column width={4}>
-          
-//           <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
-//           <Menu.Item
-//               name='athletes'
-//               active={activeItem === 'athletes'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='book-appointment'
-//               active={activeItem === 'book-appointment'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='view-appointments'
-//               active={activeItem === 'view-appointments'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='add-athlete'
-//               active={activeItem === 'add-athlete'}
-//               onClick={handleItemClick}
-//             />
-//             <Menu.Item
-//               name='edit-account'
-//               active={activeItem === 'edit-account'}
-//               onClick={handleItemClick}
-//             />
-//           </Menu>
-          
-          
-//         </Grid.Column>
-       
-//         <Grid.Column width={12}>
-//           <Segment style={{ marginTop: '-10vh', maxWidth: '664px'}}>
-//           <AthleteCards handleItemClick={handleItemClick}/>
-//           </Segment>
-//          </Grid.Column>
-//       </Grid>
-//       </div>
-//     )
-//   }
-
-
-
-// export default MenuExampleTabularOnLeft;
-
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { Grid, Menu, Segment, Responsive } from "semantic-ui-react";
-import EditCoachForm from "./EditCoachForm";
-import AddAthleteForm from "../athlete/AddAthleteForm";
-import AthleteCards from "../athlete/AthleteCards";
+import {useState, useEffect} from "react"
+import { useLocation } from 'react-router-dom';
+import { Grid, Menu, Segment } from 'semantic-ui-react'
+import EditCoachForm from './EditCoachForm'
+import AddAthleteForm from "../athlete/AddAthleteForm"
+import AthleteCards from "../athlete/AthleteCards"
 import BookAppointment from "../appointment/BookAppiontment";
 import CoachAppointments from "../appointment/CoachAppointments";
 
 const MenuExampleTabularOnLeft = () => {
   const location = useLocation();
-  const [menuState, setMenuState] = useState({ activeItem: "athletes" });
+  const [menuState, setMenuState] = useState({activeItem: 'athletes'})
 
-  const handleItemClick = (e, { name }) => setMenuState({ activeItem: name });
+  const handleItemClick = (e, { name }) => setMenuState({ activeItem: name })
 
-  const { activeItem } = menuState;
+  const { activeItem } = menuState
 
   useEffect(() => {
-    if (location.pathname === "/editathlete") {
-      setMenuState({ activeItem: "add-athlete" });
+    if (location.pathname === '/editathlete') {
+      setMenuState({ activeItem: 'add-athlete' });
     } else {
-      setMenuState({ activeItem: "athletes" });
+      setMenuState({ activeItem: 'athletes' });
     }
   }, [location.pathname]);
 
-  return (
-    <Responsive as={Segment} maxWidth={Responsive.onlyMobile.maxWidth}>
-      <MenuExampleMobile handleItemClick={handleItemClick} activeItem={activeItem} />
-    </Responsive>
-  );
-
-  function MenuExampleMobile({ handleItemClick, activeItem }) {
-    return (
-      <Grid>
-        <Grid.Column>
-          <Menu fluid vertical tabular>
-            <Menu.Item
-              name="athletes"
-              active={activeItem === "athletes"}
+    if (activeItem === 'book-appointment') {
+      return (
+        <div style={{ marginTop: '20px', marginBottom: "104px" }}>
+        <Grid>
+        <Grid.Column width={4}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center'}}>
+          <Menu.Item
+              name='athletes'
+              active={activeItem === 'athletes'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name="book-appointment"
-              active={activeItem === "book-appointment"}
+              name='book-appointment'
+              active={activeItem === 'book-appointment'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name="view-appointments"
-              active={activeItem === "view-appointments"}
+              name='view-appointments'
+              active={activeItem === 'view-appointments'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name="add-athlete"
-              active={activeItem === "add-athlete"}
+              name='add-athlete'
+              active={activeItem === 'add-athlete'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name="edit-account"
-              active={activeItem === "edit-account"}
+              name='edit-account'
+              active={activeItem === 'edit-account'}
               onClick={handleItemClick}
             />
           </Menu>
+          
         </Grid.Column>
-        <Grid.Column stretched>
-          {renderContent(activeItem)}
+
+        <Grid.Column stretched width={12}>
+          <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
+            <BookAppointment handleItemClick={handleItemClick}/>
+          </Segment>
         </Grid.Column>
       </Grid>
-    );
+        </div>
+    )}
+
+    if (activeItem === 'view-appointments') {
+      return (
+        <div style={{ marginTop: '20px', marginBottom: "30px" }}>
+        <Grid>
+        <Grid.Column width={4}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
+          <Menu.Item
+              name='athletes'
+              active={activeItem === 'athletes'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='book-appointment'
+              active={activeItem === 'book-appointment'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='view-appointments'
+              active={activeItem === 'view-appointments'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='add-athlete'
+              active={activeItem === 'add-athlete'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='edit-account'
+              active={activeItem === 'edit-account'}
+              onClick={handleItemClick}
+            />
+          </Menu>
+          
+        </Grid.Column>
+
+        <Grid.Column stretched width={12}>
+        <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
+          <CoachAppointments handleItemClick={handleItemClick}/>
+          </Segment>
+        </Grid.Column>
+      </Grid>
+        </div>
+    )}
+
+    if (activeItem === 'add-athlete') {
+      return (
+        <div style={{ marginTop: '20px', marginBottom: "30px" }}>
+        <Grid>
+        <Grid.Column width={4}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
+          <Menu.Item
+              name='athletes'
+              active={activeItem === 'athletes'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='book-appointment'
+              active={activeItem === 'book-appointment'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='view-appointments'
+              active={activeItem === 'view-appointments'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='add-athlete'
+              active={activeItem === 'add-athlete'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='edit-account'
+              active={activeItem === 'edit-account'}
+              onClick={handleItemClick}
+            />
+          </Menu>
+          
+        </Grid.Column>
+        <Grid.Column width={12}>
+        <Segment style={{ marginTop: '-10vh', maxWidth: '664px'}}>
+          <AddAthleteForm handleItemClick={handleItemClick} />
+          </Segment>
+        </Grid.Column>  
+      </Grid>
+        </div>
+    )}
+
+    if (activeItem === 'edit-account') {
+      return (
+        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <Grid>
+        <Grid.Column width={4}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
+          <Menu.Item
+              name='athletes'
+              active={activeItem === 'athletes'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='book-appointment'
+              active={activeItem === 'book-appointment'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='view-appointments'
+              active={activeItem === 'view-appointments'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='add-athlete'
+              active={activeItem === 'add-athlete'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='edit-account'
+              active={activeItem === 'edit-account'}
+              onClick={handleItemClick}
+            />
+          </Menu>
+          
+        </Grid.Column >
+        <Grid.Column width={12}>
+        <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
+         <EditCoachForm handleItemClick={handleItemClick}/>
+        </Segment>
+        </Grid.Column>   
+      </Grid>
+        </div>
+    )}
+
+    return (
+      <div style={{ marginTop: '20px', marginBottom: "30px" }}>
+      <Grid>
+       
+        <Grid.Column width={4}>
+          
+          <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)' }}>
+          <Menu.Item
+              name='athletes'
+              active={activeItem === 'athletes'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='book-appointment'
+              active={activeItem === 'book-appointment'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='view-appointments'
+              active={activeItem === 'view-appointments'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='add-athlete'
+              active={activeItem === 'add-athlete'}
+              onClick={handleItemClick}
+            />
+            <Menu.Item
+              name='edit-account'
+              active={activeItem === 'edit-account'}
+              onClick={handleItemClick}
+            />
+          </Menu>
+          
+          
+        </Grid.Column>
+       
+        <Grid.Column width={12}>
+          <Segment style={{ marginTop: '-10vh', maxWidth: '664px'}}>
+          <AthleteCards handleItemClick={handleItemClick}/>
+          </Segment>
+         </Grid.Column>
+      </Grid>
+      </div>
+    )
   }
 
-  function renderContent(activeItem) {
-    switch (activeItem) {
-      case "book-appointment":
-        return <BookAppointment handleItemClick={handleItemClick} />;
-      case "view-appointments":
-        return <CoachAppointments handleItemClick={handleItemClick} />;
-      case "add-athlete":
-        return <AddAthleteForm handleItemClick={handleItemClick} />;
-      case "edit-account":
-        return <EditCoachForm handleItemClick={handleItemClick} />;
-      default:
-        return <AthleteCards handleItemClick={handleItemClick} />;
-    }
-  }
-};
+
 
 export default MenuExampleTabularOnLeft;
