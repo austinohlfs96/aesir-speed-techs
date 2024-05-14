@@ -59,7 +59,11 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
 
         <Grid.Column stretched width={12}>
-          <Segment style={{ marginTop: '-10vh', maxWidth: '664px' }}>
+          <Segment style={{ 
+            // marginTop: '-10vh',
+            // maxWidth: '664px' 
+            width: '122%'
+             }}>
             <BookAppointment handleItemClick={handleItemClick}/>
           </Segment>
         </Grid.Column>
