@@ -25,8 +25,8 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'book-services') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "104px" }}>
-        <Grid style={{width: '100%'}}>
+        <div style={{ display: 'flex', marginTop: '20px', marginBottom: "104px" }}>
+        {/* <Grid style={{width: '100%'}}> */}
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center'}}>
           <Menu.Item
@@ -67,7 +67,7 @@ const MenuExampleTabularOnLeft = () => {
             <BookAppointment handleItemClick={handleItemClick}/>
           </Segment>
           </Grid.Column>
-      </Grid>
+      {/* </Grid> */}
         </div>
     )}
 
@@ -203,8 +203,8 @@ const MenuExampleTabularOnLeft = () => {
     )}
 
     return (
-      <div style={{ marginTop: '20px', marginBottom: "30px" }}>
-      <Grid>
+      <div style={{ display: 'flex', marginTop: '20px', marginBottom: "30px" }}>
+      {/* <Grid> */}
        
         <Grid.Column width={4}>
           
@@ -244,7 +244,7 @@ const MenuExampleTabularOnLeft = () => {
           <AthleteCards handleItemClick={handleItemClick}/>
           </Segment>
           </Grid.Column>
-      </Grid>
+      {/* </Grid> */}
       </div>
     )
   }
