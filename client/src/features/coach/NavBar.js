@@ -26,7 +26,7 @@ const MenuExampleTabularOnLeft = () => {
     if (activeItem === 'book-services') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "104px" }}>
-        <Grid>
+        <Grid style={{width: '100%'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center'}}>
           <Menu.Item
@@ -62,7 +62,7 @@ const MenuExampleTabularOnLeft = () => {
           <Segment style={{ 
             // marginTop: '-10vh',
             // maxWidth: '664px' 
-            width: '95%'
+            width: '100%'
              }}>
             <BookAppointment handleItemClick={handleItemClick}/>
           </Segment>
@@ -107,7 +107,7 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
 
         <Grid.Column stretched width={12}>
-        <Segment style={{ width: '95%' }}>
+        <Segment style={{ width: '100%' }}>
           <h1>Appointments</h1>
           <CoachAppointments handleItemClick={handleItemClick}/>
           </Segment>
@@ -151,7 +151,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
         <Grid.Column width={12}>
-        <Segment style={{ width: '95%' }}>
+        <Segment style={{ width: '100%' }}>
           <AddAthleteForm handleItemClick={handleItemClick} />
           </Segment>
         </Grid.Column>  
@@ -194,7 +194,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column >
         <Grid.Column width={12}>
-        <Segment style={{ width: '95%' }}>
+        <Segment style={{ width: '100%' }}>
          <EditCoachForm handleItemClick={handleItemClick}/>
         </Segment>
         </Grid.Column>   
@@ -240,7 +240,7 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
        
         <Grid.Column width={12}>
-          <Segment style={{ width: '95%' }}>
+          <Segment style={{ width: '100%' }}>
           <AthleteCards handleItemClick={handleItemClick}/>
           </Segment>
           </Grid.Column>
