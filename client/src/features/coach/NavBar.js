@@ -35,12 +35,12 @@ const MenuExampleTabularOnLeft = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='book-appointment'
+              name='Book Services'
               active={activeItem === 'book-appointment'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='view-appointments'
+              name='View Past Tunes'
               active={activeItem === 'view-appointments'}
               onClick={handleItemClick}
             />
@@ -107,7 +107,8 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
 
         <Grid.Column stretched width={12}>
-        <Segment style={{ }}>
+        <Segment style={{ width: '122%' }}>
+          <h1>Appointments</h1>
           <CoachAppointments handleItemClick={handleItemClick}/>
           </Segment>
         </Grid.Column>
@@ -150,7 +151,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
         <Grid.Column width={12}>
-        <Segment style={{ }}>
+        <Segment style={{ width: '122%' }}>
           <AddAthleteForm handleItemClick={handleItemClick} />
           </Segment>
         </Grid.Column>  
@@ -193,7 +194,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column >
         <Grid.Column width={12}>
-        <Segment style={{  }}>
+        <Segment style={{ width: '122%' }}>
          <EditCoachForm handleItemClick={handleItemClick}/>
         </Segment>
         </Grid.Column>   
@@ -239,7 +240,7 @@ const MenuExampleTabularOnLeft = () => {
         </Grid.Column>
        
         <Grid.Column width={12}>
-          <Segment style={{}}>
+          <Segment style={{ width: '122%' }}>
           <AthleteCards handleItemClick={handleItemClick}/>
           </Segment>
          </Grid.Column>
