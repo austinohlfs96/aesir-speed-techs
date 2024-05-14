@@ -23,7 +23,7 @@ const MenuExampleTabularOnLeft = () => {
     }
   }, [location.pathname]);
 
-    if (activeItem === 'book-appointment') {
+    if (activeItem === 'book-services') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "104px" }}>
         <Grid>
@@ -35,13 +35,13 @@ const MenuExampleTabularOnLeft = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='Book Services'
-              active={activeItem === 'book-appointment'}
+              name='book-services'
+              active={activeItem === 'book-services'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='View Past Tunes'
-              active={activeItem === 'view-appointments'}
+              name='view-past-tunes'
+              active={activeItem === 'view-past-tunes'}
               onClick={handleItemClick}
             />
             <Menu.Item
@@ -58,7 +58,7 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
 
-        <div>
+        <Grid.Column width={12}>
           <Segment style={{ 
             // marginTop: '-10vh',
             // maxWidth: '664px' 
@@ -66,12 +66,12 @@ const MenuExampleTabularOnLeft = () => {
              }}>
             <BookAppointment handleItemClick={handleItemClick}/>
           </Segment>
-        </div>
+          </Grid.Column>
       </Grid>
         </div>
     )}
 
-    if (activeItem === 'view-appointments') {
+    if (activeItem === 'view-past-tunes') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "30px" }}>
         <Grid>
@@ -83,13 +83,13 @@ const MenuExampleTabularOnLeft = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='Book Services'
-              active={activeItem === 'book-appointment'}
+              name='book-services'
+              active={activeItem === 'book-services'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='View Past Tunes'
-              active={activeItem === 'view-appointments'}
+              name='view-past-tunes'
+              active={activeItem === 'view-past-tunes'}
               onClick={handleItemClick}
             />
             <Menu.Item
@@ -128,13 +128,13 @@ const MenuExampleTabularOnLeft = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='Book Services'
-              active={activeItem === 'book-appointment'}
+              name='book-services'
+              active={activeItem === 'book-services'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='View Past Tunes'
-              active={activeItem === 'view-appointments'}
+              name='view-past-tunes'
+              active={activeItem === 'view-past-tunes'}
               onClick={handleItemClick}
             />
             <Menu.Item
@@ -171,13 +171,13 @@ const MenuExampleTabularOnLeft = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='Book Services'
-              active={activeItem === 'book-appointment'}
+              name='book-services'
+              active={activeItem === 'book-services'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='View Past Services'
-              active={activeItem === 'view-appointments'}
+              name='view-past-tunes'
+              active={activeItem === 'view-past-tunes'}
               onClick={handleItemClick}
             />
             <Menu.Item
@@ -215,13 +215,13 @@ const MenuExampleTabularOnLeft = () => {
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='Book Services'
-              active={activeItem === 'book-appointment'}
+              name='book-services'
+              active={activeItem === 'book-services'}
               onClick={handleItemClick}
             />
             <Menu.Item
-              name='View Past Services'
-              active={activeItem === 'view-appointments'}
+              name='view-past-tunes'
+              active={activeItem === 'view-past-tunes'}
               onClick={handleItemClick}
             />
             <Menu.Item
@@ -239,11 +239,11 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
        
-        <div>
+        <Grid.Column width={12}>
           <Segment style={{ width: '95%' }}>
           <AthleteCards handleItemClick={handleItemClick}/>
           </Segment>
-         </div>
+          </Grid.Column>
       </Grid>
       </div>
     )
