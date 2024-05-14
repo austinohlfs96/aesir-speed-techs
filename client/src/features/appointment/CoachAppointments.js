@@ -145,7 +145,8 @@ const CoachAppointments = ({handleItemClick}) => {
   return (
     <>
     <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}>
-    <Header><h1>Appointments</h1>
+    <h1>Appointments</h1>
+    <Header>
     <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
           onClick={handleBookAppointment}
           >
