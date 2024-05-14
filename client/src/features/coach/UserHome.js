@@ -70,10 +70,10 @@ console.log(coach)
       
       
       {coach && (
-  <div style={{display: 'flex', fexDirection: 'row'}}>
+  <div style={{display: 'flex', flexDirection: 'row'}}>
 
   <Image src={coach.profile_picture} size ='small' style={{margin: '15px'}}/>
-  <div style={{display: 'flex', fexDirection: 'column'}}>
+  <div style={{display: 'flex', flexDirection: 'column', marginTop: '10px'}}>
   <h1 style={{ color: 'white' }}>{coach.name}</h1>
   <h2 style={{ color: 'white' }}>Team: {coach.team}</h2>
   </div>
