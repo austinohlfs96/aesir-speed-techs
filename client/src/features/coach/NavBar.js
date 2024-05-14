@@ -239,11 +239,11 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
        
-        <Grid.Column width={12}>
+        <div>
           <Segment style={{ width: '100%' }}>
           <AthleteCards handleItemClick={handleItemClick}/>
           </Segment>
-          </Grid.Column>
+          </div>
       {/* </Grid> */}
       </div>
     )
