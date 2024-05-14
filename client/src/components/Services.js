@@ -41,7 +41,7 @@ const Services = () => {
                   <Item.Content style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
                     <h1 id={`service-item-${service.id}`} style={{fontFamily: "Anta", marginBottom: '10px'}}>{service.name}</h1>
                     <Item.Meta>
-                      <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price:</span> <span>{service.price}</span>
+                      <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price: </span> <span> ${service.price}</span>
                       {/* <span className='price'>{`Price: $${service.price}`}</span> */}
                     </Item.Meta>
                     <span className='stay' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Average Turn Around Time:</span>  <span>{service.average_turn_around}</span>
