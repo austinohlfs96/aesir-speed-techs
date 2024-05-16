@@ -4,6 +4,7 @@ import Head from './Header';
 
 const Services = () => {
   const [services, setServices] = useState([]);
+  const [link, setLink] = useState([])
 
   useEffect(() => {
    
@@ -24,6 +25,38 @@ const Services = () => {
    
     fetchServices();
   }, []);
+
+  useEffect(() => {
+    // Log the URL when the component mounts
+    console.log('Current URL:', window.location.href);
+  
+    // Display the hash and everything after it
+    console.log('Hash and everything after it:', window.location.hash);
+    setLink(window.location.href)
+  
+    const fetchServices = async () => {
+      try {
+        const response = await fetch('/services');
+        if (!response.ok) {
+          throw new Error('Failed to fetch services');
+        }
+  
+        const data = await response.json();
+        setServices(data); 
+      } catch (error) {
+        console.error('Error fetching services:', error.message);
+      }
+    };
+  
+    fetchServices();
+  }, []);
+
+  useEffect(() => {
+    // Reload the page and navigate to the link when the link changes
+    if (link) {
+      window.location.href = link;
+    }
+  }, [link]);
 
   return (
     <>
@@ -55,36 +88,6 @@ const Services = () => {
       </div>
     </div>
   </>
-//   <>
-//   <Head />
-//   <div className='modal'>
-//     <div id="services">
-//       <Segment style={{ background: 'rgba(16, 51, 78, 0.6)' }}>
-//         <h1 style={{ color: 'white' }}>Services</h1>
-//         <Table celled inverted>
-//           <Table.Header>
-//             <Table.Row>
-//               <Table.HeaderCell>Name</Table.HeaderCell>
-//               <Table.HeaderCell>Price</Table.HeaderCell>
-//               <Table.HeaderCell>Average Turn Around Time</Table.HeaderCell>
-//               <Table.HeaderCell>Description</Table.HeaderCell>
-//             </Table.Row>
-//           </Table.Header>
-//           <Table.Body>
-//             {services.map((service) => (
-//               <Table.Row key={service.id}>
-//                 <Table.Cell>{service.name}</Table.Cell>
-//                 <Table.Cell>{`$${service.price}`}</Table.Cell>
-//                 <Table.Cell>{service.average_turn_around}</Table.Cell>
-//                 <Table.Cell>{service.description}<Image src={service.image} size='small' floated='left' /></Table.Cell>
-//               </Table.Row>
-//             ))}
-//           </Table.Body>
-//         </Table>
-//       </Segment>
-//     </div>
-//   </div>
-// </>
   );
 };
 
