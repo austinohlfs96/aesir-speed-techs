@@ -7,22 +7,22 @@ const Services = () => {
   const [link, setLink] = useState([])
 
   useEffect(() => {
-   
-    const fetchServices = async () => {
-      try {
-        const response = await fetch('/services');
-        if (!response.ok) {
-          throw new Error('Failed to fetch services');
-        }
-
-        const data = await response.json();
-        setServices(data); 
-      } catch (error) {
-        console.error('Error fetching services:', error.message);
-      }
+    const fetchServices = () => {
+      fetch('/services')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Failed to fetch services');
+          }
+          return response.json();
+        })
+        .then(data => {
+          setServices(data);
+        })
+        .catch(error => {
+          console.error('Error fetching services:', error.message);
+        });
     };
-
-   
+  
     fetchServices();
   }, []);
 
@@ -51,12 +51,7 @@ const Services = () => {
     fetchServices();
   }, []);
 
-  useEffect(() => {
-    // Reload the page and navigate to the link when the link changes
-    if (link) {
-      window.location.href = link;
-    }
-  }, [link]);
+  
 
   return (
     <>
