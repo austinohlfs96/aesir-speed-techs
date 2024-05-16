@@ -15,27 +15,6 @@ const LandingPage = () => {
   const navigate = useNavigate();
   
 
-  // useEffect(() => {
-  //   // Make API request to Snow API
-  //   axios.get('https://api.tomorrow.io/v4/weather/forecast?location=Vail&apikey=i8LYur8TS60cPEgzBm2sKTSC8q6aorFu', {
-  //     params: {
-  //       // key: 'i8LYur8TS60cPEgzBm2sKTSC8q6aorFu',
-  //       // resort: 'Kirkwood, CA',
-  //       // country: 'US', // or any other country code
-  //       // units: 'imperial', // or 'metric'
-  //     }
-  //   })
-  //   .then(response => {
-  //     // Handle successful response
-  //     console.log(response.data);
-  //     setSnowData(response.data);
-  //   })
-  //   .catch(error => {
-  //     // Handle error
-  //     console.error('Error fetching snow data:', error);
-  //   });
-  // }, []);
-
   useEffect(() => {
     // Activate the animation when the component mounts
     setIsActive(true);
