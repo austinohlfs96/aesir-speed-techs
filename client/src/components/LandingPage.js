@@ -13,6 +13,7 @@ const LandingPage = () => {
   const someCondition = true;
   // const [snowData, setSnowData] = useState(null);
   const navigate = useNavigate();
+  
 
   // useEffect(() => {
   //   // Make API request to Snow API
@@ -273,7 +274,7 @@ const LandingPage = () => {
     <button onClick={() => navigate("/snow-conditions")} style={{fontSize: "150%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Snow Conditions</button>
   </Segment>
 </div>
-
+   
           
           <Segment className="slide-in" style={{ 
     background: 'rgb(117, 102, 102)',
