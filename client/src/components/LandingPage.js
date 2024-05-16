@@ -160,11 +160,11 @@ const LandingPage = () => {
     justifyContent: 'space-around',
     flexWrap: 'wrap'
 }}>
-          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-1" style={{ textDecoration: 'none' }}>
+          <a href="/tuningservices#service-item-1" style={{ textDecoration: 'none' }}>
           <div 
           onClick={() => navigate(`/tuningservices#service-item-1`)}
           className="image-container"
-          style={{ position: 'relative', fontSize: "3vw" }}
+          style={{ position: 'relative', fontSize: "3vw", display: 'flex' }}
           >
             <Image
             
@@ -180,11 +180,11 @@ const LandingPage = () => {
             </h1>
           </div>
           </a>
-          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-2" style={{ textDecoration: 'none' }}>
+          <a href="/tuningservices#service-item-2" style={{ textDecoration: 'none' }}>
           <div 
           className="image-container"
           onClick={() => navigate(`/tuningservices#service-item-2`)}
-          style={{ position: 'relative', fontSize: "3vw", overflow: 'hidden' }}
+          style={{ position: 'relative', fontSize: "3vw", overflow: 'hidden', display: 'flex' }}
           >
             <Image
               src="ProTune.jpg"
@@ -199,11 +199,11 @@ const LandingPage = () => {
             </h1>
           </div>
           </a>
-          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-3" style={{ textDecoration: 'none' }}>
+          <a href="/tuningservices#service-item-3" style={{ textDecoration: 'none' }}>
           <div 
           className="image-container"
           onClick={() => navigate(`/tuningservices#service-item-3`)}
-          style={{ position: 'relative', fontSize: "3vw" }}
+          style={{ position: 'relative', fontSize: "3vw", display: 'flex' }}
           >
             <Image
               src="/HuckknifeGrind.jpg"
@@ -218,11 +218,11 @@ const LandingPage = () => {
             </h1>
           </div>
           </a>
-          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-4" style={{ textDecoration: 'none' }}>
+          <a href="/tuningservices#service-item-4" style={{ textDecoration: 'none' }}>
           <div 
           className="image-container"
           onClick={() => navigate(`/tuningservices#service-item-4`)}
-          style={{ position: 'relative', fontSize: "3vw" }}
+          style={{ position: 'relative', fontSize: "3vw", display: 'flex' }}
           >
             <Image
               src="/ProE:W.jpg"
@@ -232,7 +232,7 @@ const LandingPage = () => {
               style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
             />
             <div style={{ position: 'absolute', top: '0', left: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
-            <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
+            <h1 style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
             Full Compitition Tune
             </h1>
           </div>
