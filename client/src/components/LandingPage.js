@@ -181,6 +181,7 @@ const LandingPage = () => {
     justifyContent: 'space-around',
     flexWrap: 'wrap'
 }}>
+          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-1" style={{ textDecoration: 'none' }}>
           <div 
           onClick={() => navigate(`/tuningservices#service-item-1`)}
           className="image-container"
@@ -199,6 +200,8 @@ const LandingPage = () => {
             Pro Wax
             </h1>
           </div>
+          </a>
+          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-2" style={{ textDecoration: 'none' }}>
           <div 
           className="image-container"
           onClick={() => navigate(`/tuningservices#service-item-2`)}
@@ -216,6 +219,8 @@ const LandingPage = () => {
             Comp Edge/Wax
             </h1>
           </div>
+          </a>
+          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-3" style={{ textDecoration: 'none' }}>
           <div 
           className="image-container"
           onClick={() => navigate(`/tuningservices#service-item-3`)}
@@ -233,6 +238,8 @@ const LandingPage = () => {
             Pro Tune
             </h1>
           </div>
+          </a>
+          <a href="https://capstone-deploy-14pb.onrender.com/tuningservices#service-item-4" style={{ textDecoration: 'none' }}>
           <div 
           className="image-container"
           onClick={() => navigate(`/tuningservices#service-item-4`)}
@@ -250,6 +257,7 @@ const LandingPage = () => {
             Full Compitition Tune
             </h1>
           </div>
+          </a>
           </Segment>
 
           
