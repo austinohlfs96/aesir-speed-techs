@@ -112,7 +112,7 @@ const AthleteCards = ({handleItemClick}) => {
         </Button>
     </Header>
     
-    <Card.Group>
+    <Card.Group style={{height: '580px', overflow: 'scroll'}}>
       {coachAthletes.map((athlete) => (
         <Card key={athlete.id} onClick={() => setSelectedAthlete(athlete)}>
           <Image src={athlete.profile_picture} wrapped ui={false} size='small'/>
