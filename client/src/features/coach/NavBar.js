@@ -122,7 +122,7 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'add-athlete') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "30px" }}>
+        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
         <Grid>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
@@ -153,12 +153,12 @@ const MenuExampleTabularOnLeft = () => {
             />
           </Menu>
           
-        </Grid.Column>
-        <Grid.Column width={12}>
+        </Grid.Column >
+        <div style={{width: '67vw'}}>
         <Segment style={{ width: '100%' }}>
-          <AddAthleteForm handleItemClick={handleItemClick} />
-          </Segment>
-        </Grid.Column>  
+         <AddAthleteForm handleItemClick={handleItemClick}/>
+        </Segment>
+        </div>   
       </Grid>
         </div>
     )}
