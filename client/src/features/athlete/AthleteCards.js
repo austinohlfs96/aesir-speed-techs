@@ -103,7 +103,7 @@ const AthleteCards = ({handleItemClick}) => {
 
   return (
     <>
-    <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}>
+    {/* <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}> */}
     <Header><h1>Athletes</h1>
     <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
           onClick={handleAddAthlete}
@@ -141,7 +141,7 @@ const AthleteCards = ({handleItemClick}) => {
         </Card>
       ))}
     </Card.Group>
-    </Segment>
+    {/* </Segment> */}
 
     <Modal open={!!selectedAthlete} size='small' onClose={() => setSelectedAthlete(null)}>
   <Modal.Header>{selectedAthlete?.name}</Modal.Header>

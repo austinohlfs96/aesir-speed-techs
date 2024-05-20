@@ -105,41 +105,27 @@ const Services = () => {
                   </Item.Content>
                 </Item>
               </Segment>
-              {/* <Segment key='serviceId2'  style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <Image id='service-item-2' src='/ProTune.jpg' size='medium' floated='left' />
-                <Item>
-                  <Item.Content style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-                    <h1  style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Compitition Edge & Wax</h1>
-                    <Item.Meta>
-                      <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price: </span> <span> $100</span>
-                      {/* <span className='price'>{`Price: $${service.price}`}</span> 
-                    </Item.Meta>
-                    <span className='stay' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Average Turn Around Time:</span>  <span>24 hours</span>
-                    <Item.Description style={{ marginTop: '10px' }}>Elevate your performance with our Pro Competition Edge and Wax service, designed to unlock the full potential of your gear. Experience precision side edge sharpening and base bevel customization at 1 or 2 degrees, offering the perfect balance between glide and control. Whether you are craving seamless playfulness or steadfast reliability, our service delivers consistent, razor-sharp edges when you need them most. Dominate the competition with unparalleled precision and reliability, courtesy of our Pro Competition Edge and Wax.</Item.Description>
-                  </Item.Content>
-                </Item>
-              </Segment> */}
 
-              <Segment key='serviceId2'  style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <Segment key='serviceId2' style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Image id='service-item-2' src='/ProTune.jpg' size='medium' floated='left' />
                 <Item>
                   <Item.Content style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-                    <h1 style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Competition Edge & Wax</h1>
+                    <h1  style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Competition Edge & Wax</h1>
                     <Item.Meta>
                       <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price: </span> <span> $100</span>
                       {/* <span className='price'>{`Price: $${service.price}`}</span> */}
                     </Item.Meta>
                     <span className='stay' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Average Turn Around Time:</span>  <span>24 hours</span>
-                    <Item.Description style={{ marginTop: '10px' }}>Elevate your performance with our Pro Competition Edge and Wax service, designed to unlock the full potential of your gear. Experience precision side edge sharpening and base bevel customization at 1 or 2 degrees, offering the perfect balance between glide and control. Whether you are craving seamless playfulness or steadfast reliability, our service delivers consistent, razor-sharp edges when you need them most. Dominate the competition with unparalleled precision and reliability, courtesy of our Pro Competition Edge and Wax.</Item.Description>
+                    <Item.Description  style={{ marginTop: '10px' }}>Elevate your performance with our Pro Competition Edge and Wax service, designed to unlock the full potential of your gear. Experience precision side edge sharpening and base bevel customization at 1 or 2 degrees, offering the perfect balance between glide and control. Whether you are craving seamless playfulness or steadfast reliability, our service delivers consistent, razor-sharp edges when you need them most. Dominate the competition with unparalleled precision and reliability, courtesy of our Pro Competition Edge and Wax.</Item.Description>
                   </Item.Content>
                 </Item>
               </Segment>
 
               <Segment key='serviceId3'  style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <Image id='service-item-3' src='/HuckknifeGrind.jpg' size='medium' floated='left' />
+                <Image  src='/HuckknifeGrind.jpg' size='medium' floated='left' />
                 <Item>
                   <Item.Content style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-                    <h1 style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Competition Tune</h1>
+                    <h1 id='service-item-3' style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Competition Tune</h1>
                     <Item.Meta>
                       <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price: </span> <span> $150</span>
                       {/* <span className='price'>{`Price: $${service.price}`}</span> */}
@@ -151,10 +137,10 @@ const Services = () => {
               </Segment>
 
               <Segment key='serviceId4'   style={{ background: 'rgba(255, 255, 255, 0.8)', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '8px', marginBottom: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <Image id='service-item-4' src='/ProE:W.jpg' size='medium' floated='left' />
+                <Image  src='/ProE:W.jpg' size='medium' floated='left' />
                 <Item>
                   <Item.Content style={{display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-                    <h1  style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Competition Full Tune</h1>
+                    <h1 id='service-item-4' style={{fontFamily: "Anta", marginBottom: '10px'}}>Pro Competition Full Tune</h1>
                     <Item.Meta>
                       <span className='price' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Price: </span> <span> $200</span>
                       {/* <span className='price'>{`Price: $${service.price}`}</span> */}
