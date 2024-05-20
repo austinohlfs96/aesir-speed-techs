@@ -117,7 +117,8 @@ const EditCoachForm = ({handleItemClick}) => {
     };
 
   return (
-    <Grid.Column stretched width={12}>
+    <div>
+    // <Grid.Column stretched width={12}>
       {/* <Segment> */}
       <Header><h1>Edit Account</h1></Header>
         <Form onSubmit={formik.handleSubmit}>
@@ -177,7 +178,8 @@ const EditCoachForm = ({handleItemClick}) => {
         </Form>
         <Button secondary onClick={handleDeleteClick}>DELETE Account</Button>
       {/* </Segment> */}
-    </Grid.Column>
+    // </Grid.Column>
+    </div>
   );
 };
 
