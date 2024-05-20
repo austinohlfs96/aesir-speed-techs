@@ -139,7 +139,7 @@ const CoachAppointments = ({handleItemClick}) => {
   };
 
   const handleBookAppointment = () => {
-    handleItemClick(null, { name: 'book-appointment' })
+    handleItemClick(null, { name: 'book-services' })
   }
 
   return (
