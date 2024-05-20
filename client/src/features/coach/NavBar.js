@@ -196,12 +196,10 @@ const MenuExampleTabularOnLeft = () => {
     )}
 
     return (
-      <div style={{ display: 'flex', marginTop: '20px', marginBottom: "30px" }}>
-      {/* <Grid> */}
-       
+      <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <Grid>
         <Grid.Column width={4}>
-          
-          <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -229,16 +227,14 @@ const MenuExampleTabularOnLeft = () => {
             />
           </Menu>
           
-          
-        </Grid.Column>
-       
-        <div>
-          <Segment style={{ width: '100%' }}>
-          <AthleteCards handleItemClick={handleItemClick}/>
-          </Segment>
-          </div>
-      {/* </Grid> */}
-      </div>
+        </Grid.Column >
+        <div style={{width: '67vw'}}>
+        <Segment style={{ width: '100%' }}>
+         <AthleteCards handleItemClick={handleItemClick}/>
+        </Segment>
+        </div>   
+      </Grid>
+        </div>
     )
   }
 
