@@ -73,10 +73,10 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'view-past-tunes') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "30px" }}>
-        <Grid>
+        <div style={{ display: 'flex', marginTop: '20px', marginBottom: "104px" }}>
+        {/* <Grid style={{width: '100%'}}> */}
         <Grid.Column width={4}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center'}}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -106,13 +106,17 @@ const MenuExampleTabularOnLeft = () => {
           
         </Grid.Column>
 
-        <Grid.Column stretched width={12}>
-        <Segment style={{ width: '100%' }}>
-          <h1>Appointments</h1>
-          <CoachAppointments handleItemClick={handleItemClick}/>
+        <Grid.Column width={12}>
+          <Segment style={{ 
+            // marginTop: '-10vh',
+            // maxWidth: '664px' 
+            width: '100%'
+             }}>
+              <h1>Appointment</h1>
+            <CoachAppointments handleItemClick={handleItemClick}/>
           </Segment>
-        </Grid.Column>
-      </Grid>
+          </Grid.Column>
+      {/* </Grid> */}
         </div>
     )}
 
