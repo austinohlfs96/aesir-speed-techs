@@ -96,7 +96,7 @@ const AddAthleteForm = ({handleItemClick, athlete}) => {
 
   return (
     <Grid.Column stretched width={12}>
-    <Segment>
+    {/* <Segment> */}
     <Header><h1>Add Athlete</h1></Header>
     <Form onSubmit={formik.handleSubmit}>
     <Form.Field>
@@ -219,7 +219,7 @@ const AddAthleteForm = ({handleItemClick, athlete}) => {
     <Button >Add Equipment</Button>
       <Button type='submit'>Submit</Button>
   </Form>
-    </Segment>
+    {/* </Segment> */}
   </Grid.Column>
   );
 };

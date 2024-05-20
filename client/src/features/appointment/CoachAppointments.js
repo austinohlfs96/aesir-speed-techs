@@ -144,7 +144,7 @@ const CoachAppointments = ({handleItemClick}) => {
 
   return (
     <>
-    <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}>
+    {/* <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}> */}
     {/* <h1>Appointments</h1> */}
     <Header>
     <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
@@ -242,7 +242,7 @@ const CoachAppointments = ({handleItemClick}) => {
       {isEditModalOpen && (
       <EditAppointment setIsEditModalOpen={setIsEditModalOpen} setSelectedAppointment={setSelectedAppointment} isEditModalOpen={isEditModalOpen} selectedAppointment={selectedAppointment} handleItemClick={handleItemClick}/>
       )} 
-     </Segment>
+     {/* </Segment> */}
     </>
     
   )
