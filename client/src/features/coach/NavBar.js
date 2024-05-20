@@ -197,7 +197,7 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div>
+        <div style={{width: '67vw'}}>
         <Segment style={{ width: '100%' }}>
          <EditCoachForm handleItemClick={handleItemClick}/>
         </Segment>
