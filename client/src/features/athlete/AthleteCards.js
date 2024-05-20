@@ -146,7 +146,7 @@ const AthleteCards = ({handleItemClick}) => {
     <Modal open={!!selectedAthlete} size='small' onClose={() => setSelectedAthlete(null)}>
   <Modal.Header>{selectedAthlete?.name}</Modal.Header>
   <Modal.Content>
-    <Grid columns={3} stackable>
+    <Grid columns={3} style={{display: 'flex', flexDirection: 'row'}}>
       <Grid.Column>
         <Image src={selectedAthlete?.profile_picture} wrapped ui={true} size='small' />
       </Grid.Column>
