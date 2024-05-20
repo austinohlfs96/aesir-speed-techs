@@ -25,10 +25,10 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'book-services') {
       return (
-        <div style={{ display: 'flex', marginTop: '20px', marginBottom: "104px" }}>
-        {/* <Grid style={{width: '100%'}}> */}
+        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <Grid>
         <Grid.Column width={4}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center'}}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -56,27 +56,22 @@ const MenuExampleTabularOnLeft = () => {
             />
           </Menu>
           
-        </Grid.Column>
-
-        <Grid.Column width={12}>
-          <Segment style={{ 
-            // marginTop: '-10vh',
-            // maxWidth: '664px' 
-            width: '100%'
-             }}>
-            <BookAppointment handleItemClick={handleItemClick}/>
-          </Segment>
-          </Grid.Column>
-      {/* </Grid> */}
+        </Grid.Column >
+        <div style={{width: '67vw'}}>
+        <Segment style={{ width: '100%' }}>
+         <BookAppointment handleItemClick={handleItemClick}/>
+        </Segment>
+        </div>   
+      </Grid>
         </div>
     )}
 
     if (activeItem === 'view-past-tunes') {
       return (
-        <div style={{ display: 'flex', marginTop: '20px', marginBottom: "104px" }}>
-        {/* <Grid style={{width: '100%'}}> */}
+        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <Grid>
         <Grid.Column width={4}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center'}}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -104,19 +99,13 @@ const MenuExampleTabularOnLeft = () => {
             />
           </Menu>
           
-        </Grid.Column>
-
-        <Grid.Column width={12}>
-          <Segment style={{ 
-            // marginTop: '-10vh',
-            // maxWidth: '664px' 
-            width: '100%'
-             }}>
-              <h1>Appointment</h1>
-            <CoachAppointments handleItemClick={handleItemClick}/>
-          </Segment>
-          </Grid.Column>
-      {/* </Grid> */}
+        </Grid.Column >
+        <div style={{width: '67vw'}}>
+        <Segment style={{ width: '100%' }}>
+         <CoachAppointments handleItemClick={handleItemClick}/>
+        </Segment>
+        </div>   
+      </Grid>
         </div>
     )}
 
