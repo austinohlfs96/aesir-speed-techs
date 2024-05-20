@@ -57,7 +57,7 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '67vw'}}>
+        <div style={{width: '75vw'}}>
         <Segment style={{ width: '100%' }}>
          <BookAppointment handleItemClick={handleItemClick}/>
         </Segment>
@@ -100,7 +100,7 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '67vw'}}>
+        <div style={{width: '75vw'}}>
         <Segment style={{ width: '100%' }}>
          <CoachAppointments handleItemClick={handleItemClick}/>
         </Segment>
@@ -143,7 +143,7 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '67vw'}}>
+        <div style={{width: '75vw'}}>
         <Segment style={{ width: '100%' }}>
          <AddAthleteForm handleItemClick={handleItemClick}/>
         </Segment>
@@ -186,7 +186,7 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '67vw'}}>
+        <div style={{width: '75vw'}}>
         <Segment style={{ width: '100%' }}>
          <EditCoachForm handleItemClick={handleItemClick}/>
         </Segment>
@@ -228,7 +228,7 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '67vw'}}>
+        <div style={{width: '75vw'}}>
         <Segment style={{ width: '100%' }}>
          <AthleteCards handleItemClick={handleItemClick}/>
         </Segment>
