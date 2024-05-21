@@ -146,13 +146,15 @@ const CoachAppointments = ({handleItemClick}) => {
     <>
     {/* <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}> */}
     {/* <h1>Appointments</h1> */}
-    <Header style={{display: 'flex', flexDirection: 'row'}}>
+    <Header >
+      <div style={{display: 'flex', flexDirection: 'row'}}>
       <h1>Appointments</h1>
     <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
           onClick={handleBookAppointment}
           >
           Book Appointment
         </Button>
+        </div>
     </Header>
     <Card.Group>
         {coachAppointments.map((appointment) => (
