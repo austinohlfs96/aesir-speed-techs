@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux"
 import {setCurrentCoach, addError} from "./coachSlice"
 import { useEffect, useCallback } from 'react'
 import Head from "../../components/Header"
-import { Image, Sticky, Card, Image, Container } from 'semantic-ui-react'
+import { Image, Sticky, Card, Container } from 'semantic-ui-react'
 import { useToasts } from 'react-toast-notifications';
 
 const UserHome = () => {
