@@ -149,7 +149,7 @@ const CoachAppointments = ({handleItemClick}) => {
     <Header >
       <div style={{display: 'flex', flexDirection: 'row'}}>
       <h1>Appointments</h1>
-    <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
+      <Button secondary 
           onClick={handleBookAppointment}
           >
           Book Appointment
