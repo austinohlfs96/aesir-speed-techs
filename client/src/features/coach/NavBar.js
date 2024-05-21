@@ -26,7 +26,7 @@ const MenuExampleTabularOnLeft = () => {
     if (activeItem === 'book-services') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-        <Grid>
+        <Grid style={{padding: '0px'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
@@ -69,7 +69,7 @@ const MenuExampleTabularOnLeft = () => {
     if (activeItem === 'view-past-tunes') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-        <Grid>
+        <Grid style={{padding: '0px'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
@@ -112,7 +112,7 @@ const MenuExampleTabularOnLeft = () => {
     if (activeItem === 'add-athlete') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-        <Grid>
+        <Grid style={{padding: '0px'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
@@ -155,7 +155,7 @@ const MenuExampleTabularOnLeft = () => {
     if (activeItem === 'edit-account') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-        <Grid>
+        <Grid style={{padding: '0px'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
@@ -197,7 +197,7 @@ const MenuExampleTabularOnLeft = () => {
 
     return (
       <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-        <Grid>
+        <Grid style={{padding: '0px'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
