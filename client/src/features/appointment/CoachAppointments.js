@@ -147,9 +147,9 @@ const CoachAppointments = ({handleItemClick}) => {
     {/* <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}> */}
     {/* <h1>Appointments</h1> */}
     <Header >
-      <div style={{display: 'flex', flexDirection: 'row'}}>
+      <div style={{display: 'flex', flexDirection: 'column'}}>
       <h1>Appointments</h1>
-    <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
+      <Button secondary 
           onClick={handleBookAppointment}
           >
           Book Appointment

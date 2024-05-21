@@ -70,7 +70,7 @@ console.log(coach)
       
       
       {coach && (
-  <div style={{display: 'flex', flexDirection: 'row'}}>
+  <div style={{display: 'flex', flexDirection: 'column'}}>
 
   <Image src={coach.profile_picture} size ='small' style={{margin: '15px'}}/>
   <div style={{display: 'flex', flexDirection: 'column', marginTop: '10px'}}>
