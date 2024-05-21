@@ -26,7 +26,7 @@ const MenuExampleTabularOnLeft = () => {
     if (activeItem === 'book-services') {
       return (
         <div style={{ marginTop: '20px', marginBottom: "111px" }}>
-        <Grid style={{padding: '0px', width: '100%'}}>
+        <Grid style={{display: 'flex', felxDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
           <Menu.Item
