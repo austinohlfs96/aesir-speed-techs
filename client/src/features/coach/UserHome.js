@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux"
 import {setCurrentCoach, addError} from "./coachSlice"
 import { useEffect, useCallback } from 'react'
 import Head from "../../components/Header"
-import { Image, Sticky } from 'semantic-ui-react'
+import { Image, Sticky, Card, Image, Container } from 'semantic-ui-react'
 import { useToasts } from 'react-toast-notifications';
 
 const UserHome = () => {
@@ -70,17 +70,34 @@ console.log(coach)
       
       
       {coach && (
-  <div style={{display: 'flex', flexDirection: 'column'}}>
+  // <div style={{display: 'flex', flexDirection: 'column'}}>
 
-  <Image src={coach.profile_picture} size ='small' style={{margin: '15px'}}/>
-  <div style={{display: 'flex', flexDirection: 'column', marginTop: '10px'}}>
-  <h1 style={{ color: 'white' }}>{coach.name}</h1>
-  <h2 style={{ color: 'white' }}>Team: {coach.team}</h2>
-  </div>
+  // <Image src={coach.profile_picture} size ='small' style={{margin: '15px'}}/>
+  // <div style={{display: 'flex', flexDirection: 'column', marginTop: '10px'}}>
+  // <h1 style={{ color: 'white' }}>{coach.name}</h1>
+  // <h2 style={{ color: 'white' }}>Team: {coach.team}</h2>
+  // </div>
  
   
 
-  </div>
+  // </div>
+  <Container className='container'>
+  <Head coach={coach} />
+  
+  {coach && (
+    <Card centered>
+      <Image src={coach.profile_picture} wrapped ui={false} />
+      <Card.Content>
+        <Card.Header>{coach.name}</Card.Header>
+        <Card.Meta>
+          <span>Team: {coach.team}</span>
+        </Card.Meta>
+      </Card.Content>
+    </Card>
+  )}
+  
+  <MenuExampleTabularOnLeft />
+</Container>
 )}
       <MenuExampleTabularOnLeft/>
       
