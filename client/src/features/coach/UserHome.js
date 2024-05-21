@@ -64,12 +64,12 @@ const UserHome = () => {
 console.log(coach)
   const title = 'USER HOME'
   return (
-    <div className='container'>
-      <Head coach={coach}/>
-      {/*  */}
+    // <div className='container'>
+    //   <Head coach={coach}/>
+     
       
       
-      {coach && (
+    //   {coach && (
   // <div style={{display: 'flex', flexDirection: 'column'}}>
 
   // <Image src={coach.profile_picture} size ='small' style={{margin: '15px'}}/>
@@ -99,10 +99,10 @@ console.log(coach)
   <MenuExampleTabularOnLeft />
 </Container>
 )}
-      <MenuExampleTabularOnLeft/>
+//       <MenuExampleTabularOnLeft/>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
 export default UserHome;
