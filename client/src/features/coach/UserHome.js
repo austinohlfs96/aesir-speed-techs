@@ -85,8 +85,8 @@ console.log(coach)
   <Head coach={coach} />
   
   {coach && (
-    <Card centered>
-      <Image src={coach.profile_picture} wrapped ui={false} />
+    <Card style={{display: 'flex', flexDirection: 'row'}}>
+      <Image src={coach.profile_picture} wrapped ui={false} style={{width: '200px'}}/>
       <Card.Content>
         <Card.Header>{coach.name}</Card.Header>
         <Card.Meta>
