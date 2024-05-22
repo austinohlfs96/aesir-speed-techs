@@ -86,11 +86,11 @@ console.log(coach)
   
   {coach && (
     <Card style={{display: 'flex', flexDirection: 'row', fontFamily: 'Anta'}}>
-      <Image src={coach.profile_picture} wrapped ui={false} style={{width: '200px'}}/>
+      <Image src={coach.profile_picture} wrapped ui={false} style={{width: '170px'}}/>
       <Card.Content>
         <Card.Header style={{fontFamily: 'Anta'}}>{coach.name}</Card.Header>
         <Card.Meta>
-          <span>Team: {coach.team}</span>
+          <span><strong>Team: </strong>{coach.team}</span>
         </Card.Meta>
       </Card.Content>
     </Card>
