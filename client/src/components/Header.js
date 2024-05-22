@@ -157,7 +157,7 @@ function Head() {
           
         </div>
       )}
-       <div style={{display: 'flex', float: 'right', marginLeft: '20px', marginTop: '10px'}}>
+       <div style={{display: 'flex', float: 'right', marginLeft: '7px', marginTop: '10px'}}>
       {!coach ? (
             <>
               <Button color= "red" style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} onClick={() => navigate('/login')}>Book</Button>
