@@ -25,7 +25,7 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'book-services') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
@@ -68,7 +68,7 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'view-past-tunes') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
@@ -111,7 +111,7 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'add-athlete') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
@@ -154,7 +154,7 @@ const MenuExampleTabularOnLeft = () => {
 
     if (activeItem === 'edit-account') {
       return (
-        <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+        <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
@@ -196,7 +196,7 @@ const MenuExampleTabularOnLeft = () => {
     )}
 
     return (
-      <div style={{ marginTop: '20px', marginBottom: "111px" }}>
+      <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
         <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center', fontFamily: 'Anta' }}>
