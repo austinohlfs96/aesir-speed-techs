@@ -97,7 +97,7 @@ const AddAthleteForm = ({handleItemClick, athlete}) => {
   return (
     <Grid.Column stretched width={12}>
     {/* <Segment> */}
-    <Header><h1>Add Athlete</h1></Header>
+    <Header><h1 style={{fontFamily: 'Anta'}}>Add Athlete</h1></Header>
     <Form onSubmit={formik.handleSubmit}>
     <Form.Field>
             <label>Athlete Name</label>

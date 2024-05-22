@@ -158,7 +158,7 @@ const BookAppointment = ({handleItemClick}) => {
 
   return (
     <>
-     <Header><h1>Book Appointment</h1></Header>
+     <Header><h1 style={{fontFamily: 'Anta'}}>Book Appointment</h1></Header>
       <Form onSubmit={formik.handleSubmit}>
         <Form.Field>
           <label>Pick-up Location</label>

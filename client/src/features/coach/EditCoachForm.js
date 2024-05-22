@@ -120,7 +120,7 @@ const EditCoachForm = ({handleItemClick}) => {
     <div>
      {/* <Grid.Column stretched width={12}> */}
       {/* <Segment> */}
-      <Header><h1>Edit Account</h1></Header>
+      <Header><h1 style={{fontFamily: 'Anta'}}>Edit Account</h1></Header>
         <Form onSubmit={formik.handleSubmit}>
           <Form.Field>
             <label>Edit Name</label>
