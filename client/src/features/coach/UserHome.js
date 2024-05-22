@@ -85,7 +85,7 @@ console.log(coach)
   <Head coach={coach} />
   
   {coach && (
-    <Card style={{display: 'flex', flexDirection: 'row'}}>
+    <Card style={{display: 'flex', flexDirection: 'row', fontFamily: 'Anta'}}>
       <Image src={coach.profile_picture} wrapped ui={false} style={{width: '200px'}}/>
       <Card.Content>
         <Card.Header>{coach.name}</Card.Header>
@@ -96,7 +96,7 @@ console.log(coach)
     </Card>
   )}
   
-  <MenuExampleTabularOnLeft />
+  <MenuExampleTabularOnLeft style={{fontFamaily: 'Anta'}}/>
 </Container>
 )}
 //       <MenuExampleTabularOnLeft/>
