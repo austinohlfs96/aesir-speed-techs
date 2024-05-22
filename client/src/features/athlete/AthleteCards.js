@@ -135,8 +135,10 @@ const AthleteCards = ({handleItemClick}) => {
             <Card.Description>{`Boot Size: ${athlete.boot_size}`}</Card.Description>
             <Card.Description>{`Stance: ${athlete.stance}`}</Card.Description>
             <Card.Description>{`Disciplines: ${athlete.discipline}`}</Card.Description>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <Button onClick={(event) => handleAddEquipment(athlete, event)}>Add Equipment</Button>
             <Button type='submit' onClick={(event) => handleEditAthlete(athlete, event)}>Edit Athlete</Button>
+            </div>
           </Card.Content>
         </Card>
       ))}
