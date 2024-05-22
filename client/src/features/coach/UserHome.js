@@ -88,7 +88,7 @@ console.log(coach)
     <Card style={{display: 'flex', flexDirection: 'row', fontFamily: 'Anta'}}>
       <Image src={coach.profile_picture} wrapped ui={false} style={{width: '200px'}}/>
       <Card.Content>
-        <Card.Header>{coach.name}</Card.Header>
+        <Card.Header style={{fontFamaily: 'Anta'}}>{coach.name}</Card.Header>
         <Card.Meta>
           <span>Team: {coach.team}</span>
         </Card.Meta>
