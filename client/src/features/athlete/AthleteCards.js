@@ -104,8 +104,8 @@ const AthleteCards = ({handleItemClick}) => {
   return (
     <>
     {/* <Segment style={{ background: 'rgba(255, 255, 255, 0.8)', height: '77vh', overflow: 'auto' }}> */}
-    <Header><h1>Athletes</h1>
-    <Button secondary style={{ position: 'absolute', top: '5px', right: '5px' }}
+    <Header><h1 style={{fontFamily: 'Anta'}}>Athletes</h1>
+    <Button secondary style={{ position: 'absolute', top: '5px', right: '5px', fontFamily: 'Anta' }}
           onClick={handleAddAthlete}
           >
           Add Athlete

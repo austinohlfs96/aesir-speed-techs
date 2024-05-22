@@ -148,9 +148,10 @@ const CoachAppointments = ({handleItemClick}) => {
     {/* <h1>Appointments</h1> */}
     <Header >
       <div style={{display: 'flex', flexDirection: 'column'}}>
-      <h1>Appointments</h1>
+      <h1 style={{fontFamily: 'Anta'}}>Appointments</h1>
       <Button secondary 
           onClick={handleBookAppointment}
+          style={{fontFamily: 'Anta'}}
           >
           Book Appointment
         </Button>
