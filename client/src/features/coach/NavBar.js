@@ -57,9 +57,9 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '75vw', paddingRight: '0px', fontFamily: 'Anta'}}>
+        <div style={{width: '75vw', paddingRight: '0px'}}>
         <Segment style={{ width: '100%' }}>
-         <BookAppointment handleItemClick={handleItemClick}/>
+         <BookAppointment handleItemClick={handleItemClick} style={{fontFamily: 'Anta'}}/>
         </Segment>
         </div>   
       </Grid>
@@ -100,9 +100,9 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '75vw', paddingRight: '0px', fontFamily: 'Anta'}}>
+        <div style={{width: '75vw', paddingRight: '0px'}}>
         <Segment style={{ width: '100%' }}>
-         <CoachAppointments handleItemClick={handleItemClick}/>
+         <CoachAppointments handleItemClick={handleItemClick} style={{fontFamily: 'Anta'}}/>
         </Segment>
         </div>   
       </Grid>
@@ -143,9 +143,9 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '75vw', paddingRight: '0px', fontFamily: 'Anta'}}>
+        <div style={{width: '75vw', paddingRight: '0px'}}>
         <Segment style={{ width: '100%' }}>
-         <AddAthleteForm handleItemClick={handleItemClick}/>
+         <AddAthleteForm handleItemClick={handleItemClick} style={{fontFamily: 'Anta'}}/>
         </Segment>
         </div>   
       </Grid>
@@ -186,9 +186,9 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '75vw', paddingRight: '0px', fontFamily: 'Anta'}}>
+        <div style={{width: '75vw', paddingRight: '0px'}}>
         <Segment style={{ width: '100%' }}>
-         <EditCoachForm handleItemClick={handleItemClick}/>
+         <EditCoachForm handleItemClick={handleItemClick} style={{fontFamily: 'Anta'}}/>
         </Segment>
         </div>   
       </Grid>
@@ -228,9 +228,9 @@ const MenuExampleTabularOnLeft = () => {
           </Menu>
           
         </Grid.Column >
-        <div style={{width: '75vw', paddingRight: '0px', fontFamily: 'Anta'}}>
+        <div style={{width: '75vw', paddingRight: '0px'}}>
         <Segment style={{ width: '100%' }}>
-         <AthleteCards handleItemClick={handleItemClick}/>
+         <AthleteCards handleItemClick={handleItemClick} style={{fontFamily: 'Anta'}}/>
         </Segment>
         </div>   
       </Grid>
