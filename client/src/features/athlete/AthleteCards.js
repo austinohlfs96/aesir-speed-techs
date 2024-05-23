@@ -123,7 +123,7 @@ const AthleteCards = ({handleItemClick}) => {
           >
           X
         </Button>
-            <Card.Header>{athlete.name}</Card.Header>
+            <Card.Header style={{fontFamily: 'Anta'}}>{athlete.name}</Card.Header>
             <Card.Meta>
               <span className='date'>{`Age: ${athlete.age}`}</span>
             </Card.Meta>
@@ -145,7 +145,7 @@ const AthleteCards = ({handleItemClick}) => {
     </Card.Group>
     {/* </Segment> */}
 
-    <Modal open={!!selectedAthlete} size='small' onClose={() => setSelectedAthlete(null)}>
+    <Modal open={!!selectedAthlete} size='small' onClose={() => setSelectedAthlete(null)} style={{fontFamily: 'Anta'}}>
   <Modal.Header>{selectedAthlete?.name}</Modal.Header>
   <Modal.Content>
     <Grid columns={3} style={{display: 'flex', flexDirection: 'row'}}>
