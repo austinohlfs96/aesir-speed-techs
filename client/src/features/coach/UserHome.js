@@ -90,7 +90,7 @@ console.log(coach)
       <Card.Content>
         <Card.Header style={{fontFamily: 'Anta'}}>{coach.name}</Card.Header>
         <Card.Meta>
-          <span><strong>Team: </strong>{coach.team}</span>
+          <span><strong style={{color: 'black'}}>Team: </strong>{coach.team}</span>
         </Card.Meta>
       </Card.Content>
     </Card>
