@@ -141,7 +141,11 @@ const LandingPage = () => {
          <h1 style={{fontFamily: "Anta", textAlign: "center" }}>
             Premier Services
             </h1>
-          <p style={{ fontSize: "2vw", textAlign: 'center'   }}>Discover a new level of performance with Æsir Speed Techs' premier tuning services. Our offerings are meticulously crafted to cater to the unique needs of athletes and coaches, setting us apart as the premier destination for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.</p> 
+            <p style={{ fontSize: '2vw', textAlign: 'center', fontFamily: 'Anta', color: '#ffffff', lineHeight: '1.5', padding: '0 20px' }}>
+              Discover a new level of performance with <span style={{ fontWeight: 'bold', color: '#FF0000' }}>Æsir Speed Techs</span>' <strong>premier</strong> tuning services. Our offerings are <em>meticulously crafted</em> to cater to the unique needs of athletes and coaches, setting us apart as the <strong>premier destination</strong> for professional ski and snowboard tuning. We utilize cutting-edge equipment and high-end products to ensure that every tuning process is executed with precision.
+            </p>
+
+
          </div>
         
           
@@ -172,7 +176,7 @@ const LandingPage = () => {
               size="small"
               floated="left"
               className="dynamic-image"
-              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 8px 8px  rgba(255, 0, 0, 0.4)' }}
             />
             <div style={{ position: 'absolute', top: '0', right: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
@@ -191,7 +195,7 @@ const LandingPage = () => {
               size="small"
               centered
               className="dynamic-image"
-              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 8px 8px  rgba(255, 0, 0, 0.4)' }}
             />
             <div style={{ position: 'absolute', top: '0', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
@@ -210,7 +214,7 @@ const LandingPage = () => {
               size="small"
               floated="right"
               className="dynamic-image"
-              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 8px 8px  rgba(255, 0, 0, 0.4)' }}
             />
              <div style={{ position: 'absolute', top: '0', left: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '10%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
@@ -229,7 +233,7 @@ const LandingPage = () => {
               size="small"
               floated="right"
               className="dynamic-image"
-              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)' }}
+              style={{ marginBottom: '20px', borderRadius: '10px', height: '300px', width: '225px', boxShadow: '0 8px 8px  rgba(255, 0, 0, 0.4)' }}
             />
             <div style={{ position: 'absolute', top: '0', left: '13px', height: '300px', width: '225px', backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: '0', borderRadius: '10px' }}></div>
             <h1 style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', color: 'white', fontFamily: "Anta", textAlign: 'center' }}>
@@ -286,10 +290,11 @@ const LandingPage = () => {
 </div>
 
     
-    <p style={{ fontSize: "2.2vw", textAlign: "center", maxWidth: '55%', marginRight: '5%' }}>
-    <h1 style={{ color: 'white', fontFamily: "Anta", marginBottom: '10px'}}>THE ÆSIR MISSION</h1>
-        At Æsir Speed Techs, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses Æsir Speed Techs.
-    </p> 
+    <p style={{ fontSize: '2.2vw', textAlign: 'center', maxWidth: '55%', marginRight: '5%' }}>
+  <h1 style={{ color: 'white', fontFamily: 'Anta', marginBottom: '10px' }}>THE ÆSIR MISSION</h1>
+  At <strong>Æsir Speed Techs</strong>, our mission is to elevate the winter sports competition by providing unmatched tuning services that empower athletes and coaches to achieve their highest potential on the slopes. We are committed to excellence, constantly pushing the boundaries of performance tuning through innovation and precision. Our goal is to be the trusted partner for winter sports enthusiasts, delivering quality tuning that not only meets but exceeds the rigorous demands of competitive skiing and snowboarding. With a passion for the sport and a dedication to craftsmanship, we strive to enhance the joy and success of every individual who chooses <strong>Æsir Speed Techs</strong>.
+</p>
+
           
           </Segment>
          
