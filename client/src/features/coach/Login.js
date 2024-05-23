@@ -81,7 +81,7 @@ const Login = () => {
         <Grid columns={2} relaxed='very' stackable>
           <Grid.Column>
             <Form style={{textAlign: 'center'}} onSubmit={formik.handleSubmit} id='formikLogin'>
-            <div style={{ background: 'black', border: "2px solid white", borderRadius: "20px", paddingBottom: "10px" }}>
+            <div style={{ background: 'black', border: "2px solid white", borderRadius: "20px", paddingBottom: "10px", marginBottom: '10px' }}>
               <Form.Input
                 label={<label style={{ fontFamily: "Anta", color: "white" }}>Email</label>}
                 id='email'
@@ -92,9 +92,9 @@ const Login = () => {
                 placeholder="Enter Email"
               />
              </div>
-              <div style={{ background: 'black', border: "2px solid white", borderRadius: "20px", paddingBottom: "10px" }}>
+              <div style={{ background: 'black', border: "2px solid white", borderRadius: "20px", paddingBottom: "10px" ,marginTop: "10px", marginBottom: '10px' }}>
               <Form.Input
-                label={<label style={{ fontFamily: "Anta", color: "white" }}>Pasword</label>}
+                label={<label style={{ fontFamily: "Anta", color: "white" }}>Password</label>}
                 id='password'
                 className='loginInput'
                 type='password' onChange={formik.handleChange}
