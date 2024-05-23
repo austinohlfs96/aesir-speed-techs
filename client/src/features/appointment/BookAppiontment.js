@@ -207,11 +207,7 @@ const BookAppointment = ({handleItemClick}) => {
           Add Athlete Service
         </Button>
       )}
-      {appointment.athlete_services && appointment.athlete_services.length > 0 && (
-        <Button style={{ marginTop: '10px' }} onClick={handlePrePayClick}>
-        Confirm
-      </Button>
-      )}
+      
       <Modal open={showModal} onClose={handleModalClose}>
         <Modal.Header>Add Athlete Service</Modal.Header>
         <Modal.Content>
@@ -237,6 +233,11 @@ const BookAppointment = ({handleItemClick}) => {
             ))}
           </Card.Group>
         </Segment>
+      )}
+      {appointment.athlete_services && appointment.athlete_services.length > 0 && (
+        <Button style={{ marginTop: '10px' }} onClick={handlePrePayClick}>
+        Confirm
+      </Button>
       )}
        {appointment.athlete_services && appointment.athlete_services.length > 0 && (
        <ConfirmAppt showPaymentModal={showPaymentModal} handlePaymentModalClose={handlePaymentModalClose} calculateTotal={calculateTotal} appointment={appointment} handleItemClick={handleItemClick}/>
