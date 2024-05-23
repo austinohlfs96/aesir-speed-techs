@@ -92,7 +92,7 @@ const Login = () => {
                 placeholder="Enter Email"
               />
              </div>
-              <div style={{ background: 'black', border: "2px solid white", borderRadius: "20px", paddingBottom: "10px" ,marginTop: "10px", marginBottom: '10px' }}>
+              <div style={{ background: 'black', border: "2px solid white", borderRadius: "20px", paddingBottom: "10px" ,marginTop: "25px", marginBottom: '25px' }}>
               <Form.Input
                 label={<label style={{ fontFamily: "Anta", color: "white" }}>Password</label>}
                 id='password'

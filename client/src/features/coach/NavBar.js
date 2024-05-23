@@ -28,7 +28,7 @@ const MenuExampleTabularOnLeft = () => {
         <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center', fontFamily: 'Anta' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -71,7 +71,7 @@ const MenuExampleTabularOnLeft = () => {
         <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center', fontFamily: 'Anta' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -114,7 +114,7 @@ const MenuExampleTabularOnLeft = () => {
         <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center', fontFamily: 'Anta' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
@@ -157,7 +157,7 @@ const MenuExampleTabularOnLeft = () => {
         <div style={{ marginTop: '20px', marginBottom: "111px", fontFamily: 'Anta' }}>
         <Grid style={{display: 'flex', flexDirection: ' row', flexWrap: 'nowrap', padding: '0px', width: '100%'}}>
         <Grid.Column width={4} style={{textAlign: 'center', paddingRight: '0px'}}>
-        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center' }}>
+        <Menu fluid vertical tabular style={{ background: 'rgba(255, 255, 255, 0.8)', textAlign: 'center', fontFamily: 'Anta' }}>
           <Menu.Item
               name='athletes'
               active={activeItem === 'athletes'}
