@@ -166,7 +166,7 @@ const CoachAppointments = ({handleItemClick}) => {
           >
           X
         </Button>
-            <Card.Header styler={{fontFamily: 'Anta'}}>{appointment.booking_time} ID#: {appointment.id}</Card.Header>
+            <Card.Header style={{fontFamily: 'Anta'}}>{appointment.booking_time} ID#: {appointment.id}</Card.Header>
             <Card.Meta>
             <span className='date'>{`Pick-up: ${appointment.pickup_location}`}</span>
             </Card.Meta>
