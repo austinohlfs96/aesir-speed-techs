@@ -107,7 +107,30 @@ const LandingPage = () => {
   }}>
     <h1 style={{ fontSize: '4.5vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h1>
              <p style={{ fontSize: '3vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>ÆSIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold', color: 'red'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
-    <button onClick={() => navigate("/login")} style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Book Now</button>
+             <button style={{ 
+  background: 'linear-gradient(90deg, #660000, #ff5050)', 
+  color: '#fff', 
+  border: 'none', 
+  padding: '10px 20px', 
+  borderRadius: '5px', 
+  fontFamily: 'Orbitron, sans-serif', 
+  fontSize: '16px', 
+  fontWeight: 'bold', 
+  boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)', 
+  cursor: 'pointer', 
+  transition: 'transform 0.3s, box-shadow 0.3s'
+}}
+onMouseEnter={e => {
+  e.currentTarget.style.transform = 'scale(1.05)';
+  e.currentTarget.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.3)';
+}}
+onMouseLeave={e => {
+  e.currentTarget.style.transform = 'scale(1)';
+  e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+}}
+>Book Now</button>
+
+
   </Segment>
 </div>
       {/* </Segment> */}

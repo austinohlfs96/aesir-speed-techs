@@ -160,7 +160,29 @@ function Head() {
        <div style={{display: 'flex', float: 'right', marginLeft: '7px', marginTop: '10px'}}>
       {!coach ? (
             <>
-              <Button color= "red" style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} onClick={() => navigate('/login')}>Book</Button>
+             <button style={{ 
+  background: 'linear-gradient(90deg, #660000, #ff5050)', 
+  color: '#fff', 
+  border: 'none', 
+  padding: '5px 10px', 
+  borderRadius: '0px', 
+  textDecoration: 'underline', 
+  fontSize: '12px', 
+  fontFamily: 'Orbitron, sans-serif', 
+  cursor: 'pointer', 
+  transition: 'transform 0.3s, box-shadow 0.3s'
+}}
+onClick={() => navigate('/login')}
+onMouseEnter={e => {
+  e.currentTarget.style.transform = 'scale(1.05)';
+  e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+}}
+onMouseLeave={e => {
+  e.currentTarget.style.transform = 'scale(1)';
+  e.currentTarget.style.boxShadow = 'none';
+}}
+>Book</button>
+
               {/* <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/signup')}>Register</Button> */}
             </>
           ) : (
