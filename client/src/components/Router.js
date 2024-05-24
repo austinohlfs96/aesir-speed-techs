@@ -11,11 +11,13 @@ import AthleteSpotlight from "./AthleteSpotlight";
 import Gallery from "./Gallery"
 import Shop from "./Shop";
 import SnowConditions from "./ConditionChecker";
+import EnterPage from "./EnterPage";
 
 function Router() {
   const routes = (
     <>
-      <Route path='/' element={<LandingPage/>} />,
+      <Route path='/' element={<EnterPage/>}/>,
+      <Route path='/home' element={<LandingPage/>} />,
       <Route path='/about' element={<Title/>} />,
       <Route path='/login' element={<Login/>} />,
       <Route path='/signup' element={<Signup/>} />,

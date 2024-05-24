@@ -25,7 +25,7 @@ const Footer = () => {
         <div style={sectionStyle}>
           <p style={textStyle}><strong>Quick Links:</strong></p>
           <a href="/about" style={linkStyle}>About Us</a>
-          <a href="/services" style={linkStyle}>Services</a>
+          <a href="/tuningservices" style={linkStyle}>Services</a>
           <a href="/terms" style={linkStyle}>Terms of Service</a>
           <a href="/privacy" style={linkStyle}>Privacy Policy</a>
         </div>
