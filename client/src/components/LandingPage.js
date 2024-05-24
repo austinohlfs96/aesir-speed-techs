@@ -118,7 +118,8 @@ const LandingPage = () => {
   fontWeight: 'bold', 
   boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)', 
   cursor: 'pointer', 
-  transition: 'transform 0.3s, box-shadow 0.3s'
+  transition: 'transform 0.3s, box-shadow 0.3s',
+  fontFamily: 'Anta'
 }}
 onMouseEnter={e => {
   e.currentTarget.style.transform = 'scale(1.05)';

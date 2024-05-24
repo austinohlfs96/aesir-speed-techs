@@ -161,7 +161,58 @@ function Head() {
       {!coach ? (
             <>
              <button style={{ 
-  background: 'linear-gradient(90deg, #660000, #ff5050)', 
+              background: 'linear-gradient(90deg, #660000, #ff5050)', 
+              color: '#fff', 
+              border: 'none', 
+              padding: '5px 10px', 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              fontSize: '12px', 
+              fontFamily: 'Orbitron, sans-serif', 
+              cursor: 'pointer', 
+              transition: 'transform 0.3s, box-shadow 0.3s',
+              fontFamily: 'Anta'
+            }}
+            onClick={() => navigate('/login')}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >Book</button>
+
+              {/* <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/signup')}>Register</Button> */}
+            </>
+          ) : (
+            <>
+              <button style={{ 
+              background: 'linear-gradient(90deg, #660000, #ff5050)', 
+              color: '#fff', 
+              border: 'none', 
+              padding: '5px 10px', 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              fontSize: '12px', 
+              fontFamily: 'Orbitron, sans-serif', 
+              cursor: 'pointer', 
+              transition: 'transform 0.3s, box-shadow 0.3s',
+              fontFamily: 'Anta'
+            }}
+            onClick={() => navigate('/login')}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >Profile</button>
+              <Button style={{ 
+  background: 'linear-gradient(90deg, #696969, #a9a9a9)', 
   color: '#fff', 
   border: 'none', 
   padding: '5px 10px', 
@@ -171,8 +222,8 @@ function Head() {
   fontFamily: 'Orbitron, sans-serif', 
   cursor: 'pointer', 
   transition: 'transform 0.3s, box-shadow 0.3s'
-}}
-onClick={() => navigate('/login')}
+}} 
+onClick={handleLogout}
 onMouseEnter={e => {
   e.currentTarget.style.transform = 'scale(1.05)';
   e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
@@ -181,14 +232,8 @@ onMouseLeave={e => {
   e.currentTarget.style.transform = 'scale(1)';
   e.currentTarget.style.boxShadow = 'none';
 }}
->Book</button>
+>Logout</Button>
 
-              {/* <Button style={{borderRadius: '0px', textDecoration: 'underline'}} secondary onClick={() => navigate('/signup')}>Register</Button> */}
-            </>
-          ) : (
-            <>
-              <Button color= "red" style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} onClick={() => navigate('/coachespage')}>Profile</Button>
-              <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta'}} secondary onClick={handleLogout}>Logout</Button>
             </>
           )}
       </div>
