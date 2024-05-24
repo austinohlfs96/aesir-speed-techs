@@ -10,13 +10,14 @@ const MapContainer = ({ onLocationClick }) => {
 
   const mapStyles = {
     margin: "0 auto", 
-    width: "80%",     
+    width: "100%",     
     maxWidth: "600px", 
     height: "400px",
     position: "relative",
     overflow: "hidden",
-    borderRadius: "10px",
+    // borderRadius: "10px",
     marginBottom: "15px",
+    boxShadow: '0 4px 8px rgba(255, 0, 0, 0.4)'
   };
 
   const defaultCenter = {

@@ -137,15 +137,15 @@ const SnowReport = () => {
         /> */}
         <MapContainer onLocationClick={handleLocationClick}/>
         
-        <Segment style={{width: 'auto', textAlign: 'center'}}>
-          <h2>Recommended Wax Key</h2>
-          <h5 style={{background: 'rgb(251 238 71)'}}>Swix HS 10</h5>
-          <h5 style={{background: 'rgb(228 70 59)'}}>Swix HS 8</h5>
-          <h5 style={{background: 'rgb(186 110 158)'}}>Swix HS 7</h5>
-          <h5 style={{background: 'rgb(111 172 206)'}}>Swix HS 6</h5>
-          <h5 style={{background: 'rgb(117 173 115)'}}>Swix HS 5</h5>
+        <Segment style={{ width: 'auto', textAlign: 'center', padding: '20px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+  <h2 style={{ fontFamily: 'Anta', color: '#333', marginBottom: '20px' }}>Recommended Wax Key</h2>
+  <h5 style={{ background: '#fbce47', fontFamily: 'Anta', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>Swix HS 10</h5>
+  <h5 style={{ background: '#e4463b', fontFamily: 'Anta', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>Swix HS 8</h5>
+  <h5 style={{ background: '#ba6e9e', fontFamily: 'Anta', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>Swix HS 7</h5>
+  <h5 style={{ background: '#6facce', fontFamily: 'Anta', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>Swix HS 6</h5>
+  <h5 style={{ background: '#75ad73', fontFamily: 'Anta', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>Swix HS 5</h5>
+</Segment>
 
-        </Segment>
        
 
         {/* Days limit selector */}
@@ -226,8 +226,8 @@ const SnowReport = () => {
                   {/* Render snow condition data for each day */}
                   <Segment style={{borderRadius: '10px', bordertop: '20px', width: '325px', marginBottom: '20px', marginRight: '20px', display: 'flex', flexDirection: 'column'}}>
                   <div>
+                  <p><strong>{dayOfWeek}</strong></p>
                   <p>Location: {snowData.address}</p>
-                  <p>{dayOfWeek}</p>
                   
                   {/* <p>Conditions: {dayData.conditions}</p> */}
                   <p>Tempurature:</p>
