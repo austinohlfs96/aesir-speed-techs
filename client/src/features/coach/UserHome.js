@@ -82,25 +82,26 @@ console.log(coach)
   
 
   // </div>
-  <Container className='container'>
+  <div className='container'>
   <Head coach={coach} />
   
   {coach && (
-    <Card style={{display: 'flex', flexDirection: 'row', fontFamily: 'Anta', width: '70vw'}}>
-      <Image src={coach.profile_picture} wrapped ui={false} style={{width: '20vw'}}/>
-      <Card.Content>
-        <Card.Header style={{fontFamily: 'Anta'}}>{coach.name}</Card.Header>
-        <Card.Meta>
-          <span><strong style={{color: 'black'}}>Team: </strong>{coach.team}</span>
-        </Card.Meta>
-      </Card.Content>
-    </Card>
+    <Card style={{ display: 'flex', flexDirection: 'row', fontFamily: 'Anta', width: '70vw', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', transition: '0.3s' }}>
+    <Image src={coach.profile_picture} wrapped ui={false} style={{ width: '20vw', objectFit: 'cover', borderTopLeftRadius: '8px', borderBottomLeftRadius: '8px' }} />
+    <Card.Content style={{ backgroundColor: '#f7f7f7', padding: '20px', flex: '1', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <Card.Header style={{ fontFamily: 'Anta', fontSize: '1.5rem', marginBottom: '10px', color: '#333' }}>{coach.name}</Card.Header>
+      <Card.Meta style={{ color: '#666', marginBottom: '10px' }}>
+        <span><strong style={{ color: '#333' }}>Team: </strong>{coach.team}</span>
+      </Card.Meta>
+    </Card.Content>
+  </Card>
   )}
   
   <MenuExampleTabularOnLeft style={{fontFamaily: 'Anta'}}/>
-  <Footer/>
-</Container>
+  
+</div>
 )}
+<Footer/>
 //       <MenuExampleTabularOnLeft/>
       
 //     </div>
