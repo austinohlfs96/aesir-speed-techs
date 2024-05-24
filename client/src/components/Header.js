@@ -109,7 +109,7 @@ function Head() {
       style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
       >
         <div style={{ backgroundColor: 'red', borderRadius: '50%', display: 'inline-block', padding: '5px', width: '50px', height: '50px', marginRight: '10px' }}>
-  <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/')} />
+  <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/home')} />
 </div>
 
        <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px'}}>ÆSIR <span style={{color: 'red'}}>Speed Techs</span></span> 
@@ -120,7 +120,7 @@ function Head() {
       <Header id='headerButtons' as='h3' textAlign='center'>
       {!isMobile && ( // Conditionally render buttons if not on mobile
         <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: "0px", backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px' }}>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/')}>Home</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/home')}>Home</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
@@ -147,7 +147,7 @@ function Head() {
       {/* Render the menu items when showMenu is true or when the page width is more than 850px */}
       {showMenu && isMobile && (
         <div ref={menuRef} className="menu-dropdown">
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/')}>Home</Button>
+          <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/home')}>Home</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
           <Button style={{borderRadius: '0px', textDecoration: 'underline', fontFamily: 'Anta'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
@@ -212,27 +212,27 @@ function Head() {
             }}
             >Profile</button>
               <Button style={{ 
-  background: 'linear-gradient(90deg, #696969, #a9a9a9)', 
-  color: '#fff', 
-  border: 'none', 
-  padding: '5px 10px', 
-  borderRadius: '0px', 
-  textDecoration: 'underline', 
-  fontSize: '12px', 
-  fontFamily: 'Orbitron, sans-serif', 
-  cursor: 'pointer', 
-  transition: 'transform 0.3s, box-shadow 0.3s'
-}} 
-onClick={handleLogout}
-onMouseEnter={e => {
-  e.currentTarget.style.transform = 'scale(1.05)';
-  e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
-}}
-onMouseLeave={e => {
-  e.currentTarget.style.transform = 'scale(1)';
-  e.currentTarget.style.boxShadow = 'none';
-}}
->Logout</Button>
+                background: 'linear-gradient(90deg, #696969, #a9a9a9)', 
+                color: '#fff', 
+                border: 'none', 
+                padding: '5px 10px', 
+                borderRadius: '0px', 
+                textDecoration: 'underline', 
+                fontSize: '12px', 
+                fontFamily: 'Orbitron, sans-serif', 
+                cursor: 'pointer', 
+                transition: 'transform 0.3s, box-shadow 0.3s'
+              }} 
+              onClick={handleLogout}
+              onMouseEnter={e => {
+                e.currentTarget.style.transform = 'scale(1.05)';
+                e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+              >Logout</Button>
 
             </>
           )}
