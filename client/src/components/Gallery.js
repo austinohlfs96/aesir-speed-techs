@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Item, Image, Segment, Modal } from 'semantic-ui-react';
 import Head from './Header';
+import Footer from './Footer'
 
 const Gallery = () => {
 
@@ -69,6 +70,7 @@ const Gallery = () => {
           </Modal.Content>
         </Modal>
       )}
+      <Footer/>
     </>
   );
 };

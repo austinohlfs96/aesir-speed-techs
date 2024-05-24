@@ -201,7 +201,7 @@ function Head() {
               transition: 'transform 0.3s, box-shadow 0.3s',
               fontFamily: 'Anta'
             }}
-            onClick={() => navigate('/login')}
+            onClick={() => navigate('/coachespage')}
             onMouseEnter={e => {
               e.currentTarget.style.transform = 'scale(1.05)';
               e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';

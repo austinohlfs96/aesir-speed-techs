@@ -7,6 +7,8 @@ import * as yup from "yup";
 import { useToasts } from 'react-toast-notifications';
 import Head from "../../components/Header";
 import { Button, Divider, Form, Grid, Segment, Image } from 'semantic-ui-react';
+import Footer from '../../components/Footer';
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -77,6 +79,7 @@ const Login = () => {
    <>
       <Head />
       <div className='loginModal'>
+      <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Login</h1>
       <Segment placeholder style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' }}>
         <Grid columns={2} relaxed='very' stackable>
           <Grid.Column>
@@ -118,6 +121,7 @@ const Login = () => {
       <Image src='https://stokedrideshop.com/cdn/shop/articles/Ayumu_Hirano.jpg?v=1659564082' size='large' centered margin-bottom="57px"/>
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

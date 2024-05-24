@@ -7,6 +7,7 @@ import { logout, fetchCurrentUser, setCurrentCoach, addError } from '../features
 import { useToasts } from 'react-toast-notifications';
 import Head from "./Header";
 import SnowReport from './SnowReport';
+import Footer from './Footer';
 
 const src = '/images/wireframe/image-text.png'
 
@@ -77,7 +78,7 @@ const Shop = () => {
    
   </Segment>
   </div>
-  {/* <SnowReport/> */}
+  <Footer/>
     </div>
     
   )

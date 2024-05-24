@@ -6,6 +6,7 @@ import { useEffect, useCallback } from 'react'
 import Head from "../../components/Header"
 import { Image, Sticky, Card, Container } from 'semantic-ui-react'
 import { useToasts } from 'react-toast-notifications';
+import Footer from '../../components/Footer'
 
 const UserHome = () => {
   const navigate = useNavigate()
@@ -97,6 +98,7 @@ console.log(coach)
   )}
   
   <MenuExampleTabularOnLeft style={{fontFamaily: 'Anta'}}/>
+  <Footer/>
 </Container>
 )}
 //       <MenuExampleTabularOnLeft/>

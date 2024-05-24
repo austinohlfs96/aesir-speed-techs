@@ -6,6 +6,7 @@ import { useSelector } from "react-redux"
 import { logout, fetchCurrentUser, setCurrentCoach, addError } from '../features/coach/coachSlice'
 import { useToasts } from 'react-toast-notifications';
 import Head from "./Header";
+import Footer from './Footer';
 
 const src = '/images/wireframe/image-text.png'
 
@@ -85,6 +86,7 @@ const Title = () => {
   </Segment>
   <Image src='boards.jpg' size='large' centered style={{marginBottom: '50px'}}/>
   </div>
+  <Footer/>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 // import axios from "axios";
 // import { format } from 'date-fns';
 import Head from "./Header";
+import Footer from './Footer'
 import SnowReport from "./SnowReport";
 
 
@@ -107,7 +108,7 @@ const LandingPage = () => {
   }}>
     <h1 style={{ fontSize: '4.5vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>GO FAST TAKE CHANCES!</h1>
              <p style={{ fontSize: '3vw'}}><span style={{fontWeight: 'bold', textDecoration: "underline", fontSize: '120%'}}>ÆSIR SPEED TECHS:</span> Your <span style={{fontWeight: 'bold', color: 'red'}}>PREMIUM</span> destination for athletes seeking an edge through professional equipment services.</p>
-             <button style={{ 
+             <button onClick={() => navigate("/login")} style={{ 
   background: 'linear-gradient(90deg, #660000, #ff5050)', 
   color: '#fff', 
   border: 'none', 
@@ -357,6 +358,7 @@ onMouseLeave={e => {
       />
       </div>
     </div>
+    <Footer/>
     </div>
   );
 };
