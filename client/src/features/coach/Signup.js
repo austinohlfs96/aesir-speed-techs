@@ -8,6 +8,7 @@ import * as yup from 'yup';
 import { useToasts } from 'react-toast-notifications';
 import Head from "../../components/Header";
 import { Button, Form, Image, Segment } from 'semantic-ui-react';
+import Footer from '../../components/Footer';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -204,12 +205,13 @@ const Signup = () => {
         </Form.Field>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginTop: '20px' }}>
             <Button type='submit' style={{fontFamily: 'Anta'}}>Submit</Button>
-            <Button type='submit' style={{fontFamily: 'Anta'}} onClick={() => navigate('/')}>Cancel</Button>
+            <Button type='submit' style={{fontFamily: 'Anta'}} onClick={() => navigate('/home')}>Cancel</Button>
             </div>
           </Form>
         </Segment>
         <Image src='https://images.squarespace-cdn.com/content/v1/58b755102994cae144cde267/1488847126298-4N5ZM6OJDML7QTP15U2O/DropInZone_PeacePark2016_Blotto_07697.jpg?format=2500w' size='large' centered />
       </div>
+      <Footer/>
     </>
   );
 }

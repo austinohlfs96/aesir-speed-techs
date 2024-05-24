@@ -1,6 +1,7 @@
 import { Segment, Image, Grid } from 'semantic-ui-react'
 import Head from "./Header";
 import EmailForm from './EmailForm';
+import Footer from './Footer';
 
 
 const src = '/images/wireframe/image-text.png'
@@ -19,6 +20,7 @@ const Contact = () => {
       </Segment>
       </Grid.Column>
     </div>
+    <Footer/>
     </>
   )
 }

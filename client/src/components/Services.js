@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Item, Image, Segment, Table } from 'semantic-ui-react';
 import Head from './Header';
 import ServiceCard from './SerciveCard';
+import Footer from './Footer';
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -157,6 +158,7 @@ const Services = () => {
         </Segment> */}
       </div>
     </div>
+    <Footer/>
   </>
   );
 };

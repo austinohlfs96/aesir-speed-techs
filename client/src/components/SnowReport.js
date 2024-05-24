@@ -6,6 +6,7 @@ import MapContainer from "./MapContainer";
 import WeatherCard from "./WeatherCard";
 import { Bar } from 'react-chartjs-2';
 import { Chart, BarController, CategoryScale, LinearScale } from 'chart.js/auto'; // Import necessary Chart.js components
+import Footer from "./Footer";
 
 Chart.register(BarController, CategoryScale, LinearScale); // Register required components
 
@@ -313,6 +314,7 @@ const SnowReport = () => {
           </div>
         )}
       </Segment>
+      <Footer/>
     </div>
   );
 };

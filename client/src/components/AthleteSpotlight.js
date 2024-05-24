@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Item, Image, Segment, Embed, Icon } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
 import Head from './Header';
+import Footer from './Footer';
 
 
 
@@ -250,6 +251,7 @@ const AthleteSpotlight = () => {
          */}
       </div>
     </div>
+    <Footer/>
     </>
   );
 };
