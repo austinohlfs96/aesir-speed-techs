@@ -92,7 +92,7 @@ function Head() {
     localStorage.removeItem("jwt_token")
     localStorage.removeItem("refresh_token")
     dispatch(logout())
-    navigate("/")
+    navigate("/home")
  }
 
  const toggleMenu = () => {
@@ -214,6 +214,7 @@ function Head() {
               <Button style={{ 
                 background: 'linear-gradient(90deg, #696969, #a9a9a9)', 
                 color: '#fff', 
+                marginLeft: '10px',
                 border: 'none', 
                 padding: '5px 10px', 
                 borderRadius: '0px', 

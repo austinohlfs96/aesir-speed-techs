@@ -80,7 +80,7 @@ const Login = () => {
       <Head />
       <div className='loginModal'>
       <h1 style={{ color: 'white', textAlign: "center", color: 'white', fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Login</h1>
-      <Segment placeholder style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))' }}>
+      <Segment placeholder style={{ background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))', width: '100%' }}>
         <Grid columns={2} relaxed='very' stackable>
           <Grid.Column>
             <Form style={{textAlign: 'center'}} onSubmit={formik.handleSubmit} id='formikLogin'>
