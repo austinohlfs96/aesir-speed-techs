@@ -47,23 +47,23 @@ const AthleteSpotlight = () => {
         <h1 style={{ color: 'red', textAlign: "center", fontFamily: "Anta", backgroundColor: 'black', padding: '5px 10px', borderRadius: '10px', border: '2px solid white', width: 'fit-content'}}>Athlete Page</h1>
 
         <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.9))',
       borderRadius: '10px',
       margin: '20px',
       padding: '20px',
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
-      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.8)',
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'scale(1.02)';
-      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.8)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'scale(1)';
-      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.8)';
     }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', width: '100%' }}>
@@ -94,23 +94,23 @@ const AthleteSpotlight = () => {
     </Segment>
 
     <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.8))',
       borderRadius: '10px',
       margin: '20px',
       padding: '20px',
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
-      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.8)',
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'scale(1.02)';
-      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.8)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'scale(1)';
-      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.8)';
     }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', width: '100%' }}>
@@ -138,23 +138,23 @@ const AthleteSpotlight = () => {
     </Segment>
 
     <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.8))',
       borderRadius: '10px',
       margin: '20px',
       padding: '20px',
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
-      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.8)',
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'scale(1.02)';
-      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.8)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'scale(1)';
-      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.8)';
     }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', width: '100%' }}>
@@ -185,23 +185,23 @@ const AthleteSpotlight = () => {
 
 
     <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.8))',
       borderRadius: '10px',
       margin: '20px',
       padding: '20px',
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
-      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.8)',
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'scale(1.02)';
-      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.8)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'scale(1)';
-      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.8)';
     }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', width: '100%' }}>
@@ -229,23 +229,23 @@ const AthleteSpotlight = () => {
     </Segment>
 
     <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.8))',
       borderRadius: '10px',
       margin: '20px',
       padding: '20px',
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
-      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.8)',
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'scale(1.02)';
-      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.8)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'scale(1)';
-      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.8)';
     }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', width: '100%' }}>
@@ -273,23 +273,23 @@ const AthleteSpotlight = () => {
     </Segment>
 
     <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.8))',
       borderRadius: '10px',
       margin: '20px',
       padding: '20px',
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
-      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.8)',
       transition: 'transform 0.3s, box-shadow 0.3s',
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'scale(1.02)';
-      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+      e.currentTarget.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.8)';
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform = 'scale(1)';
-      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+      e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.8)';
     }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', width: '100%' }}>
@@ -317,7 +317,7 @@ const AthleteSpotlight = () => {
     </Segment>
 
     <Segment className="slide-in" style={{
-      background: 'linear-gradient(2deg, rgb(147 33 33 / 80%), rgba(8, 6, 6, 0.8))',
+      background: 'linear-gradient(2deg, rgb(147 33 33 / 95%), rgba(8, 6, 6, 0.8))',
       borderRadius: '10px',
       marginLeft: '20px',
       marginRight: '20px',

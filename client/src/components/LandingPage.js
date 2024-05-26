@@ -117,7 +117,7 @@ const LandingPage = () => {
   fontFamily: 'Orbitron, sans-serif', 
   fontSize: '16px', 
   fontWeight: 'bold', 
-  boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)', 
+  boxShadow: '0 4px 10px rgba(0, 0, 0, 0.7)', 
   cursor: 'pointer', 
   transition: 'transform 0.3s, box-shadow 0.3s',
   fontFamily: 'Anta'
@@ -287,7 +287,30 @@ onMouseLeave={e => {
   }}>
     <h1 style={{ fontSize: '5vw', color: '#fff', color: 'white', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Anta', textDecoration: 'underline'}}>DON'T KNOW WHAT WAX TO USE?</h1>
              <p style={{ fontSize: '5vw'}}>Check out our snow conditions and wax recommendations</p>
-    <button onClick={() => navigate("/snow-conditions")} style={{fontSize: "150%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px', textDecoration: 'underline'}}>Snow Conditions</button>
+    <button onClick={() => navigate("/snow-conditions")} 
+    style={{ 
+      background: 'linear-gradient(90deg, #660000, #ff5050)', 
+      color: '#fff', 
+      border: 'none', 
+      padding: '10px 20px', 
+      borderRadius: '5px', 
+      fontFamily: 'Orbitron, sans-serif', 
+      fontSize: '16px', 
+      fontWeight: 'bold', 
+      boxShadow: '0 4px 10px rgba(0, 0, 0, 0.7)', 
+      cursor: 'pointer', 
+      transition: 'transform 0.3s, box-shadow 0.3s',
+      fontFamily: 'Anta'
+    }}
+    onMouseEnter={e => {
+      e.currentTarget.style.transform = 'scale(1.05)';
+      e.currentTarget.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.3)';
+    }}
+    onMouseLeave={e => {
+      e.currentTarget.style.transform = 'scale(1)';
+      e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+    }}
+    >Snow Conditions</button>
   </Segment>
 </div>
    
