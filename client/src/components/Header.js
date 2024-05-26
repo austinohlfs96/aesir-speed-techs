@@ -119,25 +119,75 @@ function Head() {
       </Header>
       <Header id='headerButtons' as='h3' textAlign='center'>
       {!isMobile && ( // Conditionally render buttons if not on mobile
-        <Button.Group className='menu-buttons' style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: "0px", backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px' }}>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/home')}>Home</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/shop')}>Shop</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/about')}>About</Button>
-          <Button style={{borderRadius: '0px', textDecoration: 'underline', padding: '5px 10px', fontSize: '12px', fontFamily: 'Anta', background: 'unset'}} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
-          {/* {!coach ? (
-            <>
-              <Button primary onClick={() => navigate('/login')}>Login</Button>
-              <Button secondary onClick={() => navigate('/signup')}>Register</Button>
-            </>
-          ) : (
-            <>
-              <Button primary onClick={() => navigate('/coachespage')}>Profile</Button>
-              <Button secondary onClick={handleLogout}>Logout</Button>
-          )} */}
-        </Button.Group>
+          <Button.Group className='menu-buttons' style={{ 
+            width: '100%', 
+            display: 'flex', 
+            justifyContent: 'center', 
+            marginTop: "0px", 
+            backgroundColor: 'black', 
+            borderRadius: '20px', 
+            border: '2px solid white', 
+            padding: '3px', 
+            paddingLeft: '9px', 
+            paddingRight: '9px' 
+          }}>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/home')}>Home</Button>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/tuningservices')}>Services</Button>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/gallery')}>Gallery</Button>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/athletespotlight')}>Athlete Page</Button>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/shop')}>Shop</Button>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/about')}>About</Button>
+            <Button className="button" style={{ 
+              borderRadius: '0px', 
+              textDecoration: 'underline', 
+              padding: '5px 10px', 
+              fontSize: '12px', 
+              fontFamily: 'Anta', 
+              background: 'unset' 
+            }} secondary onClick={() => navigate('/contact')}>Contact Us</Button>
+          </Button.Group>
         
       )}
       <Button.Group>
@@ -176,7 +226,7 @@ function Head() {
             onClick={() => navigate('/login')}
             onMouseEnter={e => {
               e.currentTarget.style.transform = 'scale(1.05)';
-              e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+              e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.7)';
             }}
             onMouseLeave={e => {
               e.currentTarget.style.transform = 'scale(1)';

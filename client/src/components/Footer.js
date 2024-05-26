@@ -49,7 +49,30 @@ const Footer = () => {
           <p style={textStyle}>Subscribe to our Newsletter:</p>
           <div style={newsletterStyle}>
             <Input placeholder='Your email address' style={inputStyle} />
-            <Button primary style={buttonStyle}>Subscribe</Button>
+            <Button primary 
+            style={{ 
+              background: 'linear-gradient(90deg, #660000, #ff5050)', 
+              color: '#fff', 
+              border: 'none', 
+              padding: '10px 20px', 
+              borderRadius: '5px', 
+              fontFamily: 'Orbitron, sans-serif', 
+              fontSize: '16px', 
+              fontWeight: 'bold', 
+              boxShadow: '0 4px 10px rgba(0, 0, 0, 0.7)', 
+              cursor: 'pointer', 
+              transition: 'transform 0.3s, box-shadow 0.3s',
+              fontFamily: 'Anta'
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.3)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+            }}
+            >Subscribe</Button>
           </div>
         </div>
       </div>
@@ -132,9 +155,5 @@ const inputStyle = {
   marginRight: '10px',
 };
 
-const buttonStyle = {
-  background: 'red',
-  padding: '0.5em 1em',
-};
 
 export default Footer;
