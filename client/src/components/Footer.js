@@ -8,7 +8,7 @@ const Footer = () => {
       <div style={containerStyle}>
         <div style={sectionStyle}>
           <Image 
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' 
+            src='/AESIRLogo.png' 
             alt="Valknut logo"
             style={logoStyle} 
           />
@@ -108,8 +108,8 @@ const sectionStyle = {
 };
 
 const logoStyle = {
-  width: '40px',
-  height: '40px',
+  width: '95px',
+  height: '50px',
   marginBottom: '10px',
 };
 
