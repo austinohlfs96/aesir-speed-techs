@@ -211,6 +211,7 @@ form.ui.form div.field div.ui.input input:-webkit-autofill:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 #services {

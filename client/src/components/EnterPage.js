@@ -93,16 +93,16 @@ const EnterPage = () => {
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png" style={{ width: "90px", height: "90px", objectFit: "contain" }} />
         </div>
 
-        <h1 style={{ fontSize: '9vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.8)', marginBottom: '0px', backgroundColor: 'black', borderRadius: '30px', border: '2px solid white', paddingLeft: '25px', paddingRight: '25px', boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.8)'}}>
+        <h1 style={{ fontSize: '7vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.8)', marginBottom: '20px', backgroundColor: 'black', borderRadius: '30px', border: '2px solid white', paddingLeft: '25px', paddingRight: '25px', boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.8)'}}>
           Æ<span style={{ color: 'red' }}>SIR</span>
         </h1>
-        <h1 style={{ fontSize: '9vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.8)', marginTop: '0px' }}>
+        <h1 style={{ fontSize: '7vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '5px 5px 10px rgba(0, 0, 0, 0.8)', marginTop: '0px' }}>
           Speed Techs
         </h1>
-        <p style={{ fontSize: '2.5vw', maxWidth: '800px', fontFamily: 'Anta', textShadow: '4px 4px 8px rgba(0, 0, 0, 0.7)', marginTop: '20px' }}>
+        <p style={{ fontSize: '2.5vw', maxWidth: '800px', fontFamily: 'Anta', textShadow: '4px 4px 8px rgba(0, 0, 0, 0.7)', marginTop: '5px' }}>
           Your <span style={{ fontWeight: 'bold', color: '#FF0000' }}>PREMIUM</span> destination for elite athletes seeking a competitive edge through superior equipment services.
         </p>
-        <p style={{ fontSize: '3.5vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '4px 4px 8px rgba(0, 0, 0, 0.7)', marginTop: '20px' }}>
+        <p style={{ fontSize: '3.5vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '4px 4px 8px rgba(0, 0, 0, 0.7)', marginTop: '5px', marginBottom: '10px'}}>
           GO FAST, TAKE CHANCES!
         </p>
 
