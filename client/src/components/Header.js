@@ -108,13 +108,13 @@ function Head() {
       <Header id="title" as='h3' textAlign='left' 
       style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
       >
-        <div style={{ backgroundColor: 'red', borderRadius: '50%', display: 'inline-block', padding: '5px', width: '50px', height: '50px', marginRight: '10px' }}>
-  <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Valknut.svg/1200px-Valknut.svg.png' size='small' onClick={() => navigate('/home')} />
+        {/* <div style={{   padding: '5px', width: '50px', height: '50px', marginRight: '10px' }}>
+  <Image src='/AESIRLogo.png' size='small' onClick={() => navigate('/home')} />
 </div>
 
-       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px'}}>ÆSIR <span style={{color: 'red'}}>Speed Techs</span></span> 
+       <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px'}}>ÆSIR <span style={{color: 'red'}}>Speed Techs</span></span>  */}
        
-      
+       <Image src='/AESIRLogo.png' size='small' onClick={() => navigate('/home')} style={{width: isMobile ?  '25vw' : '10vw', height: 'auto'}}/>
        
       </Header>
       <Header id='headerButtons' as='h3' textAlign='center'>
