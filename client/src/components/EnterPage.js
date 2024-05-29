@@ -40,7 +40,8 @@ const EnterPage = () => {
           cursor: 'pointer',
           transition: 'transform 0.3s, box-shadow 0.3s',
           backdropFilter: 'blur(5px)',
-          textDecoration: 'underline'
+          textDecoration: 'underline',
+          border: '1px solid white',
         }}
           onMouseEnter={e => {
             e.currentTarget.style.transform = 'scale(1.05)';
