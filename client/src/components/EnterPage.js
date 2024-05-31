@@ -22,7 +22,7 @@ const EnterPage = () => {
       <div className="text-overlay" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', color: '#fff', backdropFilter: 'blur(10px)', backgroundColor: 'rgba(25, 25, 25, 0.5)', borderRadius: '0px', padding: '20px', boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)' }}>
 
         <div >
-          <img src="/AESIRLogo.png" style={{ width: "90vw", height: "40vh", objectFit: "contain" }} />
+          <img src="/AESIRLogo.png" style={{ width: "90vw", height: "40vh", objectFit: "contain", filter: 'drop-shadow(0 0 20px #8b0000)', }} />
         </div>
         <p style={{ fontSize: '6.5vw', fontWeight: 'bold', fontFamily: 'Anta', textShadow: '4px 4px 8px rgba(0, 0, 0, 0.7)', marginTop: '5px', marginBottom: '40px'}}>
           GO <span style={{ backgroundImage: 'linear-gradient(180deg, #fff, rgb(225 68 26)', WebkitBackgroundClip: 'text', color: 'transparent' }}>FAST</span>, TAKE <span style={{ backgroundImage: 'linear-gradient(180deg, #fff, rgb(225 68 26)', WebkitBackgroundClip: 'text', color: 'transparent' }}>CHANCES!</span>
