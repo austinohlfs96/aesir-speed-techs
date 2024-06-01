@@ -114,7 +114,7 @@ function Head() {
 
        <span  style={{fontSize: "90%", fontFamily: 'Anta', color: 'white', marginBottom: '0px', backgroundColor: 'black', borderRadius: '20px', border: '2px solid white', padding: '3px', paddingLeft: '9px', paddingRight: '9px'}}>ÆSIR <span style={{color: 'red'}}>Speed Techs</span></span>  */}
        
-       <Image src='/AESIRLogo.png' size='small' onClick={() => navigate('/home')} style={{width: isMobile ?  '25vw' : '10vw', height: 'auto'}}/>
+       <Image src='/AESIRLogo.png' size='small' onClick={() => navigate('/home')} style={{width: isMobile ?  '25vw' : '10vw', height: 'auto', filter: 'drop-shadow(0 0 20px #8b0000)'}}/>
        
       </Header>
       <Header id='headerButtons' as='h3' textAlign='center'>
