@@ -10,6 +10,8 @@ import { getToken } from '../../utils/main';
 import { checkToken } from '../../utils/main';
 import * as Yup from 'yup';
 import ConfirmAppt from './AppointmentConfirm';
+import { DateInput } from 'semantic-ui-calendar-react';
+
 
 const BookAppointment = ({handleItemClick}) => {
   const navigate = useNavigate()
@@ -158,7 +160,9 @@ const BookAppointment = ({handleItemClick}) => {
 
   return (
     <>
-     <Header><h1 style={{fontFamily: 'Anta'}}>Book Appointment</h1></Header>
+     <Header>
+      <h1 style={{fontFamily: 'Anta'}}>Book Appointment</h1>
+      </Header>
       <Form onSubmit={formik.handleSubmit}>
         <Form.Field>
           <label>Pick-up Location</label>
@@ -188,11 +192,12 @@ const BookAppointment = ({handleItemClick}) => {
         </Form.Field>
         <Form.Field>
           <label>Schedule Pick-up Time</label>
-          <Input
+          <DateInput
             name="booking_time"
-            value={formik.values.booking_time}
             placeholder="Enter your pickup time"
-            onChange={formik.handleChange}
+            value={formik.values.booking_time}
+            iconPosition="left"
+            onChange={(event, { name, value }) => formik.setFieldValue(name, value)}
             onBlur={formik.handleBlur}
           />
           {formik.touched.booking_time && formik.errors.booking_time ? (
