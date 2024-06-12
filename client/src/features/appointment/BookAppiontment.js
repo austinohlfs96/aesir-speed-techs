@@ -199,6 +199,8 @@ const BookAppointment = ({handleItemClick}) => {
             iconPosition="left"
             onChange={(event, { name, value }) => formik.setFieldValue(name, value)}
             onBlur={formik.handleBlur}
+            closeOnMouseLeave={false}  // Make sure this is set to false or not set at all
+            onClick={(e) => e.stopPropagation()}  // To prevent closing on click outside
           />
           {formik.touched.booking_time && formik.errors.booking_time ? (
             <div style={{ color: 'red' }}>{formik.errors.booking_time}</div>
