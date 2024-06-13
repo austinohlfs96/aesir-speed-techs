@@ -158,6 +158,25 @@ const BookAppointment = ({handleItemClick}) => {
       });
   };
 
+  const isValidDate = (date) => {
+    // Disable past dates and weekends
+    const currentDate = new Date();
+    const selectedDate = new Date(date);
+    
+    // Check if date is not in the past
+    if (selectedDate < currentDate) {
+      return false;
+    }
+    
+    // Check if date is not a weekend (Saturday or Sunday)
+    const dayOfWeek = selectedDate.getDay();
+    if (dayOfWeek === 0 || dayOfWeek === 6) {
+      return false;
+    }
+
+    return true;
+  };
+
   return (
     <>
      <Header>
@@ -199,8 +218,10 @@ const BookAppointment = ({handleItemClick}) => {
             iconPosition="left"
             onChange={(event, { name, value }) => formik.setFieldValue(name, value)}
             onBlur={formik.handleBlur}
-            closeOnMouseLeave={false}  // Make sure this is set to false or not set at all
-            onClick={(e) => e.stopPropagation()}  // To prevent closing on click outside
+            isValidDate={isValidDate}
+            minDate={new Date()} // Disable dates before today
+            closeOnMouseLeave={false} // Ensure this is set to false or not set to handle closing
+            onClick={(e) => e.stopPropagation()} // To prevent closing on click outside
           />
           {formik.touched.booking_time && formik.errors.booking_time ? (
             <div style={{ color: 'red' }}>{formik.errors.booking_time}</div>
