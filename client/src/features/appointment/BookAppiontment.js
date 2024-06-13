@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Button, Form, Input, Modal, Card, Segment, Header } from 'semantic-ui-react';
@@ -25,6 +25,7 @@ const BookAppointment = ({handleItemClick}) => {
   const coachAthletes = coach.athletes;
   const { addToast } = useToasts();
   const [showPaymentModal, setShowPaymentModal] = useState(false);
+  const calendarRef = useRef(null);
 
   const handleNewError = useCallback((error) => {
     addToast(error, { appearance: 'error', autoDismiss: true });
@@ -158,6 +159,19 @@ const BookAppointment = ({handleItemClick}) => {
       });
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (calendarRef.current && !calendarRef.current.contains(event.target)) {
+        // Logic to close the calendar
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [calendarRef]);
+
   const isValidDate = (date) => {
     // Disable past dates and weekends
     const currentDate = new Date();
@@ -211,18 +225,20 @@ const BookAppointment = ({handleItemClick}) => {
         </Form.Field>
         <Form.Field>
           <label>Schedule Pick-up Time</label>
-          <DateInput
-            name="booking_time"
-            placeholder="Enter your pickup time"
-            value={formik.values.booking_time}
-            iconPosition="left"
-            onChange={(event, { name, value }) => formik.setFieldValue(name, value)}
-            onBlur={formik.handleBlur}
-            isValidDate={isValidDate}
-            minDate={new Date()} // Disable dates before today
-            closeOnMouseLeave={false} // Ensure this is set to false or not set to handle closing
-            onClick={(e) => e.stopPropagation()} // To prevent closing on click outside
-          />
+          <div ref={calendarRef}>
+      <DateInput
+        name="booking_time"
+        placeholder="Enter your pickup time"
+        value={formik.values.booking_time}
+        iconPosition="left"
+        onChange={(event, { name, value }) => formik.setFieldValue(name, value)}
+        onBlur={formik.handleBlur}
+        isValidDate={isValidDate}
+        minDate={new Date()} // Disable dates before today
+        closeOnMouseLeave={false} // Ensure this is set to false or not set to handle closing
+        // Remove this if you want the calendar to close on click outside
+      />
+    </div>
           {formik.touched.booking_time && formik.errors.booking_time ? (
             <div style={{ color: 'red' }}>{formik.errors.booking_time}</div>
           ) : null}
