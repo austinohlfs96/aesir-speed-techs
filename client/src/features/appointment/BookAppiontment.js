@@ -235,8 +235,6 @@ const BookAppointment = ({handleItemClick}) => {
         onBlur={formik.handleBlur}
         isValidDate={isValidDate}
         minDate={new Date()} // Disable dates before today
-        closeOnMouseLeave={false} // Ensure this is set to false or not set to handle closing
-        // Remove this if you want the calendar to close on click outside
       />
     </div>
           {formik.touched.booking_time && formik.errors.booking_time ? (
