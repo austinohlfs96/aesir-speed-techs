@@ -40,10 +40,6 @@ const SnowReport = () => {
 
   const handleLocationClick = (data) => {
     setClickedLocation(data);
-    // const component1 = data.address_components[1];
-    // const component3 = data.address_components[3];
-    // // Set the location name based on the extracted components
-    // setLocationName(`${component1.long_name}, ${component3.long_name}`);
     handleSearch()
     console.log( "testClickedLocation", clickedLocation)
   };
@@ -126,16 +122,6 @@ const SnowReport = () => {
     
         {/* Search bar */}
         <div style={{display: "flex", flexDirection: 'column', alignItems: 'center', marginTop: '20px'}}>
-        {/* <Input
-          placeholder="Enter location..."
-          value={""}
-          style={{fontFamily: 'Anta', marginBottom: '10px'}}
-          onChange={(e) => setLocation(e.target.value)}
-          action={{
-            icon: "search",
-            onClick: handleSearch,
-          }}
-        /> */}
         <MapContainer onLocationClick={handleLocationClick}/>
         
         <Segment style={{ width: 'auto', textAlign: 'center', padding: '20px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
@@ -244,67 +230,67 @@ const SnowReport = () => {
                   </div>
                   <button onClick={handleExpandClick}>Show Hourly Temperature</button> {/* Button to expand/collapse */}
                   {showHourlyTemperature && snowData && snowData.days && (
-    <div style={{ display: "flex", justifyContent: 'center', marginTop: '20px' }}>
-      <div>
-        <h3>Hourly Temp: {dayOfWeek}</h3>
-        
-        <Bar
-        
-  data={{
-    labels: dayData.hours.map(hour => hour.datetime), // Use the datetime as labels
-    datasets: [
-      {
-        label: 'Hourly Temperature',
-        data: dayData.hours.map(hour => hour.temp), // Use the hourly temperature data
-        backgroundColor: dayData.hours.map(hour => {
-          // Set different background colors based on temperature
-          if (hour.temp >= 35) {
-            return 'rgba(251, 238, 71, 0.5)'; // Red for high temperatures
-          } else if (hour.temp >= 25) {
-            return 'rgba(228, 70, 59, 0.5)'; // Orange for warm temperatures
-          } else if (hour.temp >= 18) {
-            return 'rgba(186, 110, 158, 0.5)'; // Yellow for mild temperatures
-          } else if (hour.temp >= 10) {
-            return 'rgba(111, 172, 206, 0.5)'; // Green for cool temperatures
-          } else if (hour.temp >= 3) {
-            return 'rgba(117, 173, 115, 0.5)'; // Blue for cold temperatures
-          } else {
-            return 'rgba(117, 173, 115, 0.5)'; // Purple for very cold temperatures
-          }
-        }),
-        borderColor: dayData.hours.map(hour => {
-          // Set corresponding border colors
-          if (hour.temp >= 35) {
-            return 'rgba(251, 238, 71, 1)';
-          } else if (hour.temp >= 25) {
-            return 'rgba(228, 70, 59, 1)';
-          } else if (hour.temp >= 18) {
-            return 'rgba(186, 110, 158, 1)';
-          } else if (hour.temp >= 10) {
-            return 'rgba(111, 172, 206, 1)';
-          } else if (hour.temp >= 3) {
-            return 'rgba(117, 173, 115, 1)';
-          } else {
-            return 'rgba(117, 173, 115, 1)';
-          }
-        }),
-        borderWidth: 1
-      }
-    ]
-  }}
-  options={{
-    scales: {
-      y: {
-        
-        beginAtZero: true
-      },
-    }
-  }}
-/>
+                  <div style={{ display: "flex", justifyContent: 'center', marginTop: '20px' }}>
+                    <div>
+                      <h3>Hourly Temp: {dayOfWeek}</h3>
+                      
+                      <Bar
+                      
+                        data={{
+                          labels: dayData.hours.map(hour => hour.datetime), // Use the datetime as labels
+                          datasets: [
+                            {
+                              label: 'Hourly Temperature',
+                              data: dayData.hours.map(hour => hour.temp), // Use the hourly temperature data
+                              backgroundColor: dayData.hours.map(hour => {
+                                // Set different background colors based on temperature
+                                if (hour.temp >= 35) {
+                                  return 'rgba(251, 238, 71, 0.5)'; // Red for high temperatures
+                                } else if (hour.temp >= 25) {
+                                  return 'rgba(228, 70, 59, 0.5)'; // Orange for warm temperatures
+                                } else if (hour.temp >= 18) {
+                                  return 'rgba(186, 110, 158, 0.5)'; // Yellow for mild temperatures
+                                } else if (hour.temp >= 10) {
+                                  return 'rgba(111, 172, 206, 0.5)'; // Green for cool temperatures
+                                } else if (hour.temp >= 3) {
+                                  return 'rgba(117, 173, 115, 0.5)'; // Blue for cold temperatures
+                                } else {
+                                  return 'rgba(117, 173, 115, 0.5)'; // Purple for very cold temperatures
+                                }
+                              }),
+                              borderColor: dayData.hours.map(hour => {
+                                // Set corresponding border colors
+                                if (hour.temp >= 35) {
+                                  return 'rgba(251, 238, 71, 1)';
+                                } else if (hour.temp >= 25) {
+                                  return 'rgba(228, 70, 59, 1)';
+                                } else if (hour.temp >= 18) {
+                                  return 'rgba(186, 110, 158, 1)';
+                                } else if (hour.temp >= 10) {
+                                  return 'rgba(111, 172, 206, 1)';
+                                } else if (hour.temp >= 3) {
+                                  return 'rgba(117, 173, 115, 1)';
+                                } else {
+                                  return 'rgba(117, 173, 115, 1)';
+                                }
+                              }),
+                              borderWidth: 1
+                            }
+                          ]
+                        }}
+                        options={{
+                          scales: {
+                            y: {
+                              
+                              beginAtZero: true
+                            },
+                          }
+                        }}
+                      />
 
-      </div>
-    </div>
-  )}
+                            </div>
+                          </div>
+                        )}
 
                   </Segment>
 
