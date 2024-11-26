@@ -21,13 +21,11 @@ const Signup = () => {
   }, [addToast]);
 
   const formSchema = yup.object().shape({
-    email: yup.string().required('Please enter your email').email('Enter a valid email'),
-    password: yup.string().required('Please enter a password'),
-    confirmpassword: yup.string()
-      .required('Please confirm your password')
-      .oneOf([yup.ref('password')], 'Passwords must match'),
-    accessCode: yup.string().required('Please enter the access code'),
-    profile_picture: yup.string().url('Enter a valid URL for the profile picture'),
+    email: yup.string().required('Please enter your email').typeError('Please enter a string.'),
+    password: yup.string().required('Please enter a password.').typeError('Please enter a string.'),
+    confirmpassword: yup.string().required('Please enter the same password.').typeError('Please enter a string.'), 
+    accessCode: yup.string().required('Please enter the access code.'),
+    profile_picture: yup.string().url('Please enter a valid URL for the profile picture'),
   });
 
   const formik = useFormik({
@@ -38,27 +36,48 @@ const Signup = () => {
       password: "",
       confirmpassword: "",
       accessCode: '',
-      profile_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Windows_10_Default_Profile_Picture.svg/2048px-Windows_10_Default_Profile_Picture.svg.png",
+      profile_picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Windows_10_Default_Profile_Picture.svg/2048px-Windows_10_Default_Profile_Picture.svg.png"
     },
     validationSchema: formSchema,
     onSubmit: async (values) => {
-      try {
-        const response = await fetch(`/auth/register`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(values),
-        });
+      console.log("val", values);
+      if (values.password !== values.confirmpassword) {
+        handleNewError("Password must match.");
+        return;
+      }
 
-        if (response.ok) {
-          const result = await response.json();
-          navigate('/coachespage');
-        } else {
-          const error = await response.json();
-          handleNewError(error.message);
-          dispatch(addError(error.message));
-        }
+      const expectedAccessCode = "@ÆSiRteAm23"; // Replace with your expected access code
+      if (values.accessCode !== expectedAccessCode) {
+        handleNewError("Access code is incorrect.");
+        return;
+      }
+  
+      try {
+        fetch(`/auth/register`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        })
+  
+        .then(res => {
+          if (res.ok) {
+              res.json().then(resObj => {
+                // Update state or perform other actions upon successful registration
+                console.log(resObj);
+              })
+              navigate('/coachespage');
+          } else {
+              res.json().then(errorObj => {
+              dispatch(addError(errorObj.message));
+              handleNewError(errorObj.message);
+            });
+          }
+      })
       } catch (error) {
-        handleNewError('An unexpected error occurred.');
+        console.error('An unexpected error occurred', error);
+        handleNewError(error);
       }
     },
   });
