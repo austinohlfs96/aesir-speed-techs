@@ -63,20 +63,22 @@ const Signup = () => {
     },
   });
 
+  const nextFieldsMap = {
+    email: ['name'],
+    name: ['team', 'password'], // Show both 'team' and 'password'
+    team: ['password'],
+    password: ['confirmpassword'],
+    confirmpassword: ['accessCode'],
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     formik.setFieldValue(name, value.trim());
     formik.handleChange(e);
 
-    const nextField = {
-      email: 'name',
-      name: 'team',
-      team: 'password',
-      password: 'confirmpassword',
-      confirmpassword: 'accessCode',
-    }[name];
-    if (nextField && !visibleFields.includes(nextField)) {
-      setVisibleFields([...visibleFields, nextField]);
+    const nextFields = nextFieldsMap[name];
+    if (nextFields) {
+      setVisibleFields([...new Set([...visibleFields, ...nextFields])]);
     }
   };
 
