@@ -25,6 +25,7 @@ const BookAppointment = ({handleItemClick}) => {
   const coachAthletes = coach.athletes;
   const { addToast } = useToasts();
   const [showPaymentModal, setShowPaymentModal] = useState(false);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const calendarRef = useRef(null);
 
   const handleNewError = useCallback((error) => {
